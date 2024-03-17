@@ -30,10 +30,10 @@
         <div class="loader"></div>
     </div>
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
+    <header class="header mx-3 px-3">
+        <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-1 col-md-1">
                     <div class="header__logo text-center" style="height: 100px;">
                         <a href="./index.html" style="height: 100%;"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
                     </div>
@@ -41,9 +41,9 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Trang chủ</a></li>
-                            <li><a href="#">Nữ</a></li>
-                            <li><a href="#">Nam</a></li>
+                            <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
+                            <li><a href="./female.html">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
                             <li><a href="#">Tin tức</a></li>
                             <li><a href="#">Giới thiệu</a></li>
                             <!-- <li><a href="./shop.html">Shop</a></li>
@@ -61,17 +61,30 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-5 col-md-5">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-                        <div class="price">Giỏ hàng</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <input type="text" name="search" placeholder="Search..">
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-heart d-block text-danger text-center"></i>
+                                <span class="d-block">Yêu thích</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-user-circle d-block text-danger text-center"></i>
+                                <span class="d-block text-center">Tài khoản</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
+                                <span class="d-block">Giỏ hàng</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
-        </div>
+        <!-- </div> -->
     </header>
     <!-- Header Section End -->
 
@@ -185,21 +198,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Váy liền nữ phối tay</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>629.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -220,21 +227,15 @@
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>559.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-4">
                                     <input type="radio" id="pc-4">
@@ -255,21 +256,15 @@
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-7">
                                     <input type="radio" id="pc-7">
@@ -290,21 +285,15 @@
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>149.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-10">
                                     <input type="radio" id="pc-10">
@@ -325,21 +314,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần khaki nam dáng ôm</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>349.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -360,21 +343,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần jeans nữ dáng ôm</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-4">
                                     <input type="radio" id="pc-4">
@@ -403,21 +380,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác chần bông nam Ultra Air siêu nhẹ,...</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -437,21 +408,15 @@
                         <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>559.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-4">
                                     <input type="radio" id="pc-4">
@@ -472,21 +437,15 @@
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-7">
                                     <input type="radio" id="pc-7">
@@ -506,21 +465,15 @@
                         <div class="product__item__pic set-bg" data-setbg="img/nu/10.jpg">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo cardigan nữ cổ V dài tay dáng ngắn vừa</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-10">
                                     <input type="radio" id="pc-10">
@@ -549,21 +502,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần khaki nam dáng ôm</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>349.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -583,21 +530,15 @@
                         <div class="product__item__pic set-bg" data-setbg="img/nu/1.jpg">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần jeans nữ dáng ôm</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-4">
                                     <input type="radio" id="pc-4">
@@ -618,21 +559,15 @@
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>149.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-7">
                                     <input type="radio" id="pc-7">
@@ -652,21 +587,15 @@
                         <div class="product__item__pic set-bg" data-setbg="img/nu/2.jpg">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần dài nữ dáng suông</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>364.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-10">
                                     <input type="radio" id="pc-10">
@@ -695,21 +624,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Váy liền nữ phối tay</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>629.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -730,21 +653,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>559.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-4">
                                     <input type="radio" id="pc-4">
@@ -765,21 +682,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-7">
                                     <input type="radio" id="pc-7">
@@ -800,21 +711,15 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
                             </ul>
                         </div>
                         <div class="product__item__text">
                             <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
                             <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
                             <h6>149.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                             <div class="product__color__select">
                                 <label for="pc-10">
                                     <input type="radio" id="pc-10">

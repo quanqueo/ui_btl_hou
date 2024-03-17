@@ -908,8 +908,9 @@ ol {
 -----------------------*/
 
 .product {
-	padding-top: 0;
+	padding-top: 30px;
 	padding-bottom: 60px;
+	background-color: whitesmoke;
 }
 
 .filter__controls {
@@ -3879,4 +3880,62 @@ ol {
 }
 .news .product__item__news:hover{
 	transform: scale(0.9);
+}
+input[type=text] {
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 15px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('./../img/icon/search.png');
+	background-position: 6px 6px; 
+	background-repeat: no-repeat;
+	padding: 2px 20px 2px 40px;
+  }
+.banner{
+	height: fit-content;
+}
+.pagination{
+	border: none;
+}
+.pagination li{
+	padding: 4px 10px;
+	background-color: whitesmoke;
+	transition: 0.4s;
+	border: 1px solid whitesmoke;
+}
+.pagination li:hover{
+	color: red;
+	border: 1px solid red;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.pagination li:nth-child(2){
+	color: red;
+	border: 1px solid red;
+	border-radius: 4px;
+}
+.nice-select{
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+}
+.product__filter .product__item .product__item__text h6:nth-child(3) {
+	font-weight: 800;
+}
+.clothes-type{
+	width: 20%;
+	padding: 20px 40px;
+	overflow: hidden;
+}
+.clothes-type img{
+	transition: 0.6s;
+}
+.clothes-type:hover img{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.clothes-type h5{
+	margin-top: 15px;
 }
