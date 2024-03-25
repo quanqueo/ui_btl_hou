@@ -42,8 +42,8 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
-                            <li><a href="./female.html">Nữ</a></li>
-                            <li class="active"><a href="#">Nam</a></li>
+                            <li class="active"><a href="#">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
                             <li><a href="#">Tin tức</a></li>
                             <li><a href="./introduce.html">Giới thiệu</a></li>
                         </ul>
@@ -77,85 +77,60 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section>
+    <!-- <section>
         <div class="d-block">
-            <img src="img/banner/banner-nam.png"/>
+            <img src="img/banner/banner-04.jpg"/>
         </div>
-    </section>
+    </section> -->
     <!-- Hero Section End -->
 
     <!-- Product Section Begin -->
     <section class="product spad">
         <div class="row mb-3">
-            <h3 class="w-100 text-center p-3"><strong>SẢN PHẨM CẦN TÌM</strong></h3>
+            <h3 class="w-100 text-center p-3"><strong>SẢN PHẨM</strong></h3>
         </div>
         <div class="container">
-            <div class="d-flex mb-4">
-               <div class="clothes-type">
-                    <img src="./img/clothes-type/simicategory_filename_tablet1698394465.webp"/>
-                    <h5 class="text-center">Áo phông</h5>
-                </div>
-                <div class="clothes-type">
-                    <img src="./img/clothes-type/simicategory_filename_tablet1698394512.webp"/>
-                    <h5 class="text-center">Áo dài tay</h5>
-                </div>
-                <div class="clothes-type">
-                    <img src="./img/clothes-type/simicategory_filename_tablet1702457455.webp"/>
-                    <h5 class="text-center">Áo khoác</h5>
-                </div>
-                <div class="clothes-type">
-                    <img src="./img/clothes-type/simicategory_filename_tablet1698394609.webp"/>
-                    <h5 class="text-center">Quần</h5>
-                </div>
-                <div class="clothes-type">
-                    <img src="./img/clothes-type/simicategory_filename_tablet1698394386.webp"/>
-                    <h5 class="text-center">Quần lót</h5>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 d-flex align-items-center mb-3">
-                    <strong class="mr-2">Bộ lọc:</strong>
-                    <select class="form-control form-control-sm mr-2">
-                        <option>Khoảng giá</option>
-                        <option>< 200.000 đ</option>
-                        <option>200.000 đ - 500.000 đ</option>
-                        <option>500.000 đ - 1.000.000 đ</option>
-                        <option>> 1.000.000 đ</option>
-                    </select>
-                    <select class="form-control form-control-sm mr-2">
-                        <option>Kích thước</option>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end mb-3">
-                    <strong><i class="fa fa-bars" aria-hidden="true"></i>  Sắp xếp theo</strong>
-                </div>
-            </div>
-            <div id="productList" class="row product__filter"></div>
-            <div class="row justify-content-end">
-                <nav>
-                    <ul class="pagination">
-                        <li>
-                            <
-                        </li>
-                        <li class="page-item">
-                            1
-                        </li>
-                        <li class="page-item">2
-                        </li>
-                        <li class="page-item">3
-                        </li>
-                        <li class="page-item">4
-                        </li>
-                        <li class="page-item">
-                            >
-                        </li>
+                <!-- Content Left -->
+                <div class="col-lg-3 col-md-3 col-sm-0 col-sm-0 prd-filter">
+                    <ul>
+                        <li><h5><strong>Loại sản phẩm</strong> <strong class="d-inline-block"><i class="fa fa-chevron-down" aria-hidden="true"></i></strong></h5></li>
+                        <li><h5><strong>Kích thước</strong><strong class="d-inline-block"><i class="fa fa-chevron-down" aria-hidden="true"></i></strong></h5> </li>
+                        <li><h5><strong>Màu sắc</strong><strong class="d-inline-block"><i class="fa fa-chevron-down" aria-hidden="true"></i></strong></h5> </li>
+                        <li><h5><strong>Khoảng giá</strong><strong class="d-inline-block"><i class="fa fa-chevron-down" aria-hidden="true"></i></strong></h5> </li>
                     </ul>
-                </nav>
+                </div>
+                <!-- Content Right -->
+                <div class="col-lg-9 col-md-9 col-sm-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-md-12 col-sm-12 mb-3">
+                            <strong><i class="fa fa-bars" aria-hidden="true"></i>  Sắp xếp theo</strong>
+                        </div>
+                    </div>
+                    <div id="productList" class="row product__filter">
+                    </div>
+                    <div class="row justify-content-end">
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <
+                                </li>
+                                <li class="page-item">
+                                    1
+                                </li>
+                                <li class="page-item">2
+                                </li>
+                                <li class="page-item">3
+                                </li>
+                                <li class="page-item">4
+                                </li>
+                                <li class="page-item">
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -217,6 +192,7 @@
                         <p>
                             <strong>@CÔNG TY TNHH SACLET</strong>, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 
                         </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
             </div>
@@ -229,91 +205,91 @@
             {
                 price: '449.500',
                 prePrice: '699.000',
-                title: 'Áo hoodie nam dày dặn',
+                title: 'Váy liền nữ interlock cổ bẻ dáng dài',
                 discount: 50,
-                imgUrl: 'img/nam/4.jpg'
+                imgUrl: 'img/nu/1.jpg'
             },
             {
-                price: '349.500',
+                price: '449.500',
                 prePrice: '699.000',
-                title: 'Quần khaki nam dáng ôm',
+                title: 'Váy liền nữ interlock cổ bẻ dáng dài',
                 discount: 50,
-                imgUrl: 'img/nam/1.jpg'
-            },
-            {
-                price: '529.500 đ',
-                prePrice: '699.000',
-                title: 'Áo sweater nam cho mùa thu',
-                discount: 30,
-                imgUrl: 'img/nam/6.jpg'
+                imgUrl: 'img/nu/6.jpg'
             },
             {
                 price: '399.500 đ',
-                prePrice: '799.000',
-                title: 'Áo khoác chần bông nam Ultra Air siêu nhẹ,...',
+                prePrice: '699.000',
+                title: 'Váy liền nữ phối tay',
                 discount: 50,
-                imgUrl: 'img/nam/5.jpg'
+                imgUrl: 'img/nu/4.jpg'
             },
             {
                 price: '399.500 đ',
-                prePrice: '799.000',
-                title: 'Áo khoác chần bông nam Ultra Air siêu nhẹ,...',
+                prePrice: '699.000',
+                title: 'Áo nỉ nữ có hình in',
                 discount: 50,
-                imgUrl: 'img/nam/5.jpg'
+                imgUrl: 'img/nu/13.jpg'
+            },
+            {
+                price: '399.500 đ',
+                prePrice: '699.000',
+                title: 'Áo nỉ nữ có hình in',
+                discount: 50,
+                imgUrl: 'img/nu/14.jpg'
+            },
+            {
+                price: '559.500 đ',
+                prePrice: '1.119.000',
+                title: 'Áo khoác chần bông nữ Ultra Air siêu nhẹ,...',
+                discount: 50,
+                imgUrl: 'img/nu/9.jpg'
             },
             {
                 price: '559.500 đ',
                 prePrice: '799.000',
-                title: 'Quần jogger nam vải dù',
+                title: 'Váy liền nữ interlock dáng suông',
                 discount: 30,
-                imgUrl: 'img/nam/7.png'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '799.000',
-                title: 'Áo khoác gió nam in họa tiết có túi khóa kéo',
-                discount: 50,
-                imgUrl: 'img/nam/3.jpg'
+                imgUrl: 'img/nu/5.jpg'
             },
             {
                 price: '399.500 đ',
                 prePrice: '799.000',
                 title: 'Áo cardigan nữ cổ V dài tay dáng ngắn vừa',
-                discount: 30,
-                imgUrl: 'img/nam/8.png'
+                discount: 50,
+                imgUrl: 'img/nu/10.jpg'
             },
             {
                 price: '349.500 đ',
                 prePrice: '699.000',
-                title: 'Quần kaki nam dáng ôm',
+                title: 'Áo len nữ cổ lọ dệt loang',
                 discount: 50,
-                imgUrl: 'img/nam/1.jpg'
+                imgUrl: 'img/nu/12.jpg'
             },
             {
                 price: '399.500 đ',
                 prePrice: '799.000',
-                title: 'Áo thun nam dáng ôm',
+                title: 'Quần jeans nữ dáng ôm',
                 discount: 50,
-                imgUrl: 'img/nam/9.png'
+                imgUrl: 'img/nu/1.jpg'
             },
             {
                 price: '149.500 đ',
                 prePrice: '299.000',
-                title: 'Quần nỉ nam cạp chun có hình in dáng rộng',
+                title: 'Chân váy jeans nữ cotton dáng suông',
                 discount: 50,
-                imgUrl: 'img/nam/2.jpg'
+                imgUrl: 'img/nu/7.jpg'
             },
             {
                 price: '364.500 đ',
                 prePrice: '699.000',
-                title: 'Áo thun nam dáng ôm',
+                title: 'Quần dài nữ dáng suông',
                 discount: 50,
-                imgUrl: 'img/nam/10.png'
+                imgUrl: 'img/nu/2.jpg'
             },
         ];
         var content = "";
         data.forEach((item) => {
-            content += `<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+            content += `<div class="col-lg-4 col-md-6 col-sm-6 col-md-6 col-sm-6">
             <div class="product__item">
                 <div class="product__item__pic set-bg" data-setbg="./${item?.imgUrl}">
                     <ul class="product__hover">
