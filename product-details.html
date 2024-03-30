@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body style="position: relative;">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -85,9 +85,22 @@
     <!-- Hero Section End -->
 
     <!-- Product Section Begin -->
-    <section class="shop-details product spad">
-        <div class="product__details__pic">
-        
+    <section class="shop-details product spad" style="background-color: #FAFAFA;">
+        <div class="product-detail-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="">
+                            <a href="./index.html">Trang phục</a>
+                            <a href="./shop.html">Nữ</a>
+                            <a href="./shop.html">Áo phông</a>
+                            <span class="current-page">Áo phông nữ cotton dáng ngắn in chữ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__details__pic" style="background-color: unset;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-9">
@@ -171,19 +184,26 @@
                                     <div class="col-lg-12 col-md-12">
                                         <h4>Áo phông nữ cotton dáng ngắn in chữ</h4>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2 d-flex">
+                                        <div class="star-group1 mr-2">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
                                         <span>18 đánh giá | Đã bán: 20</span>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-3">
                                         <h4><strong>149.500 đ</strong></h4>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <h6><del>299.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-3">
                                         <span>Màu sắc:</span>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <div class="shop__sidebar__color">
                                             <label class="c-11" for="sp-11">
                                                 <input type="radio" id="sp-11">
@@ -193,10 +213,10 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <span>Kích cỡ: <a href="#">Hướng dẫn chọn size</a></span>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <div class="shop__sidebar__size">
                                             <label for="xs">xs
                                                 <input type="radio" id="xs">
@@ -218,46 +238,411 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <p class="text-primary"><i>Miễn phí giao hàng</i></p>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
-                                        <button type="button" class="btn btn-red btn-block py-2"><i class="fa fa-heart"></i> Thêm yêu thích</button>
+                                        <button type="button" class="btn btn-red btn-block py-2" onclick="showToast()"><i class="fa fa-heart"></i> Thêm yêu thích</button>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 my-2 pr-2">
-                                        <div class="number-input w-100">
+                                    <div class="col-lg-4 col-md-4 my-2 pr-2 mt-2">
+                                        <div class="number-input" style="border: 1px solid #ddd;">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">-</button>
-                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number" style="border: none">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
-                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-8 col-md-8 my-2 pl-2">
-                                        <button type="button" class="btn border btn-block py-2 bg-white"><i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+                                    <div class="col-lg-8 col-md-8 my-2 pl-2 mt-2">
+                                        <button type="button" class="btn border btn-block py-2 bg-white" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng
+                                        </button>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-12 col-md-12 mt-2">
                                         <button type="button" class="btn btn-black btn-block">Mua ngay</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <strong><i class="fa fa-credit-card" aria-hidden="true"></i> Thanh toán an toàn</strong>
-                            </div>
-                            <div class="col-6">
-                                <strong><i class="fa fa-shirt"></i> Sản phẩm chất lượng</strong>
-                            </div>
-                            <div class="col-6">
-                                <strong><i class="fa fa-truck" aria-hidden="true"></i> Miễn phí giao hàng</strong>
-                            </div>
-                            <div class="col-6">
-                                <strong><i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí đổi trả</strong>
+                                <div class="col-lg-6 mt-4">
+                                    <strong><i class="fa fa-credit-card" aria-hidden="true"></i> Thanh toán an toàn</strong>
+                                </div>
+                                <div class="col-lg-6 mt-4">
+                                    <strong><i class="fa fa-shirt"></i> Sản phẩm chất lượng</strong>
+                                </div>
+                                <div class="col-lg-6 mt-4">
+                                    <strong><i class="fa fa-truck" aria-hidden="true"></i> Miễn phí giao hàng</strong>
+                                </div>
+                                <div class="col-lg-6 mt-4">
+                                    <strong><i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí đổi trả</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="description">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-6 col-lg-6 text-center">
+                        <a class="description-item selected" onclick="toggleTab('descriptionTab')">
+                            <h2>MÔ TẢ SẢN PHẨM</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 text-center">
+                        <a class="description-item" onclick="toggleTab('PolicyTab')">
+                            <h2>CHÍNH SÁCH GIAO HÀNG</h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="descriptionTab" class="descriptionTabItem d-block">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="general">
+                                <p class="mb-4">Tổng quan</p>
+                                <ul>
+                                    <li>100% cotton</li>
+                                    <li>Kiểu dáng cổ điển giản dị tinh tế bằng ải cotton cao cấp.</li>
+                                    <li>Cập nhật để có kiểu dáng thon gọn hơn</li>
+                                    <li>Chiều dài phần thân dài hơn một chút</li>
+                                    <li>Chiều dài tay áo dài hơn một chút phù hợp với mọi dáng người.</li>
+                                    <li>Thiết kế cổ tròn với đường gân hẹp.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="shipping-policy">
+                                <p class="mb-4">Chất liệu</p>
+                                <ul>
+                                    <li>VẢI</li>
+                                    <li>100% Bông</li>
+                                    <li>HƯỚNG DẪN GIẶT</li>
+                                    <li>Giặt máy nước lạnh, không giặt khô, không sấy khô</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="PolicyTab" class="descriptionTabItem d-none">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- comment begin -->
+        <div class="comment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 content-left">
+                        <h2 class="fw-bolder">VIẾT ĐÁNH GIÁ</h2>
+                        <form action="" class="custom-form mx-2">
+                            <div class="col custom-group star-group">
+                                <label>Đánh giá</label>
+                                <div class="">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+    
+                            <div class="col custom-group name-group">
+                                <label class="" for="name">Tên của bạn</label>
+                                <input type="text" class="" id="name" placeholder="Nhập tên">
+                            </div>
+                            <div class="col custom-group title-group">
+                                <label class="" for="title-input">Tiêu đề</label>
+                                <input type="text" class="" id="title-input" placeholder="Tóm tắt đánh giá">
+                            </div>
+                            <div class="col custom-group comment-group">
+                                <label class="d-block" for="comment">Bình luận</label>
+                                <textarea class="" id="comment" rows="4" placeholder="Nội dung"></textarea>
+                            </div>
+                            <button type="submit" class="col btn btn-dark text-center">Gửi</button>
+    
+                        </form>
+                    </div>
+                    <div class="col-lg-7 content-right">
+                        <div class="comment-list">
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <p class="commentor">Triệu Viên Viên</p>
+                                    <span class="time">10/03/2024</span>
+                                </div>
+                                <div class="rating">
+                                    <div class="star-group">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="comment-detail">
+                                    <p class="detail-title">VERY GOOD</p>
+                                    <p class="detail-content">
+                                        Tôi thích cửa hàng này! Mọi thứ tôi nhận được đều hoàn toàn phù
+                                        hợp và có chất lượng tốt. Cảm ơn bạn đã cung cấp những chiếc
+                                        áo đẹp độc đáo này. Họ thật tâng bốc và tuyệt đẹp.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <p class="commentor">Bình Tinh</p>
+                                    <span class="time">10/03/2024</span>
+                                </div>
+                                <div class="rating">
+                                    <div class="star-group">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="comment-detail">
+                                    <p class="detail-title">Sản phẩm chất lượng</p>
+                                    <p class="detail-content">
+                                        Sản phẩm cho tôi cảm giác cực kỳ thoải mái và không bị bó xát,
+                                        chất lượng phù hợp với giá tiền. Tôi chưa từng nghĩ có cảm giác
+                                        tuyệt vời này với 1 chiều áo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-header">
+                                    <p class="commentor">An Nguyễn</p>
+                                    <span class="time">10/03/2024</span>
+                                </div>
+                                <div class="rating">
+                                    <div class="star-group">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="comment-detail">
+                                    <p class="detail-title">Thoáng mát</p>
+                                    <p class="detail-content">
+                                        Sản phẩm chất lượng tốt, cảm giác dày dặn nhưng rất thoáng
+                                        mát, khiến tôi cảm thấy tự tin về bản thân khi mặc. Tôi sẽ mua
+                                        thêm cho người nhà và bạn bè trải nghiệm.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="custom-pagination mt-5">
+                                <ul class="page">
+                                    <li class="page__numbers active"> 1</li>
+                                    <li class="page__numbers">2</li>
+                                    <li class="page__numbers">3</li>
+                                    <li class="page__numbers">4</li>
+                                    <li class="page__numbers page__btn">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- comment end -->
+        <!-- related products begin -->
+        <div class="container mt-5">
+            <div class="row mb-3">
+                <h3 class="w-100 text-center"><strong>SẢN PHẨM TƯƠNG TỰ</strong></h3>
+            </div>
+            <div class="row product__filter">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/nu/4.jpg">
+                            <span class="label">New</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Váy liền nữ phối tay</h6>
+                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                            <h6>629.300 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                            <div class="product__color__select">
+                                <label for="pc-1">
+                                    <input type="radio" id="pc-1">
+                                </label>
+                                <label class="active black" for="pc-2">
+                                    <input type="radio" id="pc-2">
+                                </label>
+                                <label class="grey" for="pc-3">
+                                    <input type="radio" id="pc-3">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/nam/1.jpg">
+                            <span class="label">New</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Quần khaki nam dáng ôm</h6>
+                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                            <h6>349.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                            <div class="product__color__select">
+                                <label for="pc-1">
+                                    <input type="radio" id="pc-1">
+                                </label>
+                                <label class="active black" for="pc-2">
+                                    <input type="radio" id="pc-2">
+                                </label>
+                                <label class="grey" for="pc-3">
+                                    <input type="radio" id="pc-3">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
+                            <span class="label">New</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
+                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                            <h6>399.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                            <div class="product__color__select">
+                                <label for="pc-7">
+                                    <input type="radio" id="pc-7">
+                                </label>
+                                <label class="active black" for="pc-8">
+                                    <input type="radio" id="pc-8">
+                                </label>
+                                <label class="grey" for="pc-9">
+                                    <input type="radio" id="pc-9">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
+                            <span class="label">New</span>
+                            <ul class="product__hover">
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
+                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                            <h6>149.500 đ</h6>
+                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                            <div class="product__color__select">
+                                <label for="pc-10">
+                                    <input type="radio" id="pc-10">
+                                </label>
+                                <label class="active black" for="pc-11">
+                                    <input type="radio" id="pc-11">
+                                </label>
+                                <label class="grey" for="pc-12">
+                                    <input type="radio" id="pc-12">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- related products end -->
     </section>
     <!-- Product Section End -->
+    
+    <!-- Toast begin -->
+    <div id="favourite" class="toast bg-success-custom">
+        <div class="toast-body d-flex">
+            <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+            <p>
+                Sản phẩm Áo phông nữ cotton dáng ngắn in chữ đã được thêm yêu thích! 
+            </p>
+        </div>
+    </div>
+    <!-- Toast end -->
+
+    <!-- modal begin -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 756px;">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="close close-custom" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="clearfix"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col text-center">
+                            <div class="pb-3" style="border-bottom: 1px solid #000000;">
+                                <h3 >Đã thêm vào giở hàng</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-4">
+                            <img class="h-100" src="img/nu/aophong/aophong1/4.webp" alt="">
+                        </div>
+                        <div class="col-lg-8">
+                            <h5>Áo phông nữ cotton dáng ngắn in chữ</h5>
+                            <p>Tím /XL</p>
+                            <div class="row mt-5">
+                                <div class="col-lg-5">
+                                    <div class="number-input" style="border: 1px solid #ddd;">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">-</button>
+                                        <input class="quantity" min="0" name="quantity" value="1" type="number" style="border: none">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 text-right m-auto">
+                                    <h4><strong>149.500 đ</strong></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col text-center">
+                            <button type="button" class="btn btn-outline-dark mr-3" style="width: 170px;">Xem giở hàng</button>
+                            <button type="button" class="btn btn-dark" style="width: 170px;">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -440,6 +825,32 @@
         </div>`;
         });
         document.getElementById("productList").innerHTML = content;
+
+        function toggleTab (tabId) {
+            const button = document.getElementsByClassName('description-item')
+            for (const item of button) {
+                item.classList.remove('selected')
+            }
+            event.target.parentNode.classList.add('selected')
+            
+            const items = document.getElementsByClassName('descriptionTabItem')
+            for (const item of items) {
+                if (item.id == tabId) {
+                    if (item.classList.contains('d-none')) {
+                        item.classList.remove('d-none')
+                        item.classList.add('d-block')
+                    }
+                } else {
+                    item.classList.remove('d-block')
+                    item.classList.add('d-none')
+                }
+            }
+        }
+        function showToast() {
+            console.log(1);
+            console.log();
+            $('#favourite').toast('show')
+        }
     </script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
