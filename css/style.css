@@ -4462,6 +4462,21 @@ input[type="text"] {
 }
 /* cart end */
 
+/* favoutire begin */
+.button-heart {
+  border: unset;
+  background-color: unset;
+  font-size: 30px;
+  margin-bottom: auto;
+  margin-left: 1rem;
+}
+#favourite-empty {
+  p {
+    line-height: 35px;
+  }
+}
+/* favoutire end */
+
 .fs-26 {
   font-size: 26px;
 }
