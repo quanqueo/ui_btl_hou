@@ -4243,7 +4243,6 @@ input[type="text"] {
     font-weight: 700;
   }
   p {
-    font-size: 32px;
     font-weight: 700;
   }
   ul li{
@@ -4263,14 +4262,12 @@ input[type="text"] {
 .comment { 
   margin-bottom: 60px;
   h2 {
-    /* font-size: 32px; */
     font-weight: bold;
   }
   .content-left {
     padding-right: 70px;
   }
   .content-right {
-    /* margin-left: ; */
     border-left: 1px solid #C8C7CC; 
   }
   .comment-list {
@@ -4285,22 +4282,16 @@ input[type="text"] {
       display: flex;
       justify-content: space-between;
       .commentor {
-        font-size: 32px;
         font-weight: bold;
       }
       .time {
         margin: auto 0px;
-        font-size: 24px;
         opacity: 0.5;
       }
     }
     .comment-detail {
       .detail-title {
-        font-size: 32px;
         font-weight: bold;
-      }
-      .detail-content {
-        font-size: 28px;
       }
     }
   }
@@ -4335,10 +4326,9 @@ input[type="text"] {
 /* custom form begin */
 .custom-form {
   .custom-group {
-    margin: 40px 0px;
+    margin: 20px 0px;
   }
   label {
-    font-size: 32px;
     font-weight: bold;
   }
   input {
@@ -4350,10 +4340,8 @@ input[type="text"] {
     border-bottom: 1px solid #C8C7CC;
     padding: unset;
     margin-left: 20px;
-    font-size: 28px;
   }
   textarea {
-    font-size: 28px;
     margin-left: 20px;
     border: 1px solid #C8C7CC;
     width: 100%;
@@ -4365,9 +4353,7 @@ input[type="text"] {
 }
 .star-group {
   span {
-    font-size: 28px;
     opacity: 0.5;
-    width: 50px;
     text-align: center;
   }
   .checked {
@@ -4376,7 +4362,6 @@ input[type="text"] {
 }
 .star-group1 {
   span {
-    font-size: 20px;
     width: 22px;
     text-align: center;
   }
@@ -4387,7 +4372,6 @@ input[type="text"] {
 /* product detail breadcrumb begin */
 .product-detail-breadcrumb {
   a {
-    font-size: 16px;
     color: #C8C7CC;
     margin-right: 18px;
     display: inline-block;
@@ -4401,7 +4385,6 @@ input[type="text"] {
   }
   span {
     color: #000000;
-    font-size: 16px;
   }
 }
 /* product detail breadcrumb end */
@@ -4415,7 +4398,6 @@ input[type="text"] {
   right: 0;
   margin: 10px 10px 0px;
   span {
-    font-size: 20px;
   }
   p {
     margin: unset;
@@ -4466,7 +4448,6 @@ input[type="text"] {
 .button-heart {
   border: unset;
   background-color: unset;
-  font-size: 30px;
   margin-bottom: auto;
   margin-left: 1rem;
 }
@@ -4477,15 +4458,6 @@ input[type="text"] {
 }
 /* favoutire end */
 
-.fs-26 {
-  font-size: 26px;
-}
-.fs-28 {
-  font-size: 28px;
-}
-.fs-32 {
-  font-size: 32px;
-}
-.fs-36 {
-  font-size: 36px;
-}
+/* checkout begin */
+
+/* checkout end */
