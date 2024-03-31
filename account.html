@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body style="position: relative;">
+    <style>
+        .tab-vertical .nav.nav-tabs {
+            float: left;
+            display: block;
+            margin-right: 0px;
+            border-bottom: 0;
+        }
+
+        .tab-vertical .nav.nav-tabs .nav-item {
+            margin-bottom: 6px;
+        }
+
+        .tab-vertical .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            background: #fff;
+            padding: 17px 49px 17px 20px;
+            color: black;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: #FAFAFA;
+            -webkit-border-radius: 4px 0px 0px 4px;
+            -moz-border-radius: 4px 0px 0px 4px;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        .tab-vertical .nav-tabs .nav-link.active {
+            color: rgb(199 2 2);
+            background-color: #eeeded !important;
+            /* border-color: transparent !important; */
+            border-left: 2px solid rgb(199 2 2);
+        }
+
+        .tab-vertical .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: 4px !important;
+            border-top-right-radius: 0px !important;
+        }
+
+        .tab-vertical .tab-content {
+            overflow: auto;
+            -webkit-border-radius: 0px 4px 4px 4px;
+            -moz-border-radius: 0px 4px 4px 4px;
+            border-radius: 0px 4px 4px 4px;
+            background: #FAFAFA;
+            padding: 30px;
+            padding-left: 150px;
+        }
+        .formAccountInfo input{
+            padding: 10px;
+            background: none;
+            border: none;
+            border-radius: 0px;
+            outline: none;
+            border-bottom: 1px solid #333;
+        }
+        .formAccountInfo input:read-only{
+            padding: 10px;
+            background: none;
+            border: none;
+            border-radius: 0px;
+            outline: none;
+            border-bottom: 1px solid #333;
+        }
+        .modal.fade.show{
+            display: flex!important;
+            align-items: center;
+        }
+    </style>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
+    <header class="header mx-3 px-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1">
+                    <div class="header__logo text-center">
+                        <a href="./index.html"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
+                            <li class="active"><a href="#">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="./introduce.html">Giới thiệu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__nav__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <input type="text" name="search" placeholder="Search..">
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-heart d-block text-danger text-center"></i>
+                                <span class="d-block">Yêu thích</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-user-circle d-block text-danger text-center"></i>
+                                <span class="d-block text-center">Tài khoản</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
+                                <span class="d-block">Giỏ hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <!-- <section>
+        <div class="d-block">
+            <img src="img/banner/banner-04.jpg"/>
+        </div>
+    </section> -->
+    <!-- Hero Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="shop-details product spad" style="background-color: #FAFAFA;">
+        <div class="product-detail-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="">
+                            <a href="./index.html">Trang phục</a>
+                            <a href="./shop.html">Tài khoản</a>
+                            <span class="current-page">Thông tin tài khoản</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #FAFAFA;">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-4" class="text-center">
+                    <h4><strong>Hi, Sơn Hà</strong></h4>
+                </div>
+                <div class="col-8">
+                    <h4><strong id="title"></strong></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">           
+                    <div class="tab-vertical">
+                        <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                            <li class="nav-item" onclick="onChangeTab('Thông tin tài khoản')">
+                                <a class="nav-link active" id="home-vertical-tab" data-toggle="tab" href="#home-vertical" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Thông tin tài khoản</a>
+                            </li>
+                            <li class="nav-item" onclick="onChangeTab('Thay đổi mật khẩu')">
+                                <a class="nav-link" id="profile-vertical-tab" data-toggle="tab" href="#profile-vertical" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-lock" aria-hidden="true"></i> Thay đổi mật khẩu</a>
+                            </li>
+                            <li class="nav-item" onclick="onChangeTab('Quản lý đơn hàng')">
+                                <a class="nav-link" id="contact-vertical-tab" data-toggle="tab" href="#contact-vertical" role="tab" aria-controls="contact" aria-selected="false"><i class="fa fa-file-text-o" aria-hidden="true"></i> Quản lý đơn hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout-vertical-tab" href="./index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent3">
+                            <div class="tab-pane fade show active" id="home-vertical" role="tabpanel" aria-labelledby="home-vertical-tab">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <h5><strong>Chi tiết liên hệ</strong></h5>
+                                    </div>
+                                    <div class="col-12">
+                                        <form class="row formAccountInfo">
+                                            <div class="form-group col-6">
+                                                <label for="firstName"><strong>Họ</strong></label>
+                                                <input type="text" class="form-control" id="firstName" value="Nguyễn" readonly />
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="lastName"><strong>Tên</strong></label>
+                                                <input type="text" class="form-control" id="lastName" value="Hà" readonly />
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <label for="exampleInputEmail1"><strong>Email</strong></label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" value="nguyenha@gmail.com" readonly />
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <label for="phoneNumber"><strong>Số điện thoại</strong></label>
+                                              <input type="text" class="form-control" id="phoneNumber" value="0974441021" readonly />
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="address"><strong>Địa chỉ</strong></label>
+                                                <div class="row">
+                                                    <div class="col-6 border p-3">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <strong>96 Định Công, Hoàng Mai, Hà Nội</strong>
+                                                            </div>
+                                                            <div class="col-12 my-2">
+                                                                <span>Nguyễn Hà | 0974441021</span>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <span class="p-1" style="color: rgb(71, 115, 115); background-color: rgb(204, 246, 246);">Nhà riêng</span>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <span class="cursor-pointer text-danger">Địa chỉ mặc định</span>
+                                                            </div>
+                                                            <div class="col-6 mt-3">
+                                                                <button type="button" style="background-color: white; border:none;"><strong>Xóa</strong></button>
+                                                                <button type="button" style="background-color: white; border:none;"><strong>Sửa</strong></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border p-3">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <strong>20 Trương Định, Ba Đình, Hà Nội</strong>
+                                                            </div>
+                                                            <div class="col-12 my-2">
+                                                                <span>Nguyễn Hà | 0974441021</span>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <span class="p-1" style="color: rgb(71, 115, 115); background-color: rgb(204, 246, 246);">Công ty</span>
+                                                            </div>
+                                                            <div class="col-6">
+                                                            </div>
+                                                            <div class="col-6 mt-3">
+                                                                <button type="button" style="background-color: white; border:none;"><strong>Xóa</strong></button>
+                                                                <button type="button" style="background-color: white; border:none;"><strong>Sửa</strong></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-vertical" role="tabpanel" aria-labelledby="profile-vertical-tab">
+                                <form class="row formAccountInfo">
+                                    <div class="form-group col-12">
+                                      <label for="currentPassword"><strong>Mật khẩu hiện tại</strong></label>
+                                      <input type="password" class="form-control" id="currentPassword" placeholder="Nhập mật khẩu hiện tại" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="newPassword"><strong>Mật khẩu mới</strong></label>
+                                        <input type="password" class="form-control" id="newPassword" placeholder="Nhập mật khẩu mới" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="againNewPassword"><strong>Nhập lại mật khẩu mới</strong></label>
+                                        <input type="password" class="form-control" id="againNewPassword" placeholder="Nhập lại mật khẩu mới" />
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="button" style="width: 100%; background-color: rgb(245, 48, 48); color: white; border: none; padding: 10px;">CẬP NHẬT</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="contact-vertical" role="tabpanel" aria-labelledby="contact-vertical-tab">
+                                <!-- <div class="row border">
+                                    <div class="col-12 border p-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <strong>Ngày đặt hàng:</strong>
+                                                12/03/2024
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <strong>Đang giao</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row p-3">
+                                            <div class="col-2">
+                                                <img src="./img/nu/aophong/1.webp" />
+                                            </div>
+                                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                                <div class="d-block w-100">
+                                                    <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                                                    <span class="d-block w-100">Tím / XL</span>
+                                                </div>
+                                                <div class="d-flex h-100 w-100 align-items-end">
+                                                    x1
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                                <strong>149.500 đ</strong>
+                                            </div>
+                                        </div>
+                                        <div class="row p-3">
+                                            <div class="col-2">
+                                                <img src="./img/nu/3.jpg" />
+                                            </div>
+                                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                                <div class="d-block w-100">
+                                                    <strong class="d-block w-100">Váy liền nữ ngắn tay dáng A dài</strong>
+                                                    <span class="d-block w-100">Đen / XL</span>
+                                                </div>
+                                                <div class="d-flex h-100 w-100 align-items-end">
+                                                    x1
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                                <strong>449.500 đ</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-block w-100 text-right mt-3"><strong style="font-size: 20px;">Tổng tiền: 499.000 đ</strong></div>
+                                <div class="row border mt-3">
+                                    <div class="col-12 border p-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <strong>Ngày đặt hàng:</strong>
+                                                12/03/2024
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <strong class="text-success">Hoàn thành</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row p-3">
+                                            <div class="col-2">
+                                                <img src="./img/nu/aophong/1.webp" />
+                                            </div>
+                                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                                <div class="d-block w-100">
+                                                    <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                                                    <span class="d-block w-100">Tím / XL</span>
+                                                </div>
+                                                <div class="d-flex h-100 w-100 align-items-end">
+                                                    x1
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                                <strong>149.500 đ</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-block w-100 text-right mt-3"><strong style="font-size: 20px;">Tổng tiền: 149.500 đ</strong></div> -->
+
+                                <!-- <div class="row mb-3">
+                                    <div class="col-12 pl-0">
+                                        <button type="button" style="font-size: 24px; background-color: #FAFAFA; border: none; color: grey;"><i class="fa fa-arrow-left" aria-hidden="true"></i> Trở lại</button>
+                                    </div>
+                                    <div class="col-12 pl-0 mt-2">
+                                        <h4><strong>Chi tiết đơn hàng</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row border">
+                                    <div class="col-12 border p-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <strong>Ngày đặt hàng:</strong>
+                                                12/03/2024
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <strong>Đang giao</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row p-3">
+                                            <div class="col-2">
+                                                <img src="./img/nu/aophong/1.webp" />
+                                            </div>
+                                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                                <div class="d-block w-100">
+                                                    <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                                                    <span class="d-block w-100">Tím / XL</span>
+                                                </div>
+                                                <div class="d-flex h-100 w-100 align-items-end">
+                                                    x1
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                                <strong>149.500 đ</strong>
+                                            </div>
+                                        </div>
+                                        <div class="row p-3">
+                                            <div class="col-2">
+                                                <img src="./img/nu/3.jpg" />
+                                            </div>
+                                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                                <div class="d-block w-100">
+                                                    <strong class="d-block w-100">Váy liền nữ ngắn tay dáng A dài</strong>
+                                                    <span class="d-block w-100">Đen / XL</span>
+                                                </div>
+                                                <div class="d-flex h-100 w-100 align-items-end">
+                                                    x1
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                                <strong>449.500 đ</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-6 p-3 border">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <strong style="font-size: 20px;">Nguyên Hà</strong>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>nguyenha@gmail.com</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>96 Định Công, Hoàng Mai, Hà Nội</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>0974441021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-5 pl-3">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <strong>Giá</strong>
+                                            </div>
+                                            <div class="col-7 text-right">
+                                                <span>599.000 đ</span>
+                                            </div>
+                                            <div class="col-5">
+                                                <strong>Khuyến mãi</strong>
+                                            </div>
+                                            <div class="col-7 text-right">
+                                                <span>-100.000 đ</span>
+                                            </div>
+                                            <div class="col-5">
+                                                <strong>Vận chuyển</strong>
+                                            </div>
+                                            <div class="col-7 text-right">
+                                                <span>+30.000 đ</span>
+                                            </div>
+                                            <div class="col-12 text-right">
+                                                <span>-30.000 đ</span>
+                                            </div>
+                                            <div class="col-5 mt-2">
+                                                <strong>Tổng tiền</strong>
+                                            </div>
+                                            <div class="col-7 mt-2 text-right">
+                                                <strong>499.000 đ</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 border p-3">
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <strong>Mã đơn hàng</strong> 0198743
+                                            </div>
+                                            <div class="col-12 my-2">
+                                                <strong>Thời gian đặt hàng</strong>  20:20 12/03/2024
+                                            </div>
+                                            <div class="col-12">
+                                                <strong>Hình thức thanh toán</strong>  COD - Thanh toán khi nhận hàng
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center justify-content-end">
+                                        <button data-toggle="modal" data-target="#exampleModal" type="button" style="background-color: red; color: white; font-size: 20px; padding: 10px 15px; border: none;">HỦY ĐƠN HÀNG</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12" style="margin-bottom: 50px;">
+                        <span style="font-size: 20px;">Bạn có muốn hủy đơn này không?</span>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" data-dismiss="modal" aria-label="Close" style="border: 1px solid #7e7d7d; background-color: white; padding: 10px 30px;"><strong>Trở lại</strong></button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" data-dismiss="modal" style="background-color: red; color: white; padding: 10px 30px; border: none;" onclick="onCancelCart()">Xác nhận</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong></h5>
+                        <ul>
+                            <li><a href="#">Đăng ký thành viên</a></li>
+                            <li><a href="#">Ưu đãi Độc quyền</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong></h5>
+                        <ul>
+                            <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
+                            <li><a href="#">Chính sách khuyến mãi</a></li>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong></h5>
+                        <ul>
+                            <li><a href="#">Trải nghiệm mua sắm</a></li>
+                            <li><a href="#">Hỏi đáp - FAQs</a></li>
+                        </ul>
+                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong></h5>
+                        <ul>
+                            <li><a href="#">Hướng dẫn chọn size</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong></h5>
+                        <ul>
+                            <li>Số 96 Định Công, Quận Hoàng Mai, TP.Hà Nội</li>
+                            <li>1800.8001</li>
+                            <li>thoitrangscarlet@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <hr>
+                        <p>
+                            <strong>@CÔNG TY TNHH SACLET</strong>, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script>
+        onChangeTab('Thông tin tài khoản');
+        let content = `
+        <div class="row border" onclick="goToDetail()">
+            <div class="col-12 border p-3">
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Ngày đặt hàng:</strong>
+                        12/03/2024
+                    </div>
+                    <div class="col-6 text-right">
+                        <strong>Đang giao</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-3">
+                    <div class="col-2">
+                        <img src="./img/nu/aophong/1.webp" />
+                    </div>
+                    <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                        <div class="d-block w-100">
+                            <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                            <span class="d-block w-100">Tím / XL</span>
+                        </div>
+                        <div class="d-flex h-100 w-100 align-items-end">
+                            x1
+                        </div>
+                    </div>
+                    <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                        <strong>149.500 đ</strong>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-2">
+                        <img src="./img/nu/3.jpg" />
+                    </div>
+                    <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                        <div class="d-block w-100">
+                            <strong class="d-block w-100">Váy liền nữ ngắn tay dáng A dài</strong>
+                            <span class="d-block w-100">Đen / XL</span>
+                        </div>
+                        <div class="d-flex h-100 w-100 align-items-end">
+                            x1
+                        </div>
+                    </div>
+                    <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                        <strong>449.500 đ</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-block w-100 text-right mt-3"><strong style="font-size: 20px;">Tổng tiền: 499.000 đ</strong></div>
+        <div class="row border mt-3">
+            <div class="col-12 border p-3">
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Ngày đặt hàng:</strong>
+                        12/03/2024
+                    </div>
+                    <div class="col-6 text-right">
+                        <strong class="text-success">Hoàn thành</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row p-3">
+                    <div class="col-2">
+                        <img src="./img/nu/aophong/1.webp" />
+                    </div>
+                    <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                        <div class="d-block w-100">
+                            <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                            <span class="d-block w-100">Tím / XL</span>
+                        </div>
+                        <div class="d-flex h-100 w-100 align-items-end">
+                            x1
+                        </div>
+                    </div>
+                    <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                        <strong>149.500 đ</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-block w-100 text-right mt-3"><strong style="font-size: 20px;">Tổng tiền: 149.500 đ</strong></div>`;
+        document.getElementById("contact-vertical").innerHTML = content;
+        function goToDetail(){
+            let content = `<div class="row mb-3">
+                    <div class="col-12 pl-0">
+                        <button type="button" style="font-size: 24px; background-color: #FAFAFA; border: none; color: grey;"><i class="fa fa-arrow-left" aria-hidden="true"></i> Trở lại</button>
+                    </div>
+                    <div class="col-12 pl-0 mt-2">
+                        <h4><strong>Chi tiết đơn hàng</strong></h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col-12 border p-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <strong>Ngày đặt hàng:</strong>
+                                12/03/2024
+                            </div>
+                            <div class="col-6 text-right">
+                                <strong>Đang giao</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row p-3">
+                            <div class="col-2">
+                                <img src="./img/nu/aophong/1.webp" />
+                            </div>
+                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                <div class="d-block w-100">
+                                    <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                                    <span class="d-block w-100">Tím / XL</span>
+                                </div>
+                                <div class="d-flex h-100 w-100 align-items-end">
+                                    x1
+                                </div>
+                            </div>
+                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                <strong>149.500 đ</strong>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-2">
+                                <img src="./img/nu/3.jpg" />
+                            </div>
+                            <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                <div class="d-block w-100">
+                                    <strong class="d-block w-100">Váy liền nữ ngắn tay dáng A dài</strong>
+                                    <span class="d-block w-100">Đen / XL</span>
+                                </div>
+                                <div class="d-flex h-100 w-100 align-items-end">
+                                    x1
+                                </div>
+                            </div>
+                            <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                <strong>449.500 đ</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 p-3 border">
+                        <div class="row">
+                            <div class="col-12">
+                                <strong style="font-size: 20px;">Nguyên Hà</strong>
+                            </div>
+                            <div class="col-12">
+                                <span>nguyenha@gmail.com</span>
+                            </div>
+                            <div class="col-12">
+                                <span>96 Định Công, Hoàng Mai, Hà Nội</span>
+                            </div>
+                            <div class="col-12">
+                                <span>0974441021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5 pl-3">
+                        <div class="row">
+                            <div class="col-5">
+                                <strong>Giá</strong>
+                            </div>
+                            <div class="col-7 text-right">
+                                <span>599.000 đ</span>
+                            </div>
+                            <div class="col-5">
+                                <strong>Khuyến mãi</strong>
+                            </div>
+                            <div class="col-7 text-right">
+                                <span>-100.000 đ</span>
+                            </div>
+                            <div class="col-5">
+                                <strong>Vận chuyển</strong>
+                            </div>
+                            <div class="col-7 text-right">
+                                <span>+30.000 đ</span>
+                            </div>
+                            <div class="col-12 text-right">
+                                <span>-30.000 đ</span>
+                            </div>
+                            <div class="col-5 mt-2">
+                                <strong>Tổng tiền</strong>
+                            </div>
+                            <div class="col-7 mt-2 text-right">
+                                <strong>499.000 đ</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 border p-3">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <strong>Mã đơn hàng</strong> 0198743
+                            </div>
+                            <div class="col-12 my-2">
+                                <strong>Thời gian đặt hàng</strong>  20:20 12/03/2024
+                            </div>
+                            <div class="col-12">
+                                <strong>Hình thức thanh toán</strong>  COD - Thanh toán khi nhận hàng
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-end">
+                        <button data-toggle="modal" data-target="#exampleModal" type="button" style="background-color: red; color: white; font-size: 20px; padding: 10px 15px; border: none;">HỦY ĐƠN HÀNG</button>
+                    </div>`;
+            document.getElementById("contact-vertical").innerHTML = content;
+        }
+        function onCancelCart(){
+            let content = `<div class="row border mt-3">
+                        <div class="col-12 border p-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong>Ngày đặt hàng:</strong>
+                                    12/03/2024
+                                </div>
+                                <div class="col-6 text-right">
+                                    <strong class="text-success">Hoàn thành</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row p-3">
+                                <div class="col-2">
+                                    <img src="./img/nu/aophong/1.webp" />
+                                </div>
+                                <div class="col-8 d-flex" style="align-content: space-between; flex-direction: column;">
+                                    <div class="d-block w-100">
+                                        <strong class="d-block w-100">Áo phông nữ cotton dáng ngắn in chữ</strong>
+                                        <span class="d-block w-100">Tím / XL</span>
+                                    </div>
+                                    <div class="d-flex h-100 w-100 align-items-end">
+                                        x1
+                                    </div>
+                                </div>
+                                <div class="col-2 text-right d-flex align-items-end justify-content-end p-0">
+                                    <strong>149.500 đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block w-100 text-right mt-3"><strong style="font-size: 20px;">Tổng tiền: 149.500 đ</strong></div>`;
+            document.getElementById("contact-vertical").innerHTML = content;
+        }
+        function onChangeTab(title){
+            console.log(title);
+            document.getElementById("title").innerHTML = title;
+        }
+    </script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
