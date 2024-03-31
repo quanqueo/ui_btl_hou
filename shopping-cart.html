@@ -56,16 +56,20 @@
                                 <input type="text" name="search" placeholder="Search..">
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-heart d-block text-danger text-center"></i>
-                                <span class="d-block">Yêu thích</span>
+                                <a class="d-block" href="/favourite.html">
+                                    <i class="fa fa-heart d-block text-danger text-center"></i>
+                                    <p class="d-block text-center m-0" style="font-size: 14px; line-height: 21px;">Yêu thích</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-2">
                                 <i class="fa fa-user-circle d-block text-danger text-center"></i>
                                 <span class="d-block text-center">Tài khoản</span>
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
-                                <span class="d-block">Giỏ hàng</span>
+                                <a class="d-block" href="/shopping-cart.html">
+                                    <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
+                                    <p class="d-block text-center m-0" style="font-size: 14px; line-height: 21px;">Giỏ hàng</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -101,9 +105,9 @@
 
         <!-- Cart begin -->
         <div class="cart" style="margin-top: 40px; margin-bottom: 60px;">
-            <div class="container">
+            <div id="cart-container" class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 my-5 text-center">
+                    <div class="col-lg-12 col-md-12 mb-5 text-center">
                         <span class=" font-weight-bold" style="font-size: 40px;">GIỎ HÀNG</span>
                     </div>
                 </div>
@@ -127,8 +131,8 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p class="mt-5 fs-32" >Màu sắc: <span>Tím</span></p>
-                                        <p class="mt-4 fs-32" >Kích cỡ: <span>XL</span></p>
+                                        <p class="mt-5" >Màu sắc: <span>Tím</span></p>
+                                        <p class="mt-4 " >Kích cỡ: <span>XL</span></p>
                                         <h4 class="mt-4"><strong>149.500 đ</strong></h4>
                                         <div class="row mt-4">
                                             <div class="col-lg-5">
@@ -164,8 +168,8 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p class="mt-5 fs-32" >Màu sắc: <span>Lục</span></p>
-                                        <p class="mt-4 fs-32" >Kích cỡ: <span>XL</span></p>
+                                        <p class="mt-5 " >Màu sắc: <span>Lục</span></p>
+                                        <p class="mt-4 " >Kích cỡ: <span>XL</span></p>
                                         <h4 class="mt-4"><strong>149.500 đ</strong></h4>
                                         <div class="row mt-4">
                                             <div class="col-lg-5">
@@ -186,24 +190,24 @@
                     </div>
                     <div class="col-lg-4 col-md-4 ">
                         <div class="total-product-price border">
-                            <p class="fs-32">TỔNG ĐƠN HÀNG: 2 SẢN PHẨM</p>
+                            <p class="">TỔNG ĐƠN HÀNG: 2 SẢN PHẨM</p>
                             <div class="d-flex justify-content-between mt-5">
-                                <span class="fs-32"><strong>Giá</strong></span>
-                                <span class="fs-26">599.000 <span style="text-decoration: underline;">đ</span></span>
+                                <span class=""><strong>Giá</strong></span>
+                                <span class="">599.000 <span style="text-decoration: underline;">đ</span></span>
                             </div>
                         </div>
                         <div class="coupon mt-5">
-                            <label class="fs-32">Mã giảm giá</label>
-                            <input type="text fs-28" placeholder="Nhập mã">
-                            <div class="detail fs-32 mt-2">Áp dụng Mã giảm giá của bạn để được giảm giá nhiều hơn!</div>
+                            <label class="">Mã giảm giá</label>
+                            <input type="text" placeholder="Nhập mã">
+                            <div class="detail mt-2">Áp dụng Mã giảm giá của bạn để được giảm giá nhiều hơn!</div>
                         </div>
                         <div class="total">
                             <div class="d-flex justify-content-between mt-5">
-                                <span class="fs-32"><strong>Tổng tiền</strong></span>
-                                <span class="fs-36"><strong>599.000 <span style="text-decoration: underline;">đ</span></strong></span>
+                                <span class=""><strong>Tổng tiền</strong></span>
+                                <span class=""><strong>599.000 <span style="text-decoration: underline;">đ</span></strong></span>
                             </div>
-                            <div class="mt-2 fs-32">Miễn phí vận chuyển áp dụng cho đơn hàng giao tận nơi từ 299.000 đ với tất cả các đơn hàng!</div>
-                            <button type="button" class="btn btn-danger w-100 mt-4 fs-32"><strong>THANH TOÁN</strong></button>
+                            <div class="mt-2 ">Miễn phí vận chuyển áp dụng cho đơn hàng giao tận nơi từ 299.000 đ với tất cả các đơn hàng!</div>
+                            <a href="/checkout.html" class="btn btn-danger w-100 mt-4 "><strong>THANH TOÁN</strong></a>
                         </div>
                     </div>
                 </div>
@@ -402,6 +406,29 @@
     <script>
         function deleteItem(){
             event.target.closest('.item').remove()
+            const items = document.querySelectorAll('.list-item .item')
+            if (items.length == 0) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                const favouriteContainer = document.getElementById('cart-container')
+                favouriteContainer.innerHTML = `<div id="favourite-empty" class="row py-5 px-5">
+                    <div class="col">
+                        <div class="row">
+                            <img src="/img/empty-cart.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mx-auto text-center">
+                                <h3 class="font-weight-bold">GIỎ HÀNG RỖNG</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-12 col-md-12 mx-auto text-center">
+                                <p class="">Không có sản phẩm nào trong giỏ hàng của bạn.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="col btn btn-dark text-center mt-5 py-2">TIẾP TỤC MUA SẮM</a>
+                    </div>
+                </div>`
+            }
         }
     </script>
 
