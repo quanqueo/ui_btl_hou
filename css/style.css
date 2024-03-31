@@ -4407,9 +4407,6 @@ input[type="text"] {
 /* product detail breadcrumb end */
 
 /* Toast begin */
-/* #toast-success {
-  position: relative;
-} */
 .bg-success-custom {
   background-color: #EAF2E5;
   color: #7FB15E;
@@ -4431,3 +4428,49 @@ input[type="text"] {
   border-radius: 27px;
 }
 /* modal end */
+
+
+/* cart begin */
+.cart .list-item .item:not(:last-of-type) {
+  border-bottom: 1px solid #C8C7CC;
+}
+.total-product-price {
+  padding: 25px 15px;
+  p {
+    font-weight: bold;
+    line-height: 35px;
+  }
+}
+.coupon {
+  label{
+    font-weight: bold;
+  }
+  input {
+    background: none;
+    border-radius: unset;
+    border-left: none;
+    border-right: none;
+    border-top:  1px solid #C8C7CC;
+    border-bottom: 1px solid #C8C7CC;
+    padding: unset;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+}
+/* cart end */
+
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-36 {
+  font-size: 36px;
+}
