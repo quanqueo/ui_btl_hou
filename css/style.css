@@ -3528,6 +3528,9 @@ ol {
   .blog__details__share ul li:last-child {
     margin-right: 0;
   }
+  .hero__items{
+    height: 365px;
+  }
 }
 
 /* Wide Mobile = 480px */
@@ -4010,8 +4013,9 @@ input[type="text"] {
   cursor: pointer;
 }
 .header__menu ul li a {
-  font-size: 14px;
+  font-size: 13px;
   padding: 40px 10px;
+  text-transform: uppercase;
 }
 .header__logo {
   height: fit-content;
@@ -4350,6 +4354,12 @@ input[type="text"] {
     opacity: 0.5;
   }
 
+}
+.product__details__pic ul.nav.nav-tabs li.nav-item a.nav-link{
+  padding: 4px;
+}
+.product__details__pic ul.nav.nav-tabs li.nav-item a.nav-link.active{
+  border: 1px solid #333;
 }
 .star-group {
   span {
