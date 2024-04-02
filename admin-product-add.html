@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="position: relative">
+    <nav class="navbar navbar-dark sticky-top bg-white flex-md-nowrap p-0 ">
+        <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mr-0 text-center" href="#">
+            <img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 75px;">
+        </a>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+
+                <div class="d-flex ">
+                    <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" style="font-size: 20px;"></i>
+                        <span class="notification" style="position: absolute;">5</span>
+                    </a>
+                    <div class="avatar m-auto">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-3">Sơn Hà <br> Admin</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="left: unset; right: 0">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar position-fixed">
+            <!-- <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar"> -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/general.png" alt="">
+                                Tổng quan <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                                Đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded " style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/product-active.png" alt="">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/new.png" alt="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/customer.png" alt="">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/employee.png" alt="">
+                                Nhân viên
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/logout.png" alt="">
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
+                <a style="color: #5A607F;" href="/admin-products.html"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span> Back</a>
+                <h2 id="page-title">Sản phẩm</h2>
+                <form action="POST" id="checkout-form" class="mt-4 mx-2" enctype="multipart/form-data" onsubmit="checkoutFormSubmit()">
+                    <h4>Thông tin sản phẩm</h4>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label class="" for="lastName">Tên sản phẩm</label>
+                            <input onkeyup="checkValidate()" type="text" class="form-control mx-0 validate-empty" id="lastName" placeholder="Tên sản phẩm" 
+                                style="border: 1px solid #ced4da; border-radius: .25rem; background-image: unset; padding: .375rem .75rem;"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-4">
+                            <label class="" for="category">Danh mục</label>
+                            <select class="form-control" name="category" id="category">
+                                <option value="">Danh mục</option>
+                                <option value="1">Quần</option>
+                                <option value="2">Áo</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <label class="" for="type">Loại sản phẩm</label>
+                            <select class="form-control" name="type" id="type">
+                                <option value="">Loại sản phẩm</option>
+                                <option value="1">Quần</option>
+                                <option value="2">Áo</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <label class="" for="quantity">Số lượng</label>
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" id="quantity" placeholder="Số lượng">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col ">
+                            <label class="" for="description">Mô tả sản phẩm</label>
+                            <textarea onkeyup="checkValidate()" class="form-control mx-0 validate-empty" name="description" id="description" rows="5" placeholder="Mô tả sản phẩm">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 col-lg-6 ">
+                            <label class="" for="original-price">Giá gốc</label>
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="original-price" id="original-price" placeholder="Giá gốc">
+                        </div>
+                        <div class="col-md-6 col-lg-6 ">
+                            <label class="" for="discount-price">Giá đã giảm</label>
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="discount-price" id="discount-price" placeholder="Giá đã giảm">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Ảnh</label>
+                            <div class="img-wraper bg-white rounded" style="height: 321px;">
+                                <!-- <input type="file" name="myFile" class="drop-zone__input m-auto"> -->
+                                <div class="d-flex flex-column text-center" style="margin: 140px 0px;">
+                                    <button class="btn border text-primary font-weight-bold m-auto">Thêm ảnh</button>
+                                    <span class="m-auto">Hoặc kéo thả ảnh</span>
+                                </div>
+                            </div>
+                            <!-- <textarea onkeyup="checkValidate()" class="mx-0 validate-empty" name="discount-price" id="discount-price" placeholder="Giá đã giảm"> -->
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-lg-6 col-md-6">
+                            <label class="" for="category">Kích cỡ</label>
+                            <select class="form-control" name="category" id="category">
+                                <option value="">Kích cỡ</option>
+                                <option value="1">S</option>
+                                <option value="2">M</option>
+                                <option value="3">L</option>
+                                <option value="4">XL</option>
+                                <option value="5">XXL</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <label class="" for="type">Màu sắc</label>
+                            <select class="form-control" name="type" id="type">
+                                <option value="">Màu sắc</option>
+                                <option value="1">Xanh</option>
+                                <option value="2">Đỏ</option>
+                                <option value="3">Vàng</option>
+                                <option value="4">Lục</option>
+                                <option value="5">Lam</option>
+                                <option value="6">Chàm</option>
+                                <option value="7">Tím</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">   
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <div class="">
+                                <button type="submit" class=" btn btn-danger text-center font-weight-bold">Lưu sản phẩm</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function deleteItem() {
+            event.target.closest(".item").remove();
+            // const items = document.querySelectorAll(".list-item .item");
+            // if (items.length == 0) {
+            //     window.scrollTo({ top: 0, behavior: "smooth" });
+            //     const favouriteContainer = document.getElementById("cart-container");
+            //     favouriteContainer.innerHTML = `<div id="favourite-empty" class="row py-5 px-5">
+            //         <div class="col">
+            //             <div class="row">
+            //                 <img src="/img/empty-cart.png" alt="">
+            //             </div>
+            //             <div class="row">
+            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
+            //                     <h3 class="font-weight-bold">GIỎ HÀNG RỖNG</h3>
+            //                 </div>
+            //             </div>
+            //             <div class="row mt-3">
+            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
+            //                     <p class="">Không có sản phẩm nào trong giỏ hàng của bạn.</p>
+            //                 </div>
+            //             </div>
+            //             <a href="#" class="col btn btn-dark text-center mt-5 py-2">TIẾP TỤC MUA SẮM</a>
+            //         </div>
+            //     </div>`;
+            // }
+        }
+    </script>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            // $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // $(window).resize(function(){
+            //     $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            //     $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // });
+
+            $('#checkboxAll').click(function(){
+                $('input:checkbox').not(this).prop('checked', this.checked);
+            })
+            $('#btn-delete').click(function(){
+                $('.checkboxItem:checked').closest("tr.item").remove()
+                $('#checkboxAll').prop('checked', false)
+            })
+            $("input:checkbox").change(function() {
+                if(this.checked) {
+                    // $("input:checkbox")
+                    if (!$('#btn-add').hasClass("disabled")) {
+                        $('#btn-add').addClass("disabled")
+                        $('#btn-add').removeClass("text-danger")
+                        $('#btn-edit').addClass("text-danger")
+                        $('#btn-edit').removeClass("disabled")
+                        $('#btn-delete').addClass("text-danger")
+                        $('#btn-delete').removeClass("disabled")
+                    }
+                }
+                if ($('.checkboxItem:checked').length !== $('.checkboxItem').length) {
+                    $('#checkboxAll').prop('checked', false)
+                } else {
+                    $('#checkboxAll').prop('checked', true)
+                }
+                if ( $("input:checkbox:checked").length > 0) {
+                    return
+                }
+                if ($('#btn-add').hasClass("disabled")) {
+                    $('#btn-add').removeClass("disabled")
+                    $('#btn-add').addClass("text-danger")
+                    $('#btn-edit').removeClass("text-danger")
+                    $('#btn-edit').addClass("disabled")
+                    $('#btn-delete').removeClass("text-danger")
+                    $('#btn-delete').addClass("disabled")
+                }
+            });
+        });
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                var htmlPreview =
+                    '<img width="200" src="' + e.target.result + '" />' +
+                    '<p>' + input.files[0].name + '</p>';
+                var wrapperZone = $(input).parent();
+                var previewZone = $(input).parent().parent().find('.preview-zone');
+                var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
+
+                wrapperZone.removeClass('dragover');
+                previewZone.removeClass('hidden');
+                boxZone.empty();
+                boxZone.append(htmlPreview);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function reset(e) {
+            e.wrap('<form>').closest('form').get(0).reset();
+            e.unwrap();
+        }
+
+        $(".dropzone").change(function() {
+            readFile(this);
+        });
+
+        $('.dropzone-wrapper').on('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).addClass('dragover');
+        });
+
+        $('.dropzone-wrapper').on('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('dragover');
+        });
+
+        $('.remove-preview').on('click', function() {
+            var boxZone = $(this).parents('.preview-zone').find('.box-body');
+            var previewZone = $(this).parents('.preview-zone');
+            var dropzone = $(this).parents('.form-group').find('.dropzone');
+            boxZone.empty();
+            previewZone.addClass('hidden');
+            reset(dropzone);
+        });
+
+    </script>
+</body>
+
+</html>
