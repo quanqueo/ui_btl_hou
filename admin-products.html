@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="position: relative">
+    <nav class="navbar navbar-dark sticky-top bg-white flex-md-nowrap p-0 ">
+        <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mr-0 text-center" href="#">
+            <img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 75px;">
+        </a>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+
+                <div class="d-flex ">
+                    <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" style="font-size: 20px;"></i>
+                        <span class="notification" style="position: absolute;">5</span>
+                    </a>
+                    <div class="avatar m-auto">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-3">Sơn Hà <br> Admin</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="left: unset; right: 0">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar position-fixed">
+            <!-- <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar"> -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/general.png" alt="">
+                                Tổng quan <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                                Đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded " style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/product-active.png" alt="">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/new.png" alt="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/customer.png" alt="">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/employee.png" alt="">
+                                Nhân viên
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="#">
+                                <img class="mr-2" src="/img/icon/logout.png" alt="">
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
+                <h2 id="page-title">Sản phẩm</h2>
+                <div class="table bg-white mt-2 p-4">
+                    <div id="table-filter" class="row">
+                        <div class="d-flex flex-column w-100">
+                            <div class="d-flex justify-content-end mr-3">
+                                <a id="btn-add" class="btn btn-light text-danger" href="/admin-product-add.html">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                                <a id="btn-edit" class="btn btn-light ml-2 disabled" href="/admin-product-edit.html">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a id="btn-delete" class="btn btn-light ml-2 disabled">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex mt-1 mx-3">
+                                <select class="form-control" name="filter" id="cars" style="width: 140px;">
+                                    <option value="">Bộ lọc</option>
+                                    <option value="1">Tên</option>
+                                    <option value="2">Số lượng</option>
+                                    <option value="3">Màu</option>
+                                    <option value="4">Giá</option>
+                                    <option value="5">Đánh giá</option>
+                                </select>
+                                <input class="form-control ml-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" style="width: 300px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="table-content" class="row mt-3">
+                        <div class="col-lg-12 col-md-12">
+                            <div id="list" class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="border-0">
+                                        <tr class="border-bottom">
+                                            <th class="border-0">
+                                                <input type="checkbox" id="checkboxAll" name="checkboxAll" value="0">
+                                            </th>
+                                            <th class="border-0">Sản phẩm</th>
+                                            <th class="border-0">Số lượng</th>
+                                            <th class="border-0">Màu</th>
+                                            <th class="border-0">giá</th>
+                                            <th class="border-0">Đánh giá</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="overflow-y: auto;" >
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
+                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="table-footer" class="row mt-3 ml-1">
+                        <div class="custom-pagination">
+                            <ul class="page">
+                                <li class="page__numbers page__btn">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                </li>
+                                <li class="page__numbers active"> 1</li>
+                                <li class="page__numbers">2</li>
+                                <li class="page__numbers">3</li>
+                                <li class="page__numbers">4</li>
+                                <li class="page__numbers">5</li>
+                                <li class="page__numbers">6</li>
+                                <li class="page__numbers">...</li>
+                                <li class="page__numbers">24</li>
+                                <li class="page__numbers page__btn">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function deleteItem() {
+            event.target.closest(".item").remove();
+            // const items = document.querySelectorAll(".list-item .item");
+            // if (items.length == 0) {
+            //     window.scrollTo({ top: 0, behavior: "smooth" });
+            //     const favouriteContainer = document.getElementById("cart-container");
+            //     favouriteContainer.innerHTML = `<div id="favourite-empty" class="row py-5 px-5">
+            //         <div class="col">
+            //             <div class="row">
+            //                 <img src="/img/empty-cart.png" alt="">
+            //             </div>
+            //             <div class="row">
+            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
+            //                     <h3 class="font-weight-bold">GIỎ HÀNG RỖNG</h3>
+            //                 </div>
+            //             </div>
+            //             <div class="row mt-3">
+            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
+            //                     <p class="">Không có sản phẩm nào trong giỏ hàng của bạn.</p>
+            //                 </div>
+            //             </div>
+            //             <a href="#" class="col btn btn-dark text-center mt-5 py-2">TIẾP TỤC MUA SẮM</a>
+            //         </div>
+            //     </div>`;
+            // }
+        }
+    </script>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // $(window).resize(function(){
+            //     $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            //     $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // });
+
+            $('#checkboxAll').click(function(){
+                $('input:checkbox').not(this).prop('checked', this.checked);
+            })
+            $('#btn-delete').click(function(){
+                $('.checkboxItem:checked').closest("tr.item").remove()
+                $('#checkboxAll').prop('checked', false)
+            })
+            $("input:checkbox").change(function() {
+                if(this.checked) {
+                    // $("input:checkbox")
+                    if (!$('#btn-add').hasClass("disabled")) {
+                        $('#btn-add').addClass("disabled")
+                        $('#btn-add').removeClass("text-danger")
+                        $('#btn-edit').addClass("text-danger")
+                        $('#btn-edit').removeClass("disabled")
+                        $('#btn-delete').addClass("text-danger")
+                        $('#btn-delete').removeClass("disabled")
+                    }
+                }
+                if ($('.checkboxItem:checked').length !== $('.checkboxItem').length) {
+                    $('#checkboxAll').prop('checked', false)
+                } else {
+                    $('#checkboxAll').prop('checked', true)
+                }
+                if ( $("input:checkbox:checked").length > 0) {
+                    return
+                }
+                if ($('#btn-add').hasClass("disabled")) {
+                    $('#btn-add').removeClass("disabled")
+                    $('#btn-add').addClass("text-danger")
+                    $('#btn-edit').removeClass("text-danger")
+                    $('#btn-edit').addClass("disabled")
+                    $('#btn-delete').removeClass("text-danger")
+                    $('#btn-delete').addClass("disabled")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

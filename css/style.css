@@ -4349,33 +4349,41 @@ input[type="text"] {
       }
     }
   }
-  .custom-pagination {
-    font-size: 16px;
-    ul {
-      list-style-type: none;
-    }
-    .page {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      border-radius: 0.6rem;
-    }
-    .page__numbers {
-      display: block;
-      padding: 0 10px;
-      margin: 0 5px;
-      float: left;
-      border-radius: 0.2rem;
-      cursor: pointer;
-    }
-    .page__numbers.active {
-      border: 1px solid #D4121A;
-      color: #D4121A;
-    }
-    
-  }
 }
 /* comment section end */
+
+/* common custom pagination begin */
+.custom-pagination {
+  font-size: 16px;
+  ul {
+    list-style-type: none;
+  }
+  .page {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 0.6rem;
+  }
+  .page__numbers {
+    display: block;
+    padding: 0 10px;
+    margin: 0 5px;
+    float: left;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+  .page__numbers:hover {
+    border: 1px solid #D4121A;
+    color: #D4121A;
+  }
+  .page__numbers.active {
+    border: 1px solid #D4121A;
+    color: #D4121A;
+  }
+  
+}
+/* common custom pagination end */
 
 /* custom form begin */
 .custom-form {
@@ -4521,3 +4529,47 @@ input[type="text"] {
 /* checkout begin */
 
 /* checkout end */
+
+/* custom-bell-notification begin */
+.custom-bell-notification {
+  color: #888;
+  padding: 10px 15px;
+  position: relative;
+  display: inline-flex;
+  line-height: 1.2;
+  .notification {
+    position: absolute;
+    background-color: #fb404b;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 18px;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 18px;
+    top: 0;
+    right: 8px;
+    border: 1px solid #fff;
+  }
+}
+/* custom-bell-notification end */
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+}
+.avatar img{
+  width:100%;
+}
+
+.img-wraper {
+  border: 1px dotted #A1A7C4;
+  border-radius: 10px;
+}
