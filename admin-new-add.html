@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="position: relative">
+    <nav class="navbar navbar-dark sticky-top bg-white flex-md-nowrap p-0 ">
+        <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mr-0 text-center" href="#">
+            <img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 75px;">
+        </a>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+
+                <div class="d-flex ">
+                    <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" style="font-size: 20px;"></i>
+                        <span class="notification" style="position: absolute;">5</span>
+                    </a>
+                    <div class="avatar m-auto">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-3">Sơn Hà <br> Admin</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="left: unset; right: 0">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar position-fixed">
+            <!-- <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar"> -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-index.html">
+                                <img class="mr-2" src="/img/icon/general.png" alt="">
+                                Tổng quan <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-orders.html">
+                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                                Đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-products.html">
+                                <img class="mr-2" src="/img/icon/product.png" alt="">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded" style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="/admin-news.html">
+                                <img class="mr-2" src="/img/icon/new-active.png" alt="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-customers.html">
+                                <img class="mr-2" src="/img/icon/customer.png" alt="">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-employees.html">
+                                <img class="mr-2" src="/img/icon/employee.png" alt="">
+                                Nhân viên
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-logout.html">
+                                <img class="mr-2" src="/img/icon/logout.png" alt="">
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
+                <a style="color: #5A607F;" href="/admin-news.html"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span> Back</a>
+                <h2 id="page-title">Thêm tin tức</h2>
+                <form action="/admin-news.html" method="POST" id="checkout-form" class="mt-4 mx-2" enctype="multipart/form-data" onsubmit="checkoutFormSubmit()">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Ảnh chính</label>
+                            <div class="preview p-4 d-none">
+                            </div>
+                            <div class="img-wraper bg-white rounded mt-2" style="height: 276px;">
+                                <div class="d-flex flex-column text-center" style="margin: 106px 0px;">
+                                    <button type="button" class="btn border text-primary font-weight-bold m-auto">Thêm ảnh</button>
+                                    <input type="file" name="img_logo" class="d-none">
+                                    <span class="m-auto">Hoặc kéo thả ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label class="" for="lastName">Nội dung chính</label>
+                            <input type="text" class="form-control mx-0" id="main-content" placeholder="Nội dung chính" 
+                                style="border: 1px solid #ced4da; border-radius: .25rem; background-image: unset; padding: .375rem .75rem;"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col ">
+                            <label class="" for="description">Mô tả nội dung</label>
+                            <textarea
+                                class="form-control mx-0"
+                                name="description"
+                                id="description"
+                                rows="11"
+                                placeholder="Mô tả nội dung"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Tiêu để 1</label>
+                            <input type="text" class="form-control mx-0" id="title1-name" placeholder="Tên tiêu đề 1" 
+                                style="border: 1px solid #ced4da; border-radius: .25rem; background-image: unset; padding: .375rem .75rem;"
+                            >
+                            <div class="preview p-4 d-none">
+                            </div>
+                            <div class="img-wraper bg-white rounded mt-2" style="height: 276px;">
+                                <div class="d-flex flex-column text-center" style="margin: 106px 0px;">
+                                    <button type="button" class="btn border text-primary font-weight-bold m-auto">Thêm ảnh</button>
+                                    <input type="file" name="img_logo" class="d-none">
+                                    <span class="m-auto">Hoặc kéo thả ảnh</span>
+                                </div>
+                            </div>
+                            <textarea
+                                class="form-control mt-2 mx-0"
+                                name="title1-description"
+                                id="title1-description"
+                                rows="11"
+                                placeholder="Mô tả tiêu đề"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <button 
+                        type="button"
+                        class=" btn btn-dark text-center font-weight-bold mt-3"
+                        style="width: 330px;"
+                    >Thêm tiêu đề</button>
+                    
+                    
+                    <div class="row my-4">   
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <div class="">
+                                <!-- <button type="submit" class=" btn btn-danger text-center font-weight-bold">Lưu sản phẩm</button> -->
+                                <a 
+                                    href="/admin-news.html"
+                                    class=" btn btn-danger text-center font-weight-bold"
+                                    style="width: 330px;"
+                                >Lưu tin tức</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            // $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // $(window).resize(function(){
+            //     $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            //     $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // });
+        });
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                var htmlPreview =
+                    '<img width="200" src="' + e.target.result + '" />' +
+                    '<p>' + input.files[0].name + '</p>';
+                var wrapperZone = $(input).parent();
+                var previewZone = $(input).parent().parent().find('.preview-zone');
+                var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
+
+                wrapperZone.removeClass('dragover');
+                previewZone.removeClass('hidden');
+                boxZone.empty();
+                boxZone.append(htmlPreview);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function reset(e) {
+            e.wrap('<form>').closest('form').get(0).reset();
+            e.unwrap();
+        }
+
+        $(".dropzone").change(function() {
+            readFile(this);
+        });
+
+        $('.dropzone-wrapper').on('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).addClass('dragover');
+        });
+
+        $('.dropzone-wrapper').on('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('dragover');
+        });
+
+        $('.remove-preview').on('click', function() {
+            var boxZone = $(this).parents('.preview-zone').find('.box-body');
+            var previewZone = $(this).parents('.preview-zone');
+            var dropzone = $(this).parents('.form-group').find('.dropzone');
+            boxZone.empty();
+            previewZone.addClass('hidden');
+            reset(dropzone);
+        });
+
+    </script>
+</body>
+
+</html>

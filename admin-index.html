@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="position: relative">
+    <nav class="navbar navbar-dark sticky-top bg-white flex-md-nowrap p-0 ">
+        <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mr-0 text-center" href="#">
+            <img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 75px;">
+        </a>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+
+                <div class="d-flex ">
+                    <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" style="font-size: 20px;"></i>
+                        <span class="notification" style="position: absolute;">5</span>
+                    </a>
+                    <div class="avatar m-auto">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-3">Sơn Hà <br> Admin</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="left: unset; right: 0">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar position-fixed">
+            <!-- <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar"> -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item p-2 rounded" style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="/admin-index.html">
+                                <img class="mr-2" src="/img/icon/general-active.png" alt="">
+                                Tổng quan <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-orders.html">
+                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                                Đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded ">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-products.html">
+                                <img class="mr-2" src="/img/icon/product.png" alt="">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-news.html">
+                                <img class="mr-2" src="/img/icon/new.png" alt="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-customers.html">
+                                <img class="mr-2" src="/img/icon/customer.png" alt="">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-employees.html">
+                                <img class="mr-2" src="/img/icon/employee.png" alt="">
+                                Nhân viên
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-logout.html">
+                                <img class="mr-2" src="/img/icon/logout.png" alt="">
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
+                <h2 id="page-title">Tổng quan</h2>
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="card bg-white rounded border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <h5 class="card-title text-muted">Tổng người dùng</h5>
+                                        <h4 class="card-subtitle mt-4 font-weight-bold">1,233</h4>
+                                    </div>
+                                    <img src="/img/icon/total-user.png" alt="">
+                                </div>
+                                <p class="card-text mt-4">
+                                    <span class="text-success">
+                                        <img src="/img/icon/ic-trending-up-24px.png" alt="">8.5%
+                                    </span>
+                                    Tăng so với tuần trước
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="card bg-white rounded border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <h5 class="card-title text-muted">Tổng đơn hàng</h5>
+                                        <h4 class="card-subtitle mt-4 font-weight-bold">8,293</h4>
+                                    </div>
+                                    <img src="/img/icon/total-order.png" alt="">
+                                </div>
+                                <p class="card-text mt-4">
+                                    <span class="text-success">
+                                        <img src="/img/icon/ic-trending-up-24px.png" alt="">1.3%
+                                    </span>
+                                    Tăng so với tuần trước
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="card bg-white rounded border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <h5 class="card-title text-muted">Tổng doanh thu</h5>
+                                        <h4 class="card-subtitle mt-4 font-weight-bold">22,111,000đ</h4>
+                                    </div>
+                                    <img src="/img/icon/total-user.png" alt="">
+                                </div>
+                                <p class="card-text mt-4">
+                                    <span class="text-success">
+                                        <img src="/img/icon/ic-trending-down-24px.png" alt="">4.3%
+                                    </span>
+                                    Giảm so với tuần trước
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="card bg-white rounded border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <h5 class="card-title text-muted">Tổng đơn hoàn trả</h5>
+                                        <h4 class="card-subtitle mt-4 font-weight-bold">231</h4>
+                                    </div>
+                                    <img src="/img/icon/total-return-order.png" alt="">
+                                </div>
+                                <p class="card-text mt-4">
+                                    <span class="text-success">
+                                        <img src="/img/icon/ic-trending-up-24px.png" alt="">1.8%
+                                    </span>
+                                    Tăng so với tuần trước
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="bg-white p-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="font-weight-bold">Đơn đặt hàng gần nhất</h5>
+                                <select class="border-0 text-muted" id="">
+                                    <option  class="dropdown-item" href="#">Hàng tuần</option>
+                                    <option  class="dropdown-item" href="#">Hàng tháng</option>
+                                    <option  class="dropdown-item" href="#">Hàng quý</option>
+                                    <option  class="dropdown-item" href="#">Hàng năm</option>
+                                </select>
+                            </div>
+                            <div class="d-flex justify-content-between align-middle mt-4">
+                                <div class="content-left d-flex">
+                                    <div id="current-statistic" class="">
+                                        <h6 class="font-weight-bold">300</h6>
+                                        <p class="text-muted m-0">Đơn trong tuần</p>
+                                    </div>
+                                    <div class="previous-statistic ml-5">
+                                        <h6 class="font-weight-bold">233</h6>
+                                        <p class="text-muted m-0">Đơn tuần trước</p>
+                                    </div>
+                                </div>
+                                <div class="content-right d-flex">
+                                    <div class="previous-statistic-label mt-auto">
+                                        <span class="d-inline-block" style="width: 12px; height: 12px; background-color: #D9E1EC;"></span>
+                                        <span class="text-muted m-2"> Tuần trước</span>
+                                    </div>
+                                    <div class="current-statistic-label mt-auto ml-3">
+                                        <span class="d-inline-block" style="width: 12px; height: 12px; background-color: #AD0820;"></span>
+                                        <span class="text-muted m-2"> Tuần này</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <img src="/img/chart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="bg-white p-4">
+                            <h5 class="font-weight-bold">Giao dịch gần đây</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr class="border-bottom">
+                                        <th class="border-0" scope="col">Mã đơn hàng</th>
+                                        <th class="border-0" scope="col">Ngày</th>
+                                        <th class="border-0" scope="col">Tổng tiền</th>
+                                        <th class="border-0" scope="col">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">033445</th>
+                                        <td>12/03/2024</td>
+                                        <td>1,090,000đ</td>
+                                        <td class="">Đang giao</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">099334</th>
+                                        <td>12/03/2024</td>
+                                        <td>1,090,000đ</td>
+                                        <td class="text-success">Hoàn thành</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">033455</th>
+                                        <td>10/03/2024</td>
+                                        <td>1,990,000đ</td>
+                                        <td class="text-success">Hoàn thành</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th class="font-weight-normal">334545</th>
+                                        <td>10/03/2024</td>
+                                        <td>590,000đ</td>
+                                        <td class="text-danger">Hoàn trả</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="bg-white p-4">
+                            <h5 class="font-weight-bold">Giao dịch gần đây</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr class="border-bottom">
+                                        <th class="border-0" scope="col">Mã đơn hàng</th>
+                                        <th class="border-0" scope="col">Ngày</th>
+                                        <th class="border-0" scope="col">Tổng tiền</th>
+                                        <th class="border-0" scope="col">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">033445</th>
+                                        <td>12/03/2024</td>
+                                        <td>1,090,000đ</td>
+                                        <td class="">Đang giao</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">099334</th>
+                                        <td>12/03/2024</td>
+                                        <td>1,090,000đ</td>
+                                        <td class="text-success">Hoàn thành</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th class="font-weight-normal">033455</th>
+                                        <td>10/03/2024</td>
+                                        <td>1,990,000đ</td>
+                                        <td class="text-success">Hoàn thành</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th class="font-weight-normal">334545</th>
+                                        <td>10/03/2024</td>
+                                        <td>590,000đ</td>
+                                        <td class="text-danger">Hoàn trả</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            // $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // $(window).resize(function(){
+            //     $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            //     $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // });
+        });
+    </script>
+</body>
+
+</html>
