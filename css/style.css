@@ -4573,3 +4573,13 @@ input[type="text"] {
   border: 1px dotted #A1A7C4;
   border-radius: 10px;
 }
+.product__item__pic{
+  transition: 0.6s;
+  transform: scale(1.03);
+}
+.product__item__pic:hover{
+  transform: scale(1.06);
+}
+.col-lg-3{
+  padding: 0px;
+}
