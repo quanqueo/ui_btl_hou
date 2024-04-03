@@ -7,7 +7,8 @@
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Male-Fashion | Template</title>
+    <title>SCARLET</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo/logonew-03.jpg">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -26,9 +27,9 @@
 
 <body style="position: relative;">
     <!-- Page Preloder -->
-    <div id="preloder">
+    <!-- <div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- Header Section Begin -->
     <header class="header mx-3 px-3">
         <div class="container">
@@ -583,7 +584,7 @@
     <!-- Product Section End -->
     
     <!-- Toast begin -->
-    <div id="favourite" class="toast bg-success-custom">
+    <div id="favourite" class="toast bg-success-custom" data-delay="5000">
         <div class="toast-body d-flex">
             <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
             <p>
@@ -851,9 +852,7 @@
             }
         }
         function showToast() {
-            console.log(1);
-            console.log();
-            $('#favourite').toast('show')
+            $('#favourite').toast('show');
         }
     </script>
     <!-- Js Plugins -->
