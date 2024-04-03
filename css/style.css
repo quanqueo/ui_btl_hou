@@ -4511,4 +4511,5 @@ input[type="text"] {
 
 .img-wraper {
   border: 1px dotted #A1A7C4;
+  border-radius: 10px;
 }

@@ -187,6 +187,7 @@
                             <label class="" for="lastName">Tên sản phẩm</label>
                             <input onkeyup="checkValidate()" type="text" class="form-control mx-0 validate-empty" id="lastName" placeholder="Tên sản phẩm" 
                                 style="border: 1px solid #ced4da; border-radius: .25rem; background-image: unset; padding: .375rem .75rem;"
+                                value="Váy liền nữ phối tay"
                             >
                         </div>
                     </div>
@@ -195,8 +196,8 @@
                             <label class="" for="category">Danh mục</label>
                             <select class="form-control" name="category" id="category">
                                 <option value="">Danh mục</option>
-                                <option value="1">Quần</option>
-                                <option value="2">Áo</option>
+                                <option value="1">Nam</option>
+                                <option value="2" selected>Nữ</option>
                             </select>
                             
                         </div>
@@ -206,11 +207,14 @@
                                 <option value="">Loại sản phẩm</option>
                                 <option value="1">Quần</option>
                                 <option value="2">Áo</option>
+                                <option value="3" selected>Váy</option>
                             </select>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <label class="" for="quantity">Số lượng</label>
-                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" id="quantity" placeholder="Số lượng">
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" id="quantity" placeholder="Số lượng"
+                                value="55"
+                            >
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -223,26 +227,63 @@
                                 id="description"
                                 rows="5"
                                 placeholder="Mô tả sản phẩm"
-                            ></textarea>
+                            >Váy liền nữ hai lớp dạ kiểu phối tay dài.&#13;&#10;Sự kết hợp giữa chất liệu liệu dạ kiểu phần thân váy hai lớp và phần tay áo chất liệu cotton.</textarea>
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-6 col-lg-6 ">
                             <label class="" for="original-price">Giá gốc</label>
-                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="original-price" id="original-price" placeholder="Giá gốc">
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="original-price" id="original-price" placeholder="Giá gốc"
+                                value="599000"
+                            >
                         </div>
                         <div class="col-md-6 col-lg-6 ">
                             <label class="" for="discount-price">Giá đã giảm</label>
-                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="discount-price" id="discount-price" placeholder="Giá đã giảm">
+                            <input onkeyup="checkValidate()" type="number" class="form-control mx-0 validate-empty" name="discount-price" id="discount-price" placeholder="Giá đã giảm"
+                                value="499000"
+                            >
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="col">
                             <label for="">Ảnh</label>
-                            <div class="preview p-4 d-none">
-                            </div>
                             <div class="img-wraper bg-white rounded" style="height: 321px;">
-                                <div class="d-flex flex-column text-center" style="margin: 140px 0px;">
+                                <div class="preview p-4 d-flex">
+                                    <div class="img1">
+                                        <img src="/img/nu/4.jpg" alt="" style="height: 224px;">
+                                        <div class="border rounded mt-2 py-1 d-flex justify-content-around" style="font-size: 20px;">
+                                            <a class="text-dark" href="">
+                                                <img src="/img/icon/eye.png" alt="">
+                                            </a>
+                                            <a class="text-danger" href="">
+                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img2 ml-4">
+                                        <img src="/img/nu/4.jpg" alt="" style="height: 224px;">
+                                        <div class="border rounded mt-2 py-1 d-flex justify-content-around" style="font-size: 20px;">
+                                            <a class="text-dark" href="">
+                                                <img src="/img/icon/eye.png" alt="">
+                                            </a>
+                                            <a class="text-danger" href="">
+                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img3 ml-4">
+                                        <img src="/img/nu/4.jpg" alt="" style="height: 224px;">
+                                        <div class="border rounded mt-2 py-1 d-flex justify-content-around" style="font-size: 20px;">
+                                            <a class="text-dark" href="">
+                                                <img src="/img/icon/eye.png" alt="">
+                                            </a>
+                                            <a class="text-danger" href="">
+                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-column text-center d-none" style="margin: 140px 0px;">
                                     <button type="button" class="btn border text-primary font-weight-bold m-auto">Thêm ảnh</button>
                                     <input type="file" name="img_logo" class="d-none">
                                     <span class="m-auto">Hoặc kéo thả ảnh</span>
@@ -276,9 +317,9 @@
                             <label class="" for="category">Kích cỡ</label>
                             <select class="form-control " name="size[]" id="size" multiple="multiple">
                                 <option value="">Kích cỡ</option>
-                                <option value="1">S</option>
+                                <option value="1" selected>S</option>
                                 <option value="2">M</option>
-                                <option value="3">L</option>
+                                <option value="3" selected>L</option>
                                 <option value="4">XL</option>
                                 <option value="5">XXL</option>
                             </select>
@@ -295,6 +336,7 @@
                                 <option value="5">Lam</option>
                                 <option value="6">Chàm</option>
                                 <option value="7">Tím</option>
+                                <option value="8" selected>Đen</option>
                             </select>
                         </div>
                     </div>
