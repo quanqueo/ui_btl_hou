@@ -66,15 +66,15 @@
                                 Tổng quan <span class="sr-only"></span>
                             </a>
                         </li>
-                        <li class="nav-item p-2 rounded">
-                            <a class="nav-link text-dark font-weight-bold" href="/admin-orders.html">
-                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                        <li class="nav-item p-2 rounded" style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="/admin-orders.html">
+                                <img class="mr-2" src="/img/icon/order-active.png" alt="">
                                 Đơn hàng
                             </a>
                         </li>
-                        <li class="nav-item p-2 rounded " style="background-color: #AD0820;">
-                            <a class="nav-link text-white font-weight-bold" href="/admin-products.html">
-                                <img class="mr-2" src="/img/icon/product-active.png" alt="">
+                        <li class="nav-item p-2 rounded ">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-products.html">
+                                <img class="mr-2" src="/img/icon/product.png" alt="">
                                 Sản phẩm
                             </a>
                         </li>
@@ -112,11 +112,8 @@
                     <div id="table-filter" class="row">
                         <div class="d-flex flex-column w-100">
                             <div class="d-flex justify-content-end mr-3">
-                                <a id="btn-add" class="btn btn-light text-danger" href="/admin-product-add.html">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                <a id="btn-edit" class="btn btn-light ml-2 disabled" href="/admin-product-edit.html">
-                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                <a id="btn-detail" class="btn btn-light ml-2 disabled" href="/admin-order-detail.html">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
                                 </a>
                                 <a id="btn-delete" class="btn btn-light ml-2 disabled">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -144,11 +141,11 @@
                                             <th class="border-0">
                                                 <input type="checkbox" id="checkboxAll" name="checkboxAll" value="0">
                                             </th>
-                                            <th class="border-0">Sản phẩm</th>
-                                            <th class="border-0">Số lượng</th>
-                                            <th class="border-0">Màu</th>
+                                            <th class="border-0">Mã đơn hàng</th>
+                                            <th class="border-0">tên khách hàng</th>
+                                            <th class="border-0">Ngày</th>
+                                            <th class="border-0">Trạng thái</th>
                                             <th class="border-0">giá</th>
-                                            <th class="border-0">Đánh giá</th>
                                         </tr>
                                     </thead>
                                     <tbody style="overflow-y: auto;" >
@@ -156,92 +153,71 @@
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">233244</td>
+                                            <td class="border-0 align-middle">Nguyễn Hà</td>
+                                            <td class="border-0 align-middle">12/03/2024</td>
+                                            <td class="border-0 align-middle">Đang giao</td>
+                                            <td class="border-0 align-middle">1,090,000đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">122346</td>
+                                            <td class="border-0 align-middle">My Trần</td>
+                                            <td class="border-0 align-middle">12/03/2024</td>
+                                            <td class="border-0 align-middle text-success">Hoàn thành</td>
+                                            <td class="border-0 align-middle">1,048,500đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">167544</td>
+                                            <td class="border-0 align-middle">An Nguyễn</td>
+                                            <td class="border-0 align-middle">11/03/2024</td>
+                                            <td class="border-0 align-middle text-success">Hoàn thành</td>
+                                            <td class="border-0 align-middle">990,000đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">334245</td>
+                                            <td class="border-0 align-middle">Lucas Đô</td>
+                                            <td class="border-0 align-middle">11/03/2024</td>
+                                            <td class="border-0 align-middle text-success">Hoàn thành</td>
+                                            <td class="border-0 align-middle">890,000đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">232455</td>
+                                            <td class="border-0 align-middle">Long Trần</td>
+                                            <td class="border-0 align-middle">11/03/2024</td>
+                                            <td class="border-0 align-middle text-danger">Hoàn trả</td>
+                                            <td class="border-0 align-middle">890,000đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">122465</td>
+                                            <td class="border-0 align-middle">Bạch Dương</td>
+                                            <td class="border-0 align-middle">11/03/2024</td>
+                                            <td class="border-0 align-middle text-success">Hoàn thành</td>
+                                            <td class="border-0 align-middle">690,000đ</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">334564</td>
+                                            <td class="border-0 align-middle">Nguyễn Thi</td>
+                                            <td class="border-0 align-middle">10/03/2024</td>
+                                            <td class="border-0 align-middle text-success">Hoàn thành</td>
+                                            <td class="border-0 align-middle">890,000đ</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -332,15 +308,10 @@
             })
             $("input:checkbox").change(function() {
                 if(this.checked) {
-                    // $("input:checkbox")
-                    if (!$('#btn-add').hasClass("disabled")) {
-                        $('#btn-add').addClass("disabled")
-                        $('#btn-add').removeClass("text-danger")
-                        $('#btn-edit').addClass("text-danger")
-                        $('#btn-edit').removeClass("disabled")
-                        $('#btn-delete').addClass("text-danger")
-                        $('#btn-delete').removeClass("disabled")
-                    }
+                    $('#btn-detail').addClass("text-danger")
+                    $('#btn-detail').removeClass("disabled")
+                    $('#btn-delete').addClass("text-danger")
+                    $('#btn-delete').removeClass("disabled")
                 }
                 if ($('.checkboxItem:checked').length !== $('.checkboxItem').length) {
                     $('#checkboxAll').prop('checked', false)
@@ -350,14 +321,10 @@
                 if ( $("input:checkbox:checked").length > 0) {
                     return
                 }
-                if ($('#btn-add').hasClass("disabled")) {
-                    $('#btn-add').removeClass("disabled")
-                    $('#btn-add').addClass("text-danger")
-                    $('#btn-edit').removeClass("text-danger")
-                    $('#btn-edit').addClass("disabled")
-                    $('#btn-delete').removeClass("text-danger")
-                    $('#btn-delete').addClass("disabled")
-                }
+                $('#btn-detail').removeClass("text-danger")
+                $('#btn-detail').addClass("disabled")
+                $('#btn-delete').removeClass("text-danger")
+                $('#btn-delete').addClass("disabled")
             });
         });
     </script>

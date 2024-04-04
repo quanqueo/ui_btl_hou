@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Male_Fashion Template" />
+    <meta name="keywords" content="Male_Fashion, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="position: relative">
+    <nav class="navbar navbar-dark sticky-top bg-white flex-md-nowrap p-0 ">
+        <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mr-0 text-center" href="#">
+            <img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 75px;">
+        </a>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+
+                <div class="d-flex ">
+                    <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true" style="font-size: 20px;"></i>
+                        <span class="notification" style="position: absolute;">5</span>
+                    </a>
+                    <div class="avatar m-auto">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-3">Sơn Hà <br> Admin</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="left: unset; right: 0">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar position-fixed">
+            <!-- <nav class="col-md-3 col-lg-2 d-none d-md-block bg-white sidebar"> -->
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-index.html">
+                                <img class="mr-2" src="/img/icon/general.png" alt="">
+                                Tổng quan <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-orders.html">
+                                <img class="mr-2" src="/img/icon/order.png" alt="">
+                                Đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-products.html">
+                                <img class="mr-2" src="/img/icon/product.png" alt="">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-news.html">
+                                <img class="mr-2" src="/img/icon/new.png" alt="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-customers.html">
+                                <img class="mr-2" src="/img/icon/customer.png" alt="">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded" style="background-color: #AD0820;">   
+                            <a class="nav-link text-white font-weight-bold" href="/admin-employees.html">
+                                <img class="mr-2" src="/img/icon/employee-active.png" alt="">
+                                Nhân viên
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-logout.html">
+                                <img class="mr-2" src="/img/icon/logout.png" alt="">
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
+                <a style="color: #5A607F;" href="/admin-employees.html"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span> Back</a>
+                <div class="d-flex justify-content-between">
+                    <h2 id="page-title">
+                        Thêm nhân viên
+                    </h2>
+                    <a id="btn-edit" class="btn btn-light bg-white border ml-2 font-weight-bold text-danger" href="/admin-employees-edit.html">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <form action="/admin-employees.html" method="get" class="custom-form">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="bg-white border p-4">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 text-center my-auto">
+                                        <img class="" src="/img/icon/user.png" alt="" style="width: 148px; height: 148px;">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 custom-group name-group">
+                                                <label class="" for="lastName">Họ</label>
+                                                <input type="text" class="mx-0" id="lastName" placeholder="Nhập họ của bạn">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 custom-group name-group">
+                                                <label class="" for="firstName">Tên</label>
+                                                <input type="text" class="mx-0" id="firstName" placeholder="Nhập tên của bạn">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                                <label class="" for="email">Email</label>
+                                                <input type="text" class="mx-0" name="email" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                                <label class="" for="phoneNumber">Số điện thoại</label>
+                                                <input type="text" class="mx-0" id="phoneNumber" placeholder="Số điện thoại">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col custom-group title-group">
+                                                <label class="" for="title-input">Địa chỉ</label>
+                                                <input type="text" class="mx-0" id="title-input" placeholder="Địa chỉ">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                                <label class="" for="date-join">Ngày tham gia</label>
+                                                <input type="date" class="mx-0" name="date-join" id="date-join" placeholder="dd-mm-yyyy">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                                <label class="" for="position">Chức vụ</label>
+                                                <input type="text" class="mx-0" id="position" placeholder="Chức vụ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <button type="submit" class=" btn btn-danger text-center font-weight-bold">Lưu nhân viên</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // $(window).resize(function(){
+            //     $('nav.sidebar').height( window.innerHeight - $('nav.navbar').height())
+            //     $('main').height( window.innerHeight - $('nav.navbar').height() - 16)
+            // });
+        });
+
+    </script>
+</body>
+
+</html>

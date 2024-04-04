@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" /> -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+        .circle {
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            background: #A1A7C4
+        }
+    </style>
 </head>
 
 <body style="position: relative">
@@ -72,9 +85,9 @@
                                 Đơn hàng
                             </a>
                         </li>
-                        <li class="nav-item p-2 rounded " style="background-color: #AD0820;">
-                            <a class="nav-link text-white font-weight-bold" href="/admin-products.html">
-                                <img class="mr-2" src="/img/icon/product-active.png" alt="">
+                        <li class="nav-item p-2 rounded">
+                            <a class="nav-link text-dark font-weight-bold" href="/admin-products.html">
+                                <img class="mr-2" src="/img/icon/product.png" alt="">
                                 Sản phẩm
                             </a>
                         </li>
@@ -90,9 +103,9 @@
                                 Khách hàng
                             </a>
                         </li>
-                        <li class="nav-item p-2 rounded">
-                            <a class="nav-link text-dark font-weight-bold" href="/admin-employees.html">
-                                <img class="mr-2" src="/img/icon/employee.png" alt="">
+                        <li class="nav-item p-2 rounded" style="background-color: #AD0820;">
+                            <a class="nav-link text-white font-weight-bold" href="/admin-employees.html">
+                                <img class="mr-2" src="/img/icon/employee-active.png" alt="">
                                 Nhân viên
                             </a>
                         </li>
@@ -107,15 +120,15 @@
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
-                <h2 id="page-title">Sản phẩm</h2>
+                <h2 id="page-title">Nhân viên</h2>
                 <div class="table bg-white mt-2 p-4">
                     <div id="table-filter" class="row">
                         <div class="d-flex flex-column w-100">
                             <div class="d-flex justify-content-end mr-3">
-                                <a id="btn-add" class="btn btn-light text-danger" href="/admin-product-add.html">
+                                <a id="btn-add" class="btn btn-light text-danger" href="/admin-employee-add.html">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                 </a>
-                                <a id="btn-edit" class="btn btn-light ml-2 disabled" href="/admin-product-edit.html">
+                                <a id="btn-edit" class="btn btn-light ml-2 disabled" href="/admin-employee-edit.html">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a id="btn-delete" class="btn btn-light ml-2 disabled">
@@ -126,10 +139,10 @@
                                 <select class="form-control" name="filter" id="cars" style="width: 140px;">
                                     <option value="">Bộ lọc</option>
                                     <option value="1">Tên</option>
-                                    <option value="2">Số lượng</option>
-                                    <option value="3">Màu</option>
-                                    <option value="4">Giá</option>
-                                    <option value="5">Đánh giá</option>
+                                    <option value="2">Email</option>
+                                    <option value="3">Số điện thoại</option>
+                                    <option value="4">Địa chỉ</option>
+                                    <option value="5">Trạng thái</option>
                                 </select>
                                 <input class="form-control ml-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" style="width: 300px;">
                             </div>
@@ -144,11 +157,11 @@
                                             <th class="border-0">
                                                 <input type="checkbox" id="checkboxAll" name="checkboxAll" value="0">
                                             </th>
-                                            <th class="border-0">Sản phẩm</th>
-                                            <th class="border-0">Số lượng</th>
-                                            <th class="border-0">Màu</th>
-                                            <th class="border-0">giá</th>
-                                            <th class="border-0">Đánh giá</th>
+                                            <th class="border-0">Tên</th>
+                                            <th class="border-0">Email</th>
+                                            <th class="border-0">Số điện thoại</th>
+                                            <th class="border-0">Địa chỉ</th>
+                                            <th class="border-0">Trạng thái</th>
                                         </tr>
                                     </thead>
                                     <tbody style="overflow-y: auto;" >
@@ -157,91 +170,91 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">A</div>
+                                                <span class="ml-1 my-auto">Nguyễn Lạc An</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">annguyen@gmail.com</td>
+                                            <td class="border-0 align-middle">0983334212</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">M</div>
+                                                <span class="ml-1 my-auto">Trần Khởi My</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">mytran12@gmail.com</td>
+                                            <td class="border-0 align-middle">098567432</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">A</div>
+                                                <span class="ml-1 my-auto">Nguyễn Như An</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">annguyen@gmail.com</td>
+                                            <td class="border-0 align-middle">0983334211</td>
+                                            <td class="border-0 align-middle">Đông Anh, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">L</div>
+                                                <span class="ml-1 my-auto">Chu Thê Long</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">longtran@gmail.com</td>
+                                            <td class="border-0 align-middle">0983334210</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-danger">Ngừng hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">L</div>
+                                                <span class="ml-1 my-auto">Đô Thị Lợi</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">lucasdo@gmail.com</td>
+                                            <td class="border-0 align-middle">0983134212</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">B</div>
+                                                <span class="ml-1 my-auto">Lưu Như Bích</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">bachduong@gmail.com</td>
+                                            <td class="border-0 align-middle">083334212</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                         <tr class="border-bottom item">
                                             <td class="border-0 align-middle">
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <div class="circle">N</div>
+                                                <span class="ml-1 my-auto">Nguyễn Lưu Nguyên</span>
                                             </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                            <td class="border-0 align-middle">Nguyenthi@gmail.com</td>
+                                            <td class="border-0 align-middle">0983334200</td>
+                                            <td class="border-0 align-middle">Hoàng Mai, Hà Nội</td>
+                                            <td class="border-0 align-middle text-success">Đang hoạt động</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -273,35 +286,6 @@
         </div>
     </div>
 
-    <script>
-        function deleteItem() {
-            event.target.closest(".item").remove();
-            // const items = document.querySelectorAll(".list-item .item");
-            // if (items.length == 0) {
-            //     window.scrollTo({ top: 0, behavior: "smooth" });
-            //     const favouriteContainer = document.getElementById("cart-container");
-            //     favouriteContainer.innerHTML = `<div id="favourite-empty" class="row py-5 px-5">
-            //         <div class="col">
-            //             <div class="row">
-            //                 <img src="/img/empty-cart.png" alt="">
-            //             </div>
-            //             <div class="row">
-            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
-            //                     <h3 class="font-weight-bold">GIỎ HÀNG RỖNG</h3>
-            //                 </div>
-            //             </div>
-            //             <div class="row mt-3">
-            //                 <div class="col-lg-12 col-md-12 mx-auto text-center">
-            //                     <p class="">Không có sản phẩm nào trong giỏ hàng của bạn.</p>
-            //                 </div>
-            //             </div>
-            //             <a href="#" class="col btn btn-dark text-center mt-5 py-2">TIẾP TỤC MUA SẮM</a>
-            //         </div>
-            //     </div>`;
-            // }
-        }
-    </script>
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -332,7 +316,6 @@
             })
             $("input:checkbox").change(function() {
                 if(this.checked) {
-                    // $("input:checkbox")
                     if (!$('#btn-add').hasClass("disabled")) {
                         $('#btn-add').addClass("disabled")
                         $('#btn-add').removeClass("text-danger")
