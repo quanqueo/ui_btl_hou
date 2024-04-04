@@ -29,6 +29,19 @@
             var containerEl = document.querySelector('.product__filter');
             var mixer = mixitup(containerEl);
         }
+        if(localStorage.getItem("isLoged")){
+            $('#loginName').removeClass('d-block');
+            $('#loginName').addClass('d-none');
+            $('#username').removeClass('d-none');
+            $('#username').addClass('d-block');
+        }
+        $('#buttonLogin').on('click', function() {
+            localStorage.setItem("isLoged", true);
+            $('#loginName').removeClass('d-block');
+            $('#loginName').addClass('d-none');
+            $('#username').removeClass('d-none');
+            $('#username').addClass('d-block');
+        });
     });
 
     /*------------------
