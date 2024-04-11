@@ -26,6 +26,164 @@
 </head>
 
 <body>
+    <div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-right">
+                        <span aria-hidden="true" class="btn-close" data-dismiss="modal" aria-label="Close">&times;</span>
+                    </div>
+                    <div class="tab-content nav nav-tabs border-0">
+                        <div id="login" class="tab-pane active">
+                            <h3 class="d-block text-center"><strong>Đăng nhập</strong></h3>
+                            <div style="height: 80px;" class="d-block text-center"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></div>
+                            <div style="font-size: 13px;" class="d-block text-center">Đăng nhập để không bỏ lỡ quyền lợi tích luỹ cho bất kỳ đơn hàng nào</div>
+                            <div class="d-block text-center mt-1"><strong>Đăng nhập hoặc đăng ký (miễn phí)</strong></div>
+                            <a style="height: 40px;" class="d-block text-center google mt-2"><img src="img/logo/google.jpg" alt="" style="object-fit: cover; height: 100%; padding: 8px 0px;"></a>
+                            <div class="row">
+                                <div class="col-5"><hr></div>
+                                <div class="col-2">Hoặc</div>
+                                <div class="col-5"><hr></div>
+                            </div>
+                            <div class="d-flex flex-column text-center">
+                                <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control btn-round px-3" id="email1"placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control btn-round px-3" id="password1" placeholder="Mật khẩu">
+                                </div>
+                                <button id="buttonLogin" type="button" data-dismiss="modal" class="btn btn-black btn-block btn-round">Đăng nhập</button>
+                                </form>
+                            </div>
+                            <!-- <div style="justify-content: space-between; padding: 5px 0px;" class="d-flex extendForm">
+                                <a data-toggle="tab" href="#register" style="cursor: pointer; color: cornflowerblue;">Đăng ký tài khoản mới</a>
+                                <a style="cursor: pointer; color: cornflowerblue;">Quên mật khẩu</a>
+                            </div> -->
+                        </div>
+                        <div id="register" class="tab-pane fade">
+                            <h3 class="d-block text-center"><strong>Đăng ký</strong></h3>
+                            <div style="height: 80px;" class="d-block text-center"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></div>
+                            <div style="font-size: 13px;" class="d-block text-center">Đăng nhập để không bỏ lỡ quyền lợi tích luỹ cho bất kỳ đơn hàng nào</div>
+                            <div class="d-block text-center mt-1"><strong>Đăng nhập hoặc đăng ký (miễn phí)</strong></div>
+                            <a style="height: 40px;" class="d-block text-center google mt-2"><img src="img/logo/google.jpg" alt="" style="object-fit: cover; height: 100%; padding: 8px 0px;"></a>
+                            <div class="row">
+                                <div class="col-5"><hr></div>
+                                <div class="col-2">Hoặc</div>
+                                <div class="col-5"><hr></div>
+                            </div>
+                            <div class="d-flex flex-column text-center">
+                                <form>
+                                    <div class="d-inline-flex">
+                                        <div class="form-group w-50 mr-3">
+                                            <input type="email" class="form-control btn-round px-3" placeholder="Họ và tên">
+                                        </div>
+                                        <div class="form-group w-50">
+                                            <input type="email" class="form-control btn-round px-3" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control btn-round px-3" id="email1"placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control btn-round px-3" id="password1" placeholder="Mật khẩu">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control btn-round px-3" id="password2" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                    <button type="button" class="btn btn-black btn-block btn-round">Đăng ký</button>
+                                </form>
+                            </div>
+                            <!-- <div style="padding: 5px 0px;" class="extendForm">
+                                <a data-toggle="tab" href="#login" style="cursor: pointer; color: cornflowerblue;">Đăng nhập</a>
+                            </div> -->
+                        </div>
+                      </div>
+                      <ul style="justify-content: space-between; border: none; padding: 5px 0px;" class="nav nav-tabs extendForm" role="tablist">
+                        <li class="nav-item"><a data-toggle="tab" href="#login" class="mr-2 direction active">Đăng nhập</a><a style="cursor: pointer; color: #007bff;">Quên mật khẩu</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#register" class="direction">Đăng ký tài khoản mới</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Toast begin -->
+    <div id="favourite" class="toast bg-success-custom" data-delay="5000">
+        <div class="toast-body d-flex">
+            <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+            <p>
+                Sản phẩm <span id="favouritePrdName"></span> đã được thêm yêu thích! 
+            </p>
+        </div>
+    </div>
+    <div id="removeFavourite" class="toast bg-success-custom" data-delay="5000">
+        <div class="toast-body d-flex">
+            <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+            <p>
+               Bỏ yêu thích thành công! 
+            </p>
+        </div>
+    </div>
+    <!-- Toast end -->
+
+    <!-- modal begin -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 756px;">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="close close-custom" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="clearfix"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col text-center">
+                            <div class="pb-3" style="border-bottom: 1px solid #000000;">
+                                <h3 >Đã thêm vào giỏ hàng</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-4">
+                            <img id="cartPrdImg" class="h-100" src="img/nu/aophong/aophong1/4.webp" alt="">
+                        </div>
+                        <div class="col-lg-8">
+                            <h5><span id="cartPrdName"></span></h5>
+                            <p>Đen /XL</p>
+                            <div class="row mt-5">
+                                <div class="col-lg-5">
+                                    <div class="number-input" style="border: 1px solid #ddd;">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">-</button>
+                                        <input class="quantity" min="0" name="quantity" value="1" type="number" style="border: none">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 text-right m-auto">
+                                    <h4><strong id="cartPrdPrice"></strong></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col text-center">
+                            <a href="/shopping-cart.html" type="button" class="btn btn-outline-dark mr-3" style="width: 170px;">Xem giỏ hàng</a>
+                            <a href="/checkout.html" type="button" class="btn btn-dark" style="width: 170px;">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
     <!-- Page Preloder -->
     <!-- <div id="preloder">
         <div class="loader"></div>
@@ -57,8 +215,8 @@
                                 <input type="text" name="search" placeholder="Search..">
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-heart d-block text-danger text-center"></i>
-                                <span class="d-block">Yêu thích</span>
+                                <a href="./favourite.html" class="d-block m-0"><i class="fa fa-heart d-block text-danger text-center"></i></a>
+                                <span class="d-block"><a href="./favourite.html" style="color: black;">Yêu thích</a></span>
                             </div>
                            <div id="loginName" class="col-lg-2 col-md-2">
                                 <i class="fa fa-user-circle d-block text-danger text-center" data-toggle="modal" data-target="#exampleModal"></i>
@@ -69,8 +227,8 @@
                                 <span class="d-block text-center cursor-pointer"><a href="./account.html" style="color: black;">Sơn Hà</a></span>
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
-                                <span class="d-block">Giỏ hàng</span>
+                                <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                                <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black;">Giỏ hàng</a></span>
                             </div>
                         </div>
                     </div>
@@ -594,10 +752,19 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
+    <script src="./js/shared.js"></script>
     <script>
+        function createGuid() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
+            .replace(/[xy]/g, function (c) {
+                const r = Math.random() * 16 | 0, 
+                    v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
         var data = [
             {
+                id: createGuid(),
                 price: '449.500',
                 prePrice: '699.000',
                 title: 'Váy liền nữ interlock cổ bẻ dáng dài',
@@ -605,6 +772,7 @@
                 imgUrl: 'img/nu/1.jpg'
             },
             {
+                id: createGuid(),
                 price: '449.500',
                 prePrice: '699.000',
                 title: 'Váy liền nữ interlock cổ bẻ dáng dài',
@@ -612,6 +780,7 @@
                 imgUrl: 'img/nu/6.jpg'
             },
             {
+                id: createGuid(),
                 price: '399.500 đ',
                 prePrice: '699.000',
                 title: 'Váy liền nữ phối tay',
@@ -619,6 +788,7 @@
                 imgUrl: 'img/nu/4.jpg'
             },
             {
+                id: createGuid(),
                 price: '399.500 đ',
                 prePrice: '699.000',
                 title: 'Áo nỉ nữ có hình in',
@@ -626,6 +796,7 @@
                 imgUrl: 'img/nu/13.jpg'
             },
             {
+                id: createGuid(),
                 price: '399.500 đ',
                 prePrice: '699.000',
                 title: 'Áo nỉ nữ có hình in',
@@ -633,6 +804,7 @@
                 imgUrl: 'img/nu/14.jpg'
             },
             {
+                id: createGuid(),
                 price: '559.500 đ',
                 prePrice: '1.119.000',
                 title: 'Áo khoác chần bông nữ Ultra Air siêu nhẹ,...',
@@ -640,6 +812,7 @@
                 imgUrl: 'img/nu/9.jpg'
             },
             {
+                id: createGuid(),
                 price: '559.500 đ',
                 prePrice: '799.000',
                 title: 'Váy liền nữ interlock dáng suông',
@@ -647,6 +820,7 @@
                 imgUrl: 'img/nu/5.jpg'
             },
             {
+                id: createGuid(),
                 price: '399.500 đ',
                 prePrice: '799.000',
                 title: 'Áo cardigan nữ cổ V dài tay dáng ngắn vừa',
@@ -654,6 +828,7 @@
                 imgUrl: 'img/nu/10.jpg'
             },
             {
+                id: createGuid(),
                 price: '349.500 đ',
                 prePrice: '699.000',
                 title: 'Áo len nữ cổ lọ dệt loang',
@@ -661,6 +836,7 @@
                 imgUrl: 'img/nu/12.jpg'
             },
             {
+                id: createGuid(),
                 price: '399.500 đ',
                 prePrice: '799.000',
                 title: 'Quần jeans nữ dáng ôm',
@@ -668,6 +844,7 @@
                 imgUrl: 'img/nu/1.jpg'
             },
             {
+                id: createGuid(),
                 price: '149.500 đ',
                 prePrice: '299.000',
                 title: 'Chân váy jeans nữ cotton dáng suông',
@@ -675,6 +852,7 @@
                 imgUrl: 'img/nu/7.jpg'
             },
             {
+                id: createGuid(),
                 price: '364.500 đ',
                 prePrice: '699.000',
                 title: 'Quần dài nữ dáng suông',
@@ -684,16 +862,17 @@
         ];
         var content = "";
         data.forEach((item) => {
+            let stringItem = JSON.stringify(item);
             content += `<div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
             <div class="product__item">
                 <div class="product__item__pic set-bg" data-setbg="./${item?.imgUrl}">
                     <ul class="product__hover">
-                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                        <li><button type="button" class="btn btn-red btn-block px-2 py-1" onclick='addFavoutite(${stringItem})'><i class="fa fa-heart"></i></button></li>
                     </ul>
                 </div>
                 <div class="product__item__text">
                     <h6>${item?.title}</h6>
-                    <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                    <a class="add-cart" onclick='onAddToCard(${stringItem})'>+ Thêm giỏ hàng</a>
                     <h6>${item?.price} đ</h6>
                     <h6><del>${item?.prePrice} đ</del>   <strong class="text-danger"> -${item?.discount}%</strong></h6> 
                     <div class="product__color__select">

@@ -139,8 +139,8 @@
                                 <span class="d-block text-center cursor-pointer"><a href="./account.html" style="color: black;">Sơn Hà</a></span>
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
-                                <span class="d-block">Giỏ hàng</span>
+                                <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                                <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black;">Giỏ hàng</a></span>
                             </div>
                         </div>
                     </div>
@@ -198,7 +198,7 @@
                             <li class="nav-item" onclick="onChangeTab('Quản lý đơn hàng')">
                                 <a class="nav-link" id="contact-vertical-tab" data-toggle="tab" href="#contact-vertical" role="tab" aria-controls="contact" aria-selected="false"><i class="fa fa-file-text-o" aria-hidden="true"></i> Quản lý đơn hàng</a>
                             </li>
-                            <li class="nav-item">
+                            <li id="logout" class="nav-item" onclick="onClickLogout()">
                                 <a class="nav-link" id="logout-vertical-tab" href="./index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a>
                             </li>
                         </ul>
@@ -808,6 +808,9 @@
                     </div>`;
             document.getElementById("contact-vertical").innerHTML = content;
         }
+        function onClickLogout(){
+            localStorage.removeItem("isLoged");
+        }
         function onCancelCart(){
             let content = `<div class="row border mt-3">
                         <div class="col-12 border p-3">
@@ -845,7 +848,6 @@
             document.getElementById("contact-vertical").innerHTML = content;
         }
         function onChangeTab(title){
-            console.log(title);
             document.getElementById("title").innerHTML = title;
         }
     </script>

@@ -43,9 +43,9 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
-                            <li class="active"><a href="#">Nữ</a></li>
+                            <li><a href="./female.html">Nữ</a></li>
                             <li><a href="./male.html">Nam</a></li>
-                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
                             <li><a href="./introduce.html">Giới thiệu</a></li>
                         </ul>
                     </nav>
@@ -69,8 +69,10 @@
                                 <span class="d-block text-center cursor-pointer"><a href="./account.html" style="color: black;">Sơn Hà</a></span>
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-shopping-bag d-block text-danger text-center"></i>
-                                <span class="d-block">Giỏ hàng</span>
+                                <!-- <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                                <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black;">Giỏ hàng</a></span> -->
+                                <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                                <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black;">Giỏ hàng</a></span>
                             </div>
                         </div>
                     </div>
@@ -115,7 +117,7 @@
                 <div class="row border py-5">
                     <div class="col-lg-12 col-md-12">
                         <div id="list-favourite" class="list-item">
-                            <div class="col item pb-5">
+                            <!-- <div class="col item pb-5">
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <img class="h-100" src="img/nu/aophong/aophong1/4.webp" alt="">
@@ -136,7 +138,7 @@
                                         <h4 class="mt-5"><strong>149.500 đ</strong></h4>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     
@@ -210,8 +212,70 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
+    <div id="removeFavourite" class="toast bg-success-custom" data-delay="5000">
+        <div class="toast-body d-flex">
+            <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+            <p>
+               Bỏ yêu thích thành công! 
+            </p>
+        </div>
+    </div>
+    <script src="./js/shared.js"></script>
     <script>
+        refreshFavourite();
+        function refreshFavourite(){
+            let data = JSON.parse(localStorage.getItem('favourite'));
+            var content = "";
+            if(data?.length <= 0){
+                content = `<div id="favourite-empty" class="row border py-5 px-5">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 mx-auto text-center">
+                                        <i class="fa fa-heart-o" aria-hidden="true" style="color: #AD0820; font-size: 114px"></i>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-lg-12 col-md-12 mx-auto text-center">
+                                        <p class="font-weight-bold">DANH SÁCH YÊU THÍCH TRỐNG</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12 col-md-12 mx-auto text-center">
+                                        <p class="">Không có sản phẩm nào trong danh sách yêu thích của bạn. Bạn có thể tìm thấy nhiều sản phẩm tuyệt với ở của hàng của chúng tôi.</p>
+                                    </div>
+                                </div>
+                                <a href="./index.html" class="col btn btn-dark text-center mt-5 py-2">TIẾP TỤC MUA SẮM</a>
+                            </div>
+                        </div>`;
+            } else {
+                data.forEach((item) => {
+                    let stringItem = JSON.stringify(item);
+                    content += `<div class="col item pb-5">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="h-100" src="./${item?.imgUrl}" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="d-flex">
+                                                <h2 class="font-weight-bold">${item?.title}</h2>
+                                                <button 
+                                                    type="button"
+                                                    class="button-heart"
+                                                    onclick='removeFavouriteItem(${stringItem})'
+                                                >
+                                                    <i class="fa fa-heart" aria-hidden="true" style="color: #AD0820;"></i>
+                                                </button>
+                                            </div>
+                                            <p class="mt-5" >Màu sắc: <span>Tím</span></p>
+                                            <p class="mt-4" >Kích cỡ: <span>XL</span></p>
+                                            <h4 class="mt-5"><strong>${item?.price} đ</strong></h4>
+                                        </div>
+                                    </div>
+                                </div>`;
+                });
+            }
+            document.getElementById("list-favourite").innerHTML = content;
+        }
         function deleteItem(){
             event.target.closest('.item').remove()
 

@@ -1530,7 +1530,15 @@ ol {
   padding: 40px 0 60px;
   margin-bottom: 100px;
 }
-
+.prdDetailImg .tab-content{
+  height: 100% !important;
+}
+.prdDetailImg .tab-content .tab-pane{
+  height: 100% !important;
+}
+.prdDetailImg .tab-content .tab-pane .product__details__pic__item{
+  height: 100% !important;
+}
 .product__details__pic .nav-tabs {
   border-bottom: none;
   width: 105px;
@@ -1610,7 +1618,10 @@ ol {
 .product__details__pic__item {
   position: relative;
 }
-
+.product__details__pic__item img {
+  object-fit: cover;
+  height: 100%;
+}
 .product__details__pic__item a {
   height: 56px;
   width: 56px;

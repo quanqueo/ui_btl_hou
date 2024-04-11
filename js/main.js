@@ -254,3 +254,52 @@
       });
     });
 })(jQuery);
+function showToast(title) {
+    $('#favourite').toast('show');
+    $('#favouritePrdName').text(title);
+}
+function addFavoutite(data) {
+    $('#favourite').toast('show');
+    $('#favouritePrdName').text(data?.title);
+    var oldData = [];
+    if(localStorage.getItem("favourite")){
+        oldData = JSON.parse(localStorage.getItem("favourite"));
+    }
+    var newData = [data, ...oldData];
+    localStorage.setItem("favourite", JSON.stringify(newData));
+}
+function removeFavouriteItem(data) {
+    $('#removeFavourite').toast('show');
+    var oldData = [];
+    if(localStorage.getItem("favourite")){
+        oldData = JSON.parse(localStorage.getItem("favourite"));
+    }
+    oldData.splice(oldData.findIndex((item) => item.id == data?.id), 1);
+    var newData = [...oldData];
+    localStorage.setItem("favourite", JSON.stringify(newData));
+    refreshFavourite();
+}
+function onAddToCard(data){
+    var myModal = new bootstrap.Modal(document.getElementById("exampleModalCenter"), {});
+    myModal.show();
+    $('#cartPrdName').text(data?.title);
+    $('#cartPrdPrice').text(data?.price);
+    $('#cartPrdImg').attr("src", data?.imgUrl);
+    var oldData = [];
+    if(localStorage.getItem("cartData")){
+        oldData = JSON.parse(localStorage.getItem("cartData"));
+    }
+    var newData = [data, ...oldData];
+    localStorage.setItem("cartData", JSON.stringify(newData));
+}
+function removeCardItem(data) {
+    $('#removeCart').toast('show');
+    var oldData = [];
+    if(localStorage.getItem("cartData")){
+        oldData = JSON.parse(localStorage.getItem("cartData"));
+    }
+    oldData.splice(oldData.findIndex((item) => item.id == data?.id), 1);
+    var newData = [...oldData];
+    localStorage.setItem("cartData", JSON.stringify(newData));
+    refreshCart();
+}
