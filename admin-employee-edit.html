@@ -32,7 +32,7 @@
         </a>
         <div class="col-md-10">
             <div class="d-flex justify-content-between">
-                <input
+                <input id="search"
                     value=""
                     class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
 
@@ -42,7 +42,7 @@
                         <span class="notification" style="position: absolute;">5</span>
                     </a>
                     <div class="avatar m-auto">
-                        <img src="/img/avatar.png" alt="">
+                        <img src="./img/icon/user.png" alt="">
                         <p class="text-success">Đang hoạt động</p>
                     </div>
                     <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -113,7 +113,7 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
                 <a style="color: #5A607F;" href="./admin-employees.html"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span> Back</a>
                 <div class="d-flex justify-content-between">
-                    <h2 id="page-title">
+                    <h3 id="page-title" class="font-weight-bold">
                         Chi tiết nhân viên
                     </h2>
                     <a id="btn-edit" class="btn btn-light bg-white border ml-2 font-weight-bold text-danger" href="./admin-customer-edit.html">
@@ -126,61 +126,68 @@
                             <div class="bg-white border p-4">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-3 text-center my-auto">
-                                        <img class="" src="/img/icon/user.png" alt="" style="width: 148px; height: 148px;">
+                                        <img class="" src="./img/icon/user.png" alt="" style="width: 148px; height: 148px;">
                                     </div>
                                     <div class="col-lg-9 col-md-9">
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6 custom-group name-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 name-group">
                                                 <label class="" for="lastName">Họ</label>
                                                 <input
+                                                    class="form-control"
                                                     value="Nguyễn"
                                                     type="text" class="mx-0" id="lastName" placeholder="Nhập họ của bạn"
                                                 >
                                             </div>
-                                            <div class="col-lg-6 col-md-6 custom-group name-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 name-group">
                                                 <label class="" for="firstName">Tên</label>
                                                 <input
+                                                    class="form-control"
                                                     value="Dương"
                                                     type="text" class="mx-0" id="firstName" placeholder="Nhập tên của bạn"
                                                 >
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 title-group">
                                                 <label class="" for="email">Email</label>
                                                 <input
+                                                    class="form-control"
                                                     value="duongnguyen@gmail.com"
                                                     type="text" class="mx-0" name="email" id="email" placeholder="Email"
                                                 >
                                             </div>
-                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 title-group">
                                                 <label class="" for="phoneNumber">Số điện thoại</label>
                                                 <input
+                                                    class="form-control"
                                                     value="0987654321"
                                                     type="text" class="mx-0" id="phoneNumber" placeholder="Số điện thoại"
                                                 >
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col custom-group title-group">
+                                            <div class="col custom-group pl-2 title-group">
                                                 <label class="" for="title-input">Địa chỉ</label>
                                                 <input
+                                                    class="form-control"
                                                     value="Hoàng Mai, Hà Nội"
                                                     type="text" class="mx-0" id="title-input" placeholder="Địa chỉ"
                                                 >
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 title-group">
                                                 <label class="" for="date-join">Ngày tham gia</label>
                                                 <input
+                                                    class="form-control"
                                                     value="31-03-2024"
                                                     type="date" class="mx-0" name="date-join" id="date-join" placeholder="dd-mm-yyyy"
                                                 >
                                             </div>
-                                            <div class="col-lg-6 col-md-6 custom-group title-group">
+                                            <div class="col-lg-6 col-md-6 custom-group pl-2 title-group">
                                                 <label class="" for="position">Chức vụ</label>
                                                 <input
+                                                    class="form-control"
                                                     value="Quản lý"
                                                     type="text" class="mx-0" id="position" placeholder="Chức vụ"
                                                 >

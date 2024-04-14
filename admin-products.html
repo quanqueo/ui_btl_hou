@@ -31,7 +31,7 @@
         </a>
         <div class="col-md-10">
             <div class="d-flex justify-content-between">
-                <input class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
+                <input id="search" class="" type="text" placeholder="Tìm kiếm" aria-label="Search" style="width: unset;background-position: 14px 14px;"/>
 
                 <div class="d-flex ">
                     <a href="#" class="custom-bell-notification text-dark m-auto" aria-expanded="false">
@@ -39,7 +39,7 @@
                         <span class="notification" style="position: absolute;">5</span>
                     </a>
                     <div class="avatar m-auto">
-                        <img src="/img/avatar.png" alt="">
+                        <img src="./img/icon/user.png" alt="">
                     </div>
                     <a class="ml-3 dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-3">Sơn Hà <br> Admin</span>
@@ -107,7 +107,7 @@
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 bg-light">
-                <h2 id="page-title">Sản phẩm</h2>
+                <h3 id="page-title" class="font-weight-bold">Sản phẩm</h2>
                 <div class="table bg-white mt-2 p-4">
                     <div id="table-filter" class="row">
                         <div class="d-flex flex-column w-100">
@@ -158,7 +158,7 @@
                                             </td>
                                             <td class="border-0 align-middle d-flex">
                                                 <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
                                             <td class="border-0 align-middle">Tím</td>
@@ -170,11 +170,24 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <img class="" src="img/nam/3.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Áo khoác gió nam in họa tiết có túi khóa kéo</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">mix</td>
+                                            <td class="border-0 align-middle">399,500 <span style="text-decoration: underline;">đ</span></td>
+                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
+                                        </tr>
+                                        <tr class="border-bottom item">
+                                            <td class="border-0 align-middle">
+                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
+                                            </td>
+                                            <td class="border-0 align-middle d-flex">
+                                                <img class="" src="img/nam/2.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Quần nỉ nam cạp chun có hình in dáng rộng</span></a>
+                                            </td>
+                                            <td class="border-0 align-middle">55 trong kho</td>
+                                            <td class="border-0 align-middle">lục</td>
                                             <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
                                             <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
                                         </tr>
@@ -183,11 +196,11 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <img class="" src="img/nam/1.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Quần khaki nam dáng ôm</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">cream</td>
                                             <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
                                             <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
                                         </tr>
@@ -196,11 +209,11 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <img class="" src="img/nu/1.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Quần jeans nữ dáng ôm</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">xanh</td>
                                             <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
                                             <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
                                         </tr>
@@ -209,11 +222,11 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <img class="" src="img/nam/5.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Áo khoác chần bông nam Ultra Air siêu nhẹ,...</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">xám</td>
                                             <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
                                             <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
                                         </tr>
@@ -222,24 +235,11 @@
                                                 <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
                                             </td>
                                             <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
+                                                <img class="" src="img/nu/9.jpg" alt="" style="max-height: 50px;">
+                                                <a class="text-dark" href="/admin-product-edit.html"><span class="ml-1 my-auto">Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</span></a>
                                             </td>
                                             <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
-                                            <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
-                                            <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
-                                        </tr>
-                                        <tr class="border-bottom item">
-                                            <td class="border-0 align-middle">
-                                                <input type="checkbox" class="checkboxItem" name="checkboxAll" value="0">
-                                            </td>
-                                            <td class="border-0 align-middle d-flex">
-                                                <img class="" src="img/nu/aophong/aophong1/4.webp" alt="" style="max-height: 50px;">
-                                                <span class="ml-1 my-auto">Áo phông nữ cotton dáng ngắn in chữ</span>
-                                            </td>
-                                            <td class="border-0 align-middle">55 trong kho</td>
-                                            <td class="border-0 align-middle">Tím</td>
+                                            <td class="border-0 align-middle">cream</td>
                                             <td class="border-0 align-middle">149,500 <span style="text-decoration: underline;">đ</span></td>
                                             <td class="border-0 align-middle">5.0 (32 đánh giá)</td>
                                         </tr>
