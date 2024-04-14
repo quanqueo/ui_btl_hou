@@ -145,7 +145,7 @@
         <div class="loader"></div>
     </div> -->
     <!-- Header Section Begin -->
-    <header class="header mx-3 px-3">
+    <header class="header mx-3 px-3 hide-in-responsive">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1">
@@ -202,917 +202,846 @@
                     </div>
                 </div>
             </div>
-            <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
     </header>
-    <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg="img/banner/main.png">
-                <!-- <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6>Summer Collection</h6>
-                                <h2>Fall - Winter Collections 2030</h2>
-                                <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
-                                <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
-                                <div class="hero__social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+    <header id="header-responsive" class="header mx-3 px-3 show-in-responsive">
+        <!-- <div class="container"> -->
+            <div class="row mb-2 border-bottom remove-border">
+                <div class="col-lg-1 col-md-1 col-sm-2">
+                    <div class="header__logo text-center" style="height: fit-content;">
+                        <a href="./index.html" style="height: fit-content;"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-9 header-responsive d-flex">
+                    <div class="row w-100 hide-on-menu-responsive-expand">
+                        <div class="col-3">
+                            <i class="fa fa-search d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-heart d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span>
+                        </div>
+                        <div class="col-3">
+                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                            <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-bars d-block text-danger text-center"></i>
+                            <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span>
+                        </div>
+                    </div>
+                    <div class="row w-100 hide-on-menu-responsive-expand d-none">
+                        <div class="col-12 text-right">
+                            <i class="fa fa-times text-danger" style="font-size: 30px; padding-right: 15px;"></i>
+                            <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-menu-responsive-expand">
+                <div class="col-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul class="d-flex" style="justify-content: space-around;">
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
+                            <li><a href="./female.html">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- </div> -->
+        </header>
+        <!-- Header Section End -->
+        
+    <div class="position-relative">
+        <div id="menu-responsive" class="row">
+            <div class="col-12">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="row">
+                            <div id="loginName" class="col-6 item-menu-responsive-extends">
+                                <a href="./login-responsive.html" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    TÀI KHOẢN
+                                </a>
+                            </div>
+                            <div id="username" class="d-none col-6 item-menu-responsive-extends">
+                                <a href="./account.html" class="d-none" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    SƠN HÀ
+                                </a>
+                            </div>
+                            <div class="col-6 item-menu-responsive-extends">
+                                <a href="./introduce.html" class="d-block" style="color: black; font-size: 20px; cursor: pointer;">
+                                    <i class="fa fa-info px-3 py-2" style="border-radius: 50px; border: 3px solid rgb(192, 1, 1);  color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    GIỚI THIỆU
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <ul class="nav nav-tabs row menu-responsive-item" id="myTab" role="tablist">
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>NỮ</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span>NAM</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><span>SẢN PHẨM BÁN CHẠY</span></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <div class="hero__items set-bg" data-setbg="img/banner/slider2.png">
-                <!-- <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6>Summer Collection</h6>
-                                <h2>Fall - Winter Collections 2030</h2>
-                                <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
-                                <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
-                                <div class="hero__social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <!-- Hero Section Begin -->
+        <section class="hero hide-on-menu-responsive-expand">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="img/banner/main.png">
+                    <!-- <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <h6>Summer Collection</h6>
+                                    <h2>Fall - Winter Collections 2030</h2>
+                                    <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                                    commitment to exceptional quality.</p>
+                                    <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                    <div class="hero__social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/banner/slider2.png">
+                    <!-- <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <h6>Summer Collection</h6>
+                                    <h2>Fall - Winter Collections 2030</h2>
+                                    <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                                    commitment to exceptional quality.</p>
+                                    <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                    <div class="hero__social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+    
+    
+        <!-- Product Section Begin -->
+        <section class="product spad pt-4 hide-on-menu-responsive-expand">
+            <div class="container">
+                <div class="row product__filter">
+                    <div class="col-12 py-3">
+                        <h3 class="text-center"><strong>SẢN PHẨM BÁN CHẠY</strong></h3>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
+                                <span class="label">Sale</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-7">
+                                        <input type="radio" id="pc-7">
+                                    </label>
+                                    <label class="active black" for="pc-8">
+                                        <input type="radio" id="pc-8">
+                                    </label>
+                                    <label class="grey" for="pc-9">
+                                        <input type="radio" id="pc-9">
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
+                                <span class="label">Sale</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>149.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-10">
+                                        <input type="radio" id="pc-10">
+                                    </label>
+                                    <label class="active black" for="pc-11">
+                                        <input type="radio" id="pc-11">
+                                    </label>
+                                    <label class="grey" for="pc-12">
+                                        <input type="radio" id="pc-12">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/1.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần khaki nam dáng ôm</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>349.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-1">
+                                        <input type="radio" id="pc-1">
+                                    </label>
+                                    <label class="active black" for="pc-2">
+                                        <input type="radio" id="pc-2">
+                                    </label>
+                                    <label class="grey" for="pc-3">
+                                        <input type="radio" id="pc-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/1.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần jeans nữ dáng ôm</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-4">
+                                        <input type="radio" id="pc-4">
+                                    </label>
+                                    <label class="active black" for="pc-5">
+                                        <input type="radio" id="pc-5">
+                                    </label>
+                                    <label class="grey" for="pc-6">
+                                        <input type="radio" id="pc-6">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3 pb-5">
+                        <h3 class="text-center">
+                            <a href="./best-seller.html" style="color: red; background-color: white; border: 2px solid red; font-size: 14px; padding: 10px 20px;"><strong>Xem thêm</strong></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Áo khoác -->
+            <div class="container">
+                <div class="row mb-3">
+                    <img src="img/banner/coat.jpg" />
+                </div>
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/5.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác chần bông nam Ultra Air siêu nhẹ,...</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-1">
+                                        <input type="radio" id="pc-1">
+                                    </label>
+                                    <label class="active black" for="pc-2">
+                                        <input type="radio" id="pc-2">
+                                    </label>
+                                    <label class="grey" for="pc-3">
+                                        <input type="radio" id="pc-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>559.300 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-4">
+                                        <input type="radio" id="pc-4">
+                                    </label>
+                                    <label class="active black" for="pc-5">
+                                        <input type="radio" id="pc-5">
+                                    </label>
+                                    <label class="grey" for="pc-6">
+                                        <input type="radio" id="pc-6">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
+                                <span class="label">Sale</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-7">
+                                        <input type="radio" id="pc-7">
+                                    </label>
+                                    <label class="active black" for="pc-8">
+                                        <input type="radio" id="pc-8">
+                                    </label>
+                                    <label class="grey" for="pc-9">
+                                        <input type="radio" id="pc-9">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/10.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo cardigan nữ cổ V dài tay dáng ngắn vừa</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-10">
+                                        <input type="radio" id="pc-10">
+                                    </label>
+                                    <label class="active black" for="pc-11">
+                                        <input type="radio" id="pc-11">
+                                    </label>
+                                    <label class="grey" for="pc-12">
+                                        <input type="radio" id="pc-12">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Quần dài -->
+            <div class="container">
+                <div class="row mb-3">
+                    <img src="img/banner/quandai.jpg" />
+                </div>
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/1.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần khaki nam dáng ôm</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>349.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-1">
+                                        <input type="radio" id="pc-1">
+                                    </label>
+                                    <label class="active black" for="pc-2">
+                                        <input type="radio" id="pc-2">
+                                    </label>
+                                    <label class="grey" for="pc-3">
+                                        <input type="radio" id="pc-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/1.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần jeans nữ dáng ôm</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-4">
+                                        <input type="radio" id="pc-4">
+                                    </label>
+                                    <label class="active black" for="pc-5">
+                                        <input type="radio" id="pc-5">
+                                    </label>
+                                    <label class="grey" for="pc-6">
+                                        <input type="radio" id="pc-6">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
+                                <span class="label">Sale</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>149.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-7">
+                                        <input type="radio" id="pc-7">
+                                    </label>
+                                    <label class="active black" for="pc-8">
+                                        <input type="radio" id="pc-8">
+                                    </label>
+                                    <label class="grey" for="pc-9">
+                                        <input type="radio" id="pc-9">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/2.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần dài nữ dáng suông</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>364.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-10">
+                                        <input type="radio" id="pc-10">
+                                    </label>
+                                    <label class="active black" for="pc-11">
+                                        <input type="radio" id="pc-11">
+                                    </label>
+                                    <label class="grey" for="pc-12">
+                                        <input type="radio" id="pc-12">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sản phẩm mới -->
+            <div class="container mt-5">
+                <div class="row mb-3">
+                    <h3 class="w-100 text-center"><strong>SẢN PHẨM MỚI</strong></h3>
+                </div>
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/4.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Váy liền nữ phối tay</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>629.300 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-1">
+                                        <input type="radio" id="pc-1">
+                                    </label>
+                                    <label class="active black" for="pc-2">
+                                        <input type="radio" id="pc-2">
+                                    </label>
+                                    <label class="grey" for="pc-3">
+                                        <input type="radio" id="pc-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>559.300 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-4">
+                                        <input type="radio" id="pc-4">
+                                    </label>
+                                    <label class="active black" for="pc-5">
+                                        <input type="radio" id="pc-5">
+                                    </label>
+                                    <label class="grey" for="pc-6">
+                                        <input type="radio" id="pc-6">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>399.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-7">
+                                        <input type="radio" id="pc-7">
+                                    </label>
+                                    <label class="active black" for="pc-8">
+                                        <input type="radio" id="pc-8">
+                                    </label>
+                                    <label class="grey" for="pc-9">
+                                        <input type="radio" id="pc-9">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
+                                <span class="label">New</span>
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                    <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
+                                <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                                <h6>149.500 đ</h6>
+                                <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
+                                <div class="product__color__select">
+                                    <label for="pc-10">
+                                        <input type="radio" id="pc-10">
+                                    </label>
+                                    <label class="active black" for="pc-11">
+                                        <input type="radio" id="pc-11">
+                                    </label>
+                                    <label class="grey" for="pc-12">
+                                        <input type="radio" id="pc-12">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3 pb-5">
+                        <h3 class="text-center">
+                            <a href="./new-products.html" style="color: red; background-color: white; border: 2px solid red; font-size: 14px; padding: 10px 20px;"><strong>Xem thêm</strong></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news hide-on-menu-responsive-expand">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3 class="w-100 text-center"><strong>TIN TỨC</strong></h3>
+                </div>
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__news set-bg" data-setbg="img/tintuc/1.png">
+                            </div>
+                            <div class="p-2 text-center"><strong>SỰ KIỆN SIÊU SALE ĐẦU NĂM</strong></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__news set-bg" data-setbg="img/tintuc/3.png">
+                            </div>
+                            <div class="p-2 text-center"><strong>ĐỒNG GIÁ 149K - 199K TOÀN BỘ CỬA HÀNG</strong></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item sale">
+                            <div class="product__item__news set-bg" data-setbg="img/tintuc/5.png">
+                            </div>
+                            <div class="p-2 text-center"><strong>101 CÁCH PHỐI ĐỒ ĐẸP MẮT ĐẦU NĂM 2024</strong></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__news set-bg" data-setbg="img/tintuc/2.jpg">
+                            </div>
+                            <div class="p-2 text-center"><strong>5 CÁCH PHỐI ĐỒ VỚI ÁO POLO NAM ĐỂ TẠO PHONG CÁCH THỜI TRANG ĐẲNG CẤP</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section End -->
+    
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Đăng ký thành viên</a></li>
+                                <li><a href="#">Ưu đãi Độc quyền</a></li>
+                                <li><a href="#">Điều khoản dịch vụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
+                                <li><a href="#">Chính sách khuyến mãi</a></li>
+                                <li><a href="#">Chính sách giao hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Trải nghiệm mua sắm</a></li>
+                                <li><a href="#">Hỏi đáp - FAQs</a></li>
+                            </ul>
+                            <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Hướng dẫn chọn size</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex" style="align-content: space-between; flex-wrap: wrap;">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li>Số 20 đường Mới, huyện Đông Anh, TP.Hà Nội</li>
+                                <li>1800.8001</li>
+                                <li>thoitrangscarlet@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="d-block w-100 text-right hide-in-responsive">
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="footer__copyright__text">
+                            <p class="text-center">
+                                <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
+                            </p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                    </div>
+                    <div class="footer-bottom col-md-4 col-sm-12 text-right">
+                        <img style="width: 100px;" src="./img/footerImg.png" />
+                    </div>
+                </div>
+                <div class="row footer-bottom-responsive">
+                    <div class="col-8">
+                        <img style="width: 100px;" src="./img/footerImg.png" />
+                    </div>
+                    <div class="col-4 text-right">
+                        <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                        <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                        <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    
+        <!-- Search Begin -->
+        <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch">+</div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
             </div>
         </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Banner Section Begin -->
-    <!-- <section class="banner spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 offset-lg-4">
-                    <div class="banner__item">
-                        <div class="banner__item__pic">
-                            <img src="img/banner/banner-1.jpg" alt="">
-                        </div>
-                        <div class="banner__item__text">
-                            <h2>Clothing Collections 2030</h2>
-                            <a href="#">Shop now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="banner__item banner__item--middle">
-                        <div class="banner__item__pic">
-                            <img src="img/banner/banner-2.jpg" alt="">
-                        </div>
-                        <div class="banner__item__text">
-                            <h2>Accessories</h2>
-                            <a href="#">Shop now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="banner__item banner__item--last">
-                        <div class="banner__item__pic">
-                            <img src="img/banner/banner-3.jpg" alt="">
-                        </div>
-                        <div class="banner__item__text">
-                            <h2>Shoes Spring 2030</h2>
-                            <a href="#">Shop now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Banner Section End -->
-
-    <!-- Product Section Begin -->
-    <section class="product spad pt-4">
-        <div class="container">
-            <!-- <div class="row">
-                <div class="col-lg-12">
-                    <ul class="filter__controls">
-                        <li class="active" data-filter="*">Bán chạy</li>
-                        <li data-filter=".new-arrivals">Mới</li>
-                        <li data-filter=".hot-sales">Giảm giá</li>
-                    </ul>
-                </div>
-            </div> -->
-            <div class="row product__filter">
-                <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/4.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Váy liền nữ phối tay</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>629.300 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>559.300 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-12 py-3">
-                    <h3 class="text-center"><strong>SẢN PHẨM BÁN CHẠY</strong></h3>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-7">
-                                    <input type="radio" id="pc-7">
-                                </label>
-                                <label class="active black" for="pc-8">
-                                    <input type="radio" id="pc-8">
-                                </label>
-                                <label class="grey" for="pc-9">
-                                    <input type="radio" id="pc-9">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>149.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-10">
-                                    <input type="radio" id="pc-10">
-                                </label>
-                                <label class="active black" for="pc-11">
-                                    <input type="radio" id="pc-11">
-                                </label>
-                                <label class="grey" for="pc-12">
-                                    <input type="radio" id="pc-12">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/1.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần khaki nam dáng ôm</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>349.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/1.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần jeans nữ dáng ôm</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 pt-3 pb-5">
-                    <h3 class="text-center">
-                        <a href="./best-seller.html" style="color: red; background-color: white; border: 2px solid red; font-size: 14px; padding: 10px 20px;"><strong>Xem thêm</strong></a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <!-- Áo khoác -->
-        <div class="container">
-            <div class="row mb-3">
-                <img src="img/banner/coat.jpg" />
-            </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/5.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác chần bông nam Ultra Air siêu nhẹ,...</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>559.300 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-7">
-                                    <input type="radio" id="pc-7">
-                                </label>
-                                <label class="active black" for="pc-8">
-                                    <input type="radio" id="pc-8">
-                                </label>
-                                <label class="grey" for="pc-9">
-                                    <input type="radio" id="pc-9">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/10.jpg">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo cardigan nữ cổ V dài tay dáng ngắn vừa</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-10">
-                                    <input type="radio" id="pc-10">
-                                </label>
-                                <label class="active black" for="pc-11">
-                                    <input type="radio" id="pc-11">
-                                </label>
-                                <label class="grey" for="pc-12">
-                                    <input type="radio" id="pc-12">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Quần dài -->
-        <div class="container">
-            <div class="row mb-3">
-                <img src="img/banner/quandai.jpg" />
-            </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/1.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần khaki nam dáng ôm</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>349.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/1.jpg">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần jeans nữ dáng ôm</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>149.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-7">
-                                    <input type="radio" id="pc-7">
-                                </label>
-                                <label class="active black" for="pc-8">
-                                    <input type="radio" id="pc-8">
-                                </label>
-                                <label class="grey" for="pc-9">
-                                    <input type="radio" id="pc-9">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/2.jpg">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần dài nữ dáng suông</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>364.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-10">
-                                    <input type="radio" id="pc-10">
-                                </label>
-                                <label class="active black" for="pc-11">
-                                    <input type="radio" id="pc-11">
-                                </label>
-                                <label class="grey" for="pc-12">
-                                    <input type="radio" id="pc-12">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Sản phẩm mới -->
-        <div class="container mt-5">
-            <div class="row mb-3">
-                <h3 class="w-100 text-center"><strong>SẢN PHẨM MỚI</strong></h3>
-            </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/4.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Váy liền nữ phối tay</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>629.300 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nu/9.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác chần bông nữ Ultra Air siêu nhẹ,...</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>559.300 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/3.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Áo khoác gió nam in họa tiết có túi khóa kéo</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>399.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-7">
-                                    <input type="radio" id="pc-7">
-                                </label>
-                                <label class="active black" for="pc-8">
-                                    <input type="radio" id="pc-8">
-                                </label>
-                                <label class="grey" for="pc-9">
-                                    <input type="radio" id="pc-9">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/nam/2.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <!-- <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Quần nỉ nam cạp chun có hình in dáng rộng</h6>
-                            <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                            <h6>149.500 đ</h6>
-                            <h6><del>699.000 đ</del>   <strong class="text-danger"> -50%</strong></h6> 
-                            <div class="product__color__select">
-                                <label for="pc-10">
-                                    <input type="radio" id="pc-10">
-                                </label>
-                                <label class="active black" for="pc-11">
-                                    <input type="radio" id="pc-11">
-                                </label>
-                                <label class="grey" for="pc-12">
-                                    <input type="radio" id="pc-12">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 pt-3 pb-5">
-                    <h3 class="text-center">
-                        <a href="./new-products.html" style="color: red; background-color: white; border: 2px solid red; font-size: 14px; padding: 10px 20px;"><strong>Xem thêm</strong></a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="news">
-        <div class="container">
-            <div class="row mb-3">
-                <h3 class="w-100 text-center"><strong>TIN TỨC</strong></h3>
-            </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__news set-bg" data-setbg="img/tintuc/1.png">
-                        </div>
-                        <div class="p-2 text-center"><strong>SỰ KIỆN SIÊU SALE ĐẦU NĂM</strong></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__news set-bg" data-setbg="img/tintuc/3.png">
-                        </div>
-                        <div class="p-2 text-center"><strong>ĐỒNG GIÁ 149K - 199K TOÀN BỘ CỬA HÀNG</strong></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item sale">
-                        <div class="product__item__news set-bg" data-setbg="img/tintuc/5.png">
-                        </div>
-                        <div class="p-2 text-center"><strong>101 CÁCH PHỐI ĐỒ ĐẸP MẮT ĐẦU NĂM 2024</strong></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__news set-bg" data-setbg="img/tintuc/2.jpg">
-                        </div>
-                        <div class="p-2 text-center"><strong>5 CÁCH PHỐI ĐỒ VỚI ÁO POLO NAM ĐỂ TẠO PHONG CÁCH THỜI TRANG ĐẲNG CẤP</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Product Section End -->
-
-    <!-- Categories Section Begin -->
-    <!-- <section class="categories spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="categories__text">
-                        <h2>Clothings Hot <br /> <span>Shoe Collection</span> <br /> Accessories</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="categories__hot__deal">
-                        <img src="img/product-sale.png" alt="">
-                        <div class="hot__deal__sticker">
-                            <span>Sale Of</span>
-                            <h5>$29.99</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1">
-                    <div class="categories__deal__countdown">
-                        <span>Deal Of The Week</span>
-                        <h2>Multi-pocket Chest Bag Black</h2>
-                        <div class="categories__deal__countdown__timer" id="countdown">
-                            <div class="cd-item">
-                                <span>3</span>
-                                <p>Days</p>
-                            </div>
-                            <div class="cd-item">
-                                <span>1</span>
-                                <p>Hours</p>
-                            </div>
-                            <div class="cd-item">
-                                <span>50</span>
-                                <p>Minutes</p>
-                            </div>
-                            <div class="cd-item">
-                                <span>18</span>
-                                <p>Seconds</p>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Shop now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Categories Section End -->
-
-    <!-- Instagram Section Begin -->
-    <!-- <section class="instagram spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="instagram__text">
-                        <h2>Instagram</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                        <h3>#Male_Fashion</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Instagram Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <!-- <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Latest News</span>
-                        <h2>Fashion New Trends</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
-                            <h5>What Curling Irons Are The Best Ones</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5>Eternity Bands Do Last Forever</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5>The Health Benefits Of Sunglasses</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Latest Blog Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Đăng ký thành viên</a></li>
-                            <li><a href="#">Ưu đãi Độc quyền</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
-                            <li><a href="#">Chính sách khuyến mãi</a></li>
-                            <li><a href="#">Chính sách giao hàng</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Trải nghiệm mua sắm</a></li>
-                            <li><a href="#">Hỏi đáp - FAQs</a></li>
-                        </ul>
-                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Hướng dẫn chọn size</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li>Số 96 Định Công, Quận Hoàng Mai, TP.Hà Nội</li>
-                            <li>1800.8001</li>
-                            <li>thoitrangscarlet@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="footer__copyright__text">
-                        <p class="text-center">
-                            <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-                <div class="footer-bottom col-4 col-sm-12 text-right">
-                    <img style="width: 100px;" src="./img/footerImg.png" />
-                </div>
-            </div>
-            <div class="row footer-bottom-responsive">
-                <div class="col-8">
-                    <img style="width: 100px;" src="./img/footerImg.png" />
-                </div>
-                <div class="col-4 text-right">
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Search Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
+        <!-- Search End -->
     </div>
-    <!-- Search End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

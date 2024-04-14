@@ -150,17 +150,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1">
-                    <div class="header__logo text-center">
-                        <a href="./index.html"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    <div class="header__logo text-center" style="height: 100px;">
+                        <a href="./index.html" style="height: 100%;"><img src="img/logo/logonew-06.png" alt="" style="object-fit: cover; height: 100%;"></a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5">
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
-                            <li class="active"><a href="#">Nữ</a></li>
+                            <li class="active"><a href="./female.html">Nữ</a></li>
                             <li><a href="./male.html">Nam</a></li>
-                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
                             <li><a href="./introduce.html">Giới thiệu</a></li>
                         </ul>
                     </nav>
@@ -208,11 +208,16 @@
     <section class="product spad">
         <div class="row mb-3">
             <h3 class="w-100 text-center p-3"><strong>SẢN PHẨM</strong></h3>
+            <h5 class="w-100 text-center p-3 show-in-responsive"><strong>Áo phông</strong></h5>
         </div>
-        <div class="container">
+        <div class="container position-relative">
             <div class="row">
                 <!-- Content Left -->
-                <div class="col-lg-3 col-md-3 col-sm-0 col-sm-0 prd-filter shop__sidebar">
+                <div id="filter-collapse" class="col-lg-3 col-md-3 col-sm-12 prd-filter">
+                    <div class="row show-in-responsive-flex border-bottom mb-4" style="justify-content: space-between; padding: 20px 10px;">
+                        <h4><i class="fa fa-filter"></i> <strong>Bộ lọc</strong></h4>
+                        <h4 class="text-danger" onclick="onCloseFilter()"><i class="fa fa-times"></i></h4>
+                    </div>
                     <div class="shop__sidebar__accordion">
                         <div class="accordion" id="accordionExample">
                             <div class="card">
@@ -223,7 +228,7 @@
                                     <div class="card-body">
                                         <div class="shop__sidebar__categories">
                                             <ul>
-                                                <li><a href="#">Áo phông</a></li>
+                                                <li><a href="#" style="color: rgb(171, 2, 2);">Áo phông</a></li>
                                                 <li><a href="#">Áo dài tay</a></li>
                                                 <li><a href="#">Áo khoác</a></li>
                                                 <li><a href="#">Quần</a></li>
@@ -269,33 +274,51 @@
                                 <div class="collapse show" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <div class="shop__sidebar__color">
-                                            <label class="c-1" for="sp-1">
-                                                <input type="radio" id="sp-1">
-                                            </label>
-                                            <label class="c-2" for="sp-2">
-                                                <input type="radio" id="sp-2">
-                                            </label>
-                                            <label class="c-3" for="sp-3">
-                                                <input type="radio" id="sp-3">
-                                            </label>
-                                            <label class="c-4" for="sp-4">
-                                                <input type="radio" id="sp-4">
-                                            </label>
-                                            <label class="c-5" for="sp-5">
-                                                <input type="radio" id="sp-5">
-                                            </label>
-                                            <label class="c-6" for="sp-6">
-                                                <input type="radio" id="sp-6">
-                                            </label>
-                                            <label class="c-7" for="sp-7">
-                                                <input type="radio" id="sp-7">
-                                            </label>
-                                            <label class="c-8" for="sp-8">
-                                                <input type="radio" id="sp-8">
-                                            </label>
-                                            <label class="c-9" for="sp-9">
-                                                <input type="radio" id="sp-9">
-                                            </label>
+                                            <div class="outside-color">
+                                                <label class="c-1" for="sp-1">
+                                                    <input type="radio" id="sp-1">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-2" for="sp-2">
+                                                    <input type="radio" id="sp-2">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-3" for="sp-3">
+                                                    <input type="radio" id="sp-3">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-4" for="sp-4">
+                                                    <input type="radio" id="sp-4">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-5" for="sp-5">
+                                                    <input type="radio" id="sp-5">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-6" for="sp-6">
+                                                    <input type="radio" id="sp-6">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-7" for="sp-7">
+                                                    <input type="radio" id="sp-7">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-8" for="sp-8">
+                                                    <input type="radio" id="sp-8">
+                                                </label>
+                                            </div>
+                                            <div class="outside-color">
+                                                <label class="c-9" for="sp-9">
+                                                    <input type="radio" id="sp-9">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -325,14 +348,28 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row justify-content-center hide-in-responsive d-flex">
+                                <button type="button" class="px-3 py-2 mr-2" style="background-color: white; color: black;">Khôi phục</button>
+                                <button type="button" class="px-3 py-2" style="background-color: black; color: white;">Áp dụng</button>
+                            </div>
+                            <div class="row justify-content-center show-in-responsive-flex">
+                                <button type="button" class="px-5 py-3 mr-3" style="background-color: white; color: black;">Khôi phục</button>
+                                <button type="button" class="px-5 py-3" style="background-color: black; color: white;">Áp dụng</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Content Right -->
-                <div class="col-lg-9 col-md-9 col-sm-12 col-sm-12">
+                <div class="col-lg-9 col-md-9 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-md-12 col-sm-12 mb-3">
+                        <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-md-12 col-sm-12 mb-3">
                             <strong><i class="fa fa-bars" aria-hidden="true"></i>  Sắp xếp theo</strong>
+                        </div> -->
+                        <div class="col-lg-6 col-md-6 col-sm-6 sort-sm sort-sm-start mb-3">
+                            <strong><i class="fa fa-bars" aria-hidden="true"></i>  Sắp xếp theo</strong>
+                        </div>
+                        <div class="col-sm-6 filter-sm">
+                            <strong class="mr-2"><i class="fa fa-filter" aria-hidden="true" onclick="onOpenFilter()"></i> Bộ lọc</strong>
                         </div>
                     </div>
                     <div id="productList" class="row product__filter">
@@ -402,16 +439,21 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li>Số 96 Định Công, Quận Hoàng Mai, TP.Hà Nội</li>
-                            <li>1800.8001</li>
-                            <li>thoitrangscarlet@gmail.com</li>
-                        </ul>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex" style="align-content: space-between; flex-wrap: wrap;">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li>Số 20 đường Mới, huyện Đông Anh, TP.Hà Nội</li>
+                                <li>1800.8001</li>
+                                <li>thoitrangscarlet@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="d-block w-100 text-right hide-in-responsive">
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
             </div>
             <hr>
             <div class="row">
@@ -423,7 +465,7 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
-                <div class="footer-bottom col-4 col-sm-12 text-right">
+                <div class="footer-bottom col-md-4 col-sm-12 text-right">
                     <img style="width: 100px;" src="./img/footerImg.png" />
                 </div>
             </div>
@@ -530,7 +572,7 @@
         ];
         var content = "";
         data.forEach((item) => {
-            content += `<div class="col-lg-4 col-md-6 col-sm-6 col-md-6 col-sm-6">
+            content += `<div class="col-lg-4 col-md-4 col-sm-6">
             <div class="product__item">
                 <div class="product__item__pic set-bg" data-setbg="./${item?.imgUrl}">
                     <ul class="product__hover">
@@ -558,6 +600,13 @@
         </div>`;
         });
         document.getElementById("productList").innerHTML = content;
+
+        function onCloseFilter(){
+            document.getElementById("filter-collapse").style = 'display: none';
+        }
+        function onOpenFilter(){
+            document.getElementById("filter-collapse").style = 'display: block';
+        }
     </script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
