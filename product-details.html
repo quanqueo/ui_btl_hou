@@ -43,9 +43,9 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
-                            <li class="active"><a href="#">Nữ</a></li>
+                            <li class="active"><a href="./female.html">Nữ</a></li>
                             <li><a href="./male.html">Nam</a></li>
-                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
                             <li><a href="./introduce.html">Giới thiệu</a></li>
                         </ul>
                     </nav>
@@ -54,7 +54,7 @@
                     <div class="header__nav__option">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" name="search" placeholder="Search..">
+                                <input id="search" type="text" name="search" placeholder="Search..">
                             </div>
                             <div class="col-lg-2 col-md-2">
                                 <a class="d-block" href="/favourite.html">
@@ -111,7 +111,37 @@
         </div>
         <div class="product__details__pic prdDetailImg" style="background-color: unset;">
             <div class="container">
-                <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/4.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/5.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/6.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/1.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/2.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/nu/aophong/aophong1/3.webp">
+                      </div>
+                    </div>
+                  </div>
+                <div class="row hide-in-responsive">
                     <div class="col-lg-6 col-md-9">
                         <div class="tab-content h-100">
                             <div class="tab-pane active h-100" id="tabs-4" role="tabpanel">
@@ -186,12 +216,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-5 col-md-3 text-left">
+                    <div class="col-lg-5 col-md-3 col-sm-12 text-left">
                         <div class="row ml-2">
-                            <div class="col-10">
+                            <div class="col-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
-                                        <h4>Áo phông nữ cotton dáng ngắn in chữ</h4>
+                                        <h4><strong>Áo phông nữ cotton dáng ngắn in chữ</strong></h4>
                                     </div>
                                     <div class="col-lg-12 col-md-12 mt-2 d-flex">
                                         <div class="star-group1 mr-2">
@@ -253,14 +283,14 @@
                                     <div class="col-lg-12 col-md-12">
                                         <button type="button" class="btn btn-red btn-block py-2" onclick="showToast()"><i class="fa fa-heart"></i> Thêm yêu thích</button>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 my-2 pr-2 mt-2">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 my-2 pr-2 mt-2">
                                         <div class="number-input" style="border: 1px solid #ddd;">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">-</button>
                                             <input class="quantity" min="0" name="quantity" value="1" type="number" style="border: none">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
                                         </div>
                                     </div>
-                                    <div class="col-lg-8 col-md-8 my-2 pl-2 mt-2">
+                                    <div class="col-lg-8 col-md-8 col-sm-12 my-2 pl-2 mt-2">
                                         <button type="button" class="btn border btn-block py-2 bg-white" data-toggle="modal" data-target="#exampleModalCenter">
                                             <i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng
                                         </button>
@@ -270,16 +300,16 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="col-lg-6 col-md-6 mt-4">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4 incentives">
                                     <strong><i class="fa fa-credit-card" aria-hidden="true"></i> Thanh toán an toàn</strong>
                                 </div>
-                                <div class="col-lg-6 col-md-6 mt-4">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4 incentives">
                                     <strong><i class="fa fa-shirt"></i> Sản phẩm chất lượng</strong>
                                 </div>
-                                <div class="col-lg-6 col-md-6 mt-4">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4 incentives">
                                     <strong><i class="fa fa-truck" aria-hidden="true"></i> Miễn phí giao hàng</strong>
                                 </div>
-                                <div class="col-lg-6 col-md-6 mt-4">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4 incentives">
                                     <strong><i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí đổi trả</strong>
                                 </div>
                             </div>
@@ -292,12 +322,12 @@
         <div class="description">
             <div class="container">
                 <div class="row mb-5">
-                    <div class="col-md-6 col-lg-6 text-center">
+                    <div class="col-md-6 col-lg-6 col-sm-7 text-center">
                         <a class="description-item selected" onclick="toggleTab('descriptionTab')">
                             <h2>MÔ TẢ SẢN PHẨM</h2>
                         </a>
                     </div>
-                    <div class="col-md-6 col-lg-6 text-center">
+                    <div class="col-md-6 col-lg-6 col-sm-5 text-center" style="overflow: hidden; display: inline; height: 35px;">
                         <a class="description-item" onclick="toggleTab('PolicyTab')">
                             <h2>CHÍNH SÁCH GIAO HÀNG</h2>
                         </a>
@@ -305,9 +335,9 @@
                 </div>
                 <div id="descriptionTab" class="descriptionTabItem d-block">
                     <div class="row">
-                        <div class="col-lg-7 col-md-7">
+                        <div class="col-lg-7 col-md-7 col-sm-12">
                             <div class="general">
-                                <p class="mb-4">Tổng quan</p>
+                                <h5 class="mb-4"><strong>Tổng quan</strong></h5>
                                 <ul>
                                     <li>100% cotton</li>
                                     <li>Kiểu dáng cổ điển giản dị tinh tế bằng ải cotton cao cấp.</li>
@@ -318,9 +348,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-5">
+                        <div class="col-lg-5 col-md-5 col-sm-12 mt-2">
                             <div class="shipping-policy">
-                                <p class="mb-4">Chất liệu</p>
+                                <h5 class="mb-4"><strong>Chất liệu</strong></h5>
                                 <ul>
                                     <li>VẢI</li>
                                     <li>100% Bông</li>
@@ -341,11 +371,11 @@
         <div class="comment">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 content-left">
+                    <div class="col-lg-5 col-md-5 col-sm-12 content-left">
                         <h2 class="fw-bolder">VIẾT ĐÁNH GIÁ</h2>
                         <form action="" class="custom-form mx-2">
                             <div class="col custom-group star-group">
-                                <label>Đánh giá</label>
+                                <!-- <label>Đánh giá</label> -->
                                 <div class="">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -356,22 +386,22 @@
                             </div>
     
                             <div class="col custom-group name-group">
-                                <label class="" for="name">Tên của bạn</label>
+                                <label class="" for="name"><h4><strong>Tên của bạn</strong></h4></label>
                                 <input type="text" class="" id="name" placeholder="Nhập tên">
                             </div>
                             <div class="col custom-group title-group">
-                                <label class="" for="title-input">Tiêu đề</label>
+                                <label class="" for="title-input"><h4><strong>Tiêu đề</strong></h4></label>
                                 <input type="text" class="" id="title-input" placeholder="Tóm tắt đánh giá">
                             </div>
                             <div class="col custom-group comment-group">
-                                <label class="d-block" for="comment">Bình luận</label>
+                                <label class="d-block" for="comment"><h4><strong>Bình luận</strong></h4></label>
                                 <textarea class="" id="comment" rows="4" placeholder="Nội dung"></textarea>
                             </div>
                             <button type="submit" class="col btn btn-dark text-center">Gửi</button>
     
                         </form>
                     </div>
-                    <div class="col-lg-7 col-md-5 content-right">
+                    <div class="col-lg-7 col-md-5  col-sm-12 content-right">
                         <div class="comment-list">
                             <div class="comment-item">
                                 <div class="comment-header">
@@ -657,9 +687,9 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong></h5>
+                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Đăng ký thành viên</a></li>
                             <li><a href="#">Ưu đãi Độc quyền</a></li>
@@ -667,9 +697,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong></h5>
+                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
                             <li><a href="#">Chính sách khuyến mãi</a></li>
@@ -677,23 +707,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong></h5>
+                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Trải nghiệm mua sắm</a></li>
                             <li><a href="#">Hỏi đáp - FAQs</a></li>
                         </ul>
-                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong></h5>
+                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Hướng dẫn chọn size</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong></h5>
+                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li>Số 96 Định Công, Quận Hoàng Mai, TP.Hà Nội</li>
                             <li>1800.8001</li>
@@ -702,15 +732,28 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-8 col-sm-12">
                     <div class="footer__copyright__text">
-                        <hr>
-                        <p>
-                            <strong>@CÔNG TY TNHH SACLET</strong>, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 
+                        <p class="text-center">
+                            <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
+                </div>
+                <div class="footer-bottom col-4 col-sm-12 text-right">
+                    <img style="width: 100px;" src="./img/footerImg.png" />
+                </div>
+            </div>
+            <div class="row footer-bottom-responsive">
+                <div class="col-8">
+                    <img style="width: 100px;" src="./img/footerImg.png" />
+                </div>
+                <div class="col-4 text-right">
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -833,7 +876,7 @@
             </div>
         </div>`;
         });
-        document.getElementById("productList").innerHTML = content;
+        // document.getElementById("productList").innerHTML = content;
 
         function toggleTab (tabId) {
             const button = document.getElementsByClassName('description-item')

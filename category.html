@@ -96,13 +96,43 @@
                                     <button type="button" class="btn btn-black btn-block btn-round">Đăng ký</button>
                                 </form>
                             </div>
+                        </div>
+                        <div id="forgot-password" class="tab-pane fade">
+                            <h3 class="d-block text-center"><strong>Quên mật khẩu</strong></h3>
+                            <div style="height: 80px;" class="d-block text-center"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></div>
+                            <div style="font-size: 13px;" class="d-block text-center">Đăng nhập để không bỏ lỡ quyền lợi tích luỹ cho bất kỳ đơn hàng nào</div>
+                            <div class="d-block text-center mt-1"><strong>Lấy lại mật khẩu</strong></div>
+                            <a style="height: 40px;" class="d-block text-center google mt-2"><img src="img/logo/google.jpg" alt="" style="object-fit: cover; height: 100%; padding: 8px 0px;"></a>
+                            <div class="row">
+                                <div class="col-5"><hr></div>
+                                <div class="col-2">Hoặc</div>
+                                <div class="col-5"><hr></div>
+                            </div>
+                            <div class="d-flex flex-column text-center">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control btn-round px-3" id="email1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control btn-round px-3" id="text1" placeholder="Mã xác minh">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control btn-round px-3" id="password1" placeholder="Mật khẩu mới">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control btn-round px-3" id="password2" placeholder="Xác nhận mật khẩu">
+                                    </div>
+                                    <button type="button" class="btn btn-black btn-block btn-round">Đăng ký</button>
+                                </form>
+                            </div>
                             <!-- <div style="padding: 5px 0px;" class="extendForm">
                                 <a data-toggle="tab" href="#login" style="cursor: pointer; color: cornflowerblue;">Đăng nhập</a>
                             </div> -->
                         </div>
                       </div>
                       <ul style="justify-content: space-between; border: none; padding: 5px 0px;" class="nav nav-tabs extendForm" role="tablist">
-                        <li class="nav-item"><a data-toggle="tab" href="#login" class="mr-2 direction active">Đăng nhập</a><a style="cursor: pointer; color: #007bff;">Quên mật khẩu</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#login" class="mr-2 direction active">Đăng nhập</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#forgot-password" class="mr-2 direction">Quên mật khẩu</a></li>
                         <li class="nav-item"><a data-toggle="tab" href="#register" class="direction">Đăng ký tài khoản mới</a></li>
                     </ul>
                   </div>
@@ -139,7 +169,7 @@
                     <div class="header__nav__option">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" name="search" placeholder="Search..">
+                                <input id="search" type="text" name="search" placeholder="Search..">
                             </div>
                             <div class="col-lg-2 col-md-2">
                                 <i class="fa fa-heart d-block text-danger text-center"></i>
@@ -338,9 +368,9 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong></h5>
+                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Đăng ký thành viên</a></li>
                             <li><a href="#">Ưu đãi Độc quyền</a></li>
@@ -348,9 +378,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong></h5>
+                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
                             <li><a href="#">Chính sách khuyến mãi</a></li>
@@ -358,23 +388,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong></h5>
+                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Trải nghiệm mua sắm</a></li>
                             <li><a href="#">Hỏi đáp - FAQs</a></li>
                         </ul>
-                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong></h5>
+                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li><a href="#">Hướng dẫn chọn size</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer__about">
-                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong></h5>
+                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
                         <ul>
                             <li>Số 96 Định Công, Quận Hoàng Mai, TP.Hà Nội</li>
                             <li>1800.8001</li>
@@ -383,15 +413,28 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-8 col-sm-12">
                     <div class="footer__copyright__text">
-                        <hr>
-                        <p>
-                            <strong>@CÔNG TY TNHH SACLET</strong>, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 
+                        <p class="text-center">
+                            <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
+                </div>
+                <div class="footer-bottom col-4 col-sm-12 text-right">
+                    <img style="width: 100px;" src="./img/footerImg.png" />
+                </div>
+            </div>
+            <div class="row footer-bottom-responsive">
+                <div class="col-8">
+                    <img style="width: 100px;" src="./img/footerImg.png" />
+                </div>
+                <div class="col-4 text-right">
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
