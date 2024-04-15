@@ -140,7 +140,7 @@ ol {
   display: none;
 }
 .hide-in-responsive{
-  display: block;
+  display: block !important;
 }
 .show-in-responsive{
   display: none;
@@ -3672,7 +3672,7 @@ ol {
     margin: 0px !important;
   }
   .hide-in-responsive{
-    display: none;
+    display: none !important;
   }
   .show-in-responsive{
     display: block;
@@ -4851,4 +4851,12 @@ ul#myTab.menu-responsive-item li a{
   color: black;
   font-size: 20px;
   display: block;
+}
+.custom-group label{
+  display: block;
+}
+.custom-group input:not([type=radio]){
+  display: block;
+  padding: 10px 0px;
+  width: 100%;
 }
