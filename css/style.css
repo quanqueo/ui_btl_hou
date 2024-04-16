@@ -142,6 +142,9 @@ ol {
 .hide-in-responsive{
   display: block !important;
 }
+.hide-in-responsive-flex{
+  display: flex !important;
+}
 .show-in-responsive{
   display: none;
 }
@@ -3672,6 +3675,9 @@ ol {
     margin: 0px !important;
   }
   .hide-in-responsive{
+    display: none !important;
+  }
+  .hide-in-responsive-flex{
     display: none !important;
   }
   .show-in-responsive{
