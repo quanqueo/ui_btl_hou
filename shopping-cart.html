@@ -408,7 +408,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="total-product-price border">
-                            <h4 class=""><strong>TỔNG ĐƠN HÀNG: 2 SẢN PHẨM</strong></h4>
+                            <h4 class=""><strong>TỔNG ĐƠN HÀNG: <span id="quantity"></span> SẢN PHẨM</strong></h4>
                             <div class="d-flex justify-content-between mt-5">
                                 <span class=""><strong>Giá</strong></span>
                                 <span class="" id="totalAmountB"> <span style="text-decoration: underline;">đ</span></span>
@@ -445,6 +445,8 @@
             var totalMount = totalPrice.reduce((a, b) => a + b, 0).toLocaleString('vi', {style : 'currency', currency : 'VND'});
             document.getElementById("totalAmountB").innerHTML = totalMount;
             document.getElementById("totalAmountA").innerHTML = totalMount;
+            let data = JSON.parse(localStorage.getItem('cartData'));
+            document.getElementById("quantity").innerHTML = data?.length;
         }
         function deleteItem(){
             event.target.closest('.item').remove()

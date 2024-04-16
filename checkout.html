@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="checkout-product-list" class="col-12 show-in-responsive">
+                    <div id="checkout-product-list-responsive" class="col-12 show-in-responsive">
                         <div class="border-top border-bottom py-4">
                             <h5 class="font-weight-bold">TỔNG ĐƠN HÀNG: 2 SẢN PHẨM</h5>
                             <div class="row my-4 item">
@@ -232,7 +232,7 @@
                         </form>
                     </div>
                     <div id="checkout-product-list" class="col-lg-4 col-md-4 hide-in-responsive">
-                        <div class="border px-3 py-4">
+                        <!-- <div class="border px-3 py-4">
                             <h5 class="font-weight-bold">TỔNG ĐƠN HÀNG: 2 SẢN PHẨM</h5>
                             <div class="row my-4 item">
                                 <div class="col-lg-4">
@@ -282,7 +282,7 @@
                                 <span><strong>Tổng tiền</strong></span>
                                 <span><strong>499.000 <span style="text-decoration: underline;">đ</span></strong></span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -374,6 +374,59 @@
     <!-- Footer Section End -->
 
     <script>
+        let totalPrice = [];
+        onReloadCheckout();
+        function onReloadCheckout(){
+            let data = JSON.parse(localStorage.getItem('cartData'));
+            var content = "";
+            content += `<div class="border-top border-bottom py-4">
+                        <h5 class="font-weight-bold">TỔNG ĐƠN HÀNG: <span id="quantity"></span> SẢN PHẨM</h5>`;
+            data.forEach((item, index) => {
+                var prePrice = item?.price?.slice(0, -2);
+                var price = prePrice.replace(".", "");
+                totalPrice.push(price * 1);
+                let stringItem = JSON.stringify(item);
+                content += `<div class="row my-4 item">
+                            <div class="col-4">
+                                <img class="h-100" style="object-fit: contain;" src="./${item?.imgUrl}" alt="">
+                            </div>
+                            <div class="col-8 favourite-prd">
+                                <h5 class="font-weight-bold pb-4">${item?.title}</h5>
+                                <h6>Màu sắc: Đen</h6>
+                                <h6>Kích cỡ: XL</h6>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <h6>x1</h6>
+                                    <h6><span><strong>${item?.price}</strong></span></h6>
+                                </div>                                    
+                            </div>
+                        </div>
+                        <hr>`;
+                    });
+                        
+            content += `<div class="price">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span><strong>Giá</strong></span>
+                        <span>549.000 <span style="text-decoration: underline;">đ</span></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span><strong>Khuyến mãi</strong></span>
+                        <span>-100.000 <span style="text-decoration: underline;">đ</span></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span><strong>Vận chuyển</strong></span>
+                        <span>+30.000 <span style="text-decoration: underline;">đ</span></span>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                        <span>-30.000 <span style="text-decoration: underline;">đ</span></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span><strong>Tổng tiền</strong></span>
+                        <span><strong>449.000 <span style="text-decoration: underline;">đ</span></strong></span>
+                    </div>
+                </div>`;
+            document.getElementById("checkout-product-list").innerHTML = content;
+            recalculateTotal()
+        }
         function checkoutFormSubmit() {
             event.preventDefault()
             const inputs = document.getElementsByClassName('validate-empty')
