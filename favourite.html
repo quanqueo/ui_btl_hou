@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SCARLET</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo/logonew-03.jpg">
+    <link rel="icon" type="image/x-icon" href="./img/logo/favicon.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -31,7 +31,7 @@
         <div class="loader"></div>
     </div> -->
     <!-- Header Section Begin -->
-    <header class="header mx-3 px-3">
+    <header class="header mx-3 px-3 hide-in-responsive">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1">
@@ -57,8 +57,8 @@
                                 <input id="search" type="text" name="search" placeholder="Search..">
                             </div>
                             <div class="col-lg-2 col-md-2">
-                                <i class="fa fa-heart d-block text-danger text-center"></i>
-                                <span class="d-block">Yêu thích</span>
+                                <a href="./favourite.html" class="d-block m-0"><i class="fa fa-heart d-block text-danger text-center"></i></a>
+                                <span class="d-block text-center cursor-pointer"><a href="./favourite.html" style="color: black;">Yêu thích</a></span>
                             </div>
                            <div id="loginName" class="col-lg-2 col-md-2">
                                 <i class="fa fa-user-circle d-block text-danger text-center" data-toggle="modal" data-target="#exampleModal"></i>
@@ -78,10 +78,161 @@
                     </div>
                 </div>
             </div>
-            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
         </div>
     </header>
+
+    <header id="header-responsive" class="header mx-3 px-3 show-in-responsive">
+        <!-- <div class="container"> -->
+            <div class="row mb-2 border-bottom remove-border">
+                <div class="col-lg-1 col-md-1 col-sm-2">
+                    <div class="header__logo text-center" style="height: fit-content;">
+                        <a href="./index.html" style="height: fit-content;"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-9 header-responsive d-flex">
+                    <div class="row w-100 hide-on-menu-responsive-expand">
+                        <div class="col-3">
+                            <i class="fa fa-search d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-heart d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span>
+                        </div>
+                        <div class="col-3">
+                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                            <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-bars d-block text-danger text-center"></i>
+                            <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span>
+                        </div>
+                    </div>
+                    <div class="row w-100 hide-on-menu-responsive-expand d-none">
+                        <div class="col-12 text-right">
+                            <i class="fa fa-times text-danger" style="font-size: 30px; padding-right: 15px;"></i>
+                            <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-menu-responsive-expand">
+                <div class="col-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul class="d-flex" style="justify-content: space-around;">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
+                            <li><a href="./female.html">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- </div> -->
+        </header>
     <!-- Header Section End -->
+        
+    <div class="position-relative">
+        <div id="menu-responsive" class="row">
+            <div class="col-12">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="row">
+                            <div id="loginName" class="col-6 item-menu-responsive-extends">
+                                <a href="./login-responsive.html" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    TÀI KHOẢN
+                                </a>
+                            </div>
+                            <div id="username" class="d-none col-6 item-menu-responsive-extends">
+                                <a href="./account.html" class="d-none" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    SƠN HÀ
+                                </a>
+                            </div>
+                            <div class="col-6 item-menu-responsive-extends">
+                                <a href="./introduce.html" class="d-block" style="color: black; font-size: 20px; cursor: pointer;">
+                                    <i class="fa fa-info px-3 py-2" style="border-radius: 50px; border: 3px solid rgb(192, 1, 1);  color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    GIỚI THIỆU
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <ul class="nav nav-tabs row menu-responsive-item" id="myTab" role="tablist">
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>NỮ</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span>NAM</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><span>SẢN PHẨM BÁN CHẠY</span></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Hero Section Begin -->
     <!-- <section>
@@ -91,153 +242,155 @@
     </section> -->
     <!-- Hero Section End -->
 
-    <!-- Product Section Begin -->
-    <section class="shop-details product spad" style="background-color: #FAFAFA;">
-        <div class="product-detail-breadcrumb">
+        <!-- Product Section Begin -->
+        <section class="shop-details product spad hide-on-menu-responsive-expand" style="background-color: #FAFAFA;">
+            <div class="product-detail-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="">
+                                <a href="./index.html">Trang chủ</a>
+                                <span class="current-page">Yêu thích</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favourite begin -->
+            <div id="favourite" style="margin-top: 40px; margin-bottom: 60px;">
+                <div id="favourite-container" class="container" style="padding: 20px 100px;">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mb-5 text-center">
+                            <span class="font-weight-bold" style="font-size: 33px;">YÊU THÍCH</span>
+                        </div>
+                    </div>
+                    <div class="row border pt-5">
+                        <div class="col-lg-12 col-md-12">
+                            <div id="list-favourite" class="list-item">
+                                <!-- <div class="col item pb-5">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="h-100" src="img/nu/aophong/aophong1/4.webp" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="d-flex">
+                                                <h2 class="font-weight-bold">Áo phông nữ cotton dáng ngắn in chữ</h2>
+                                                <button 
+                                                    type="button"
+                                                    class="button-heart"
+                                                    onclick="deleteItem()"
+                                                >
+                                                    <i class="fa fa-heart" aria-hidden="true" style="color: #AD0820;"></i>
+                                                </button>
+                                            </div>
+                                            <p class="mt-5" >Màu sắc: <span>Tím</span></p>
+                                            <p class="mt-4" >Kích cỡ: <span>XL</span></p>
+                                            <h4 class="mt-5"><strong>149.500 đ</strong></h4>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Favourite end -->
+        </section>
+        <!-- Product Section End -->
+
+        <!-- Footer Section Begin -->
+        <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="">
-                            <a href="./index.html">Trang chủ</a>
-                            <span class="current-page">Yêu thích</span>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Đăng ký thành viên</a></li>
+                                <li><a href="#">Ưu đãi Độc quyền</a></li>
+                                <li><a href="#">Điều khoản dịch vụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
+                                <li><a href="#">Chính sách khuyến mãi</a></li>
+                                <li><a href="#">Chính sách giao hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Trải nghiệm mua sắm</a></li>
+                                <li><a href="#">Hỏi đáp - FAQs</a></li>
+                            </ul>
+                            <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li><a href="#">Hướng dẫn chọn size</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="align-content: space-between; flex-wrap: wrap;">
+                        <div class="footer__about">
+                            <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
+                            <ul>
+                                <li>Số 20 đường Mới, huyện Đông Anh, TP.Hà Nội</li>
+                                <li>1800.8001</li>
+                                <li>thoitrangscarlet@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="d-block w-100 text-right hide-in-responsive">
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
+                            <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Favourite begin -->
-        <div id="favourite" style="margin-top: 40px; margin-bottom: 60px;">
-            <div id="favourite-container" class="container">
+                <hr>
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 my-5 text-center">
-                        <span class="font-weight-bold" style="font-size: 40px;">YÊU THÍCH</span>
-                    </div>
-                </div>
-                <div class="row border py-5">
-                    <div class="col-lg-12 col-md-12">
-                        <div id="list-favourite" class="list-item">
-                            <!-- <div class="col item pb-5">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img class="h-100" src="img/nu/aophong/aophong1/4.webp" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="d-flex">
-                                            <h2 class="font-weight-bold">Áo phông nữ cotton dáng ngắn in chữ</h2>
-                                            <button 
-                                                type="button"
-                                                class="button-heart"
-                                                onclick="deleteItem()"
-                                            >
-                                                <i class="fa fa-heart" aria-hidden="true" style="color: #AD0820;"></i>
-                                            </button>
-                                        </div>
-                                        <p class="mt-5" >Màu sắc: <span>Tím</span></p>
-                                        <p class="mt-4" >Kích cỡ: <span>XL</span></p>
-                                        <h4 class="mt-5"><strong>149.500 đ</strong></h4>
-                                    </div>
-                                </div>
-                            </div> -->
+                    <div class="col-md-8 col-sm-12">
+                        <div class="footer__copyright__text">
+                            <p class="text-center">
+                                <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
+                            </p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                     </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- Favourite end -->
-    </section>
-    <!-- Product Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>THỜI TRANG SCARLET</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Đăng ký thành viên</a></li>
-                            <li><a href="#">Ưu đãi Độc quyền</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                        </ul>
+                    <div class="footer-bottom col-md-4 col-sm-12 text-right">
+                        <img style="width: 100px;" src="./img/footerImg.png" />
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHÍNH SÁCH</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Chính sách đổi trả 60 ngày</a></li>
-                            <li><a href="#">Chính sách khuyến mãi</a></li>
-                            <li><a href="#">Chính sách giao hàng</a></li>
-                        </ul>
+                <div class="row footer-bottom-responsive">
+                    <div class="col-8">
+                        <img style="width: 100px;" src="./img/footerImg.png" />
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>CHĂM SÓC KHÁCH HÀNG</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Trải nghiệm mua sắm</a></li>
-                            <li><a href="#">Hỏi đáp - FAQs</a></li>
-                        </ul>
-                        <h5 class="mb-3 mt-2"><strong>KIẾN THỨC MẶC ĐẸP</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li><a href="#">Hướng dẫn chọn size</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12" style="align-content: space-between; flex-wrap: wrap;">
-                    <div class="footer__about">
-                        <h5 class="mb-3"><strong>ĐỊA CHỈ LIÊN HỆ</strong> <strong class="footer-responsive-icon"><i class="fa fa-caret-up" aria-hidden="true"></i></strong></h5>
-                        <ul>
-                            <li>Số 20 đường Mới, huyện Đông Anh, TP.Hà Nội</li>
-                            <li>1800.8001</li>
-                            <li>thoitrangscarlet@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div class="d-block w-100 text-right hide-in-responsive">
+                    <div class="col-4 text-right">
                         <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
                         <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
                         <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="footer__copyright__text">
-                        <p class="text-center">
-                            <strong>@CÔNG TY TNHH SACLET, CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP TỪ NGÀY 01/01/2024 </strong>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-                <div class="footer-bottom col-md-4 col-sm-12 text-right">
-                    <img style="width: 100px;" src="./img/footerImg.png" />
-                </div>
-            </div>
-            <div class="row footer-bottom-responsive">
-                <div class="col-8">
-                    <img style="width: 100px;" src="./img/footerImg.png" />
-                </div>
-                <div class="col-4 text-right">
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-facebook" aria-hidden="true"></i>
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-youtube" aria-hidden="true"></i>
-                    <i style="font-size: 20px; padding: 0px 8px;" class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
+        </footer>
+        <!-- Footer Section End -->
+        <div id="removeFavourite" class="toast bg-success-custom" data-delay="5000">
+            <div class="toast-body d-flex">
+                <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                <p>
+                Bỏ yêu thích thành công! 
+                </p>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
-    <div id="removeFavourite" class="toast bg-success-custom" data-delay="5000">
-        <div class="toast-body d-flex">
-            <span class="m-auto px-3"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-            <p>
-               Bỏ yêu thích thành công! 
-            </p>
-        </div>
-    </div>
+   </div>
+
     <script src="./js/shared.js"></script>
     <script>
         refreshFavourite();
@@ -270,18 +423,18 @@
                     let stringItem = JSON.stringify(item);
                     content += `<div class="col item pb-5">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-3">
                                             <img class="h-100 object-fit-contain" src="./${item?.imgUrl}" alt="">
                                         </div>
-                                        <div class="col-8 favourite-prd">
-                                            <div class="d-flex">
-                                                <h2 class="font-weight-bold">${item?.title}</h2>
+                                        <div class="col-9 favourite-prd">
+                                            <div class="d-flex" style="justify-content: space-between;">
+                                                <h4 class="font-weight-bold">${item?.title}</h4>
                                                 <button 
                                                     type="button"
                                                     class="button-heart"
                                                     onclick='removeFavouriteItem(${stringItem})'
                                                 >
-                                                    <i class="fa fa-heart" aria-hidden="true" style="color: #AD0820;"></i>
+                                                    <i class="fa fa-heart" aria-hidden="true" style="color: #AD0820; font-size: 25px;"></i>
                                                 </button>
                                             </div>
                                             <p class="mt-5" >Màu sắc: <span>Tím</span></p>

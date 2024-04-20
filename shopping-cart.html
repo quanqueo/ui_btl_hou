@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SCARLET</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo/logonew-03.jpg">
+    <link rel="icon" type="image/x-icon" href="./img/logo/favicon.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -31,7 +31,7 @@
         <div class="loader"></div>
     </div> -->
     <!-- Header Section Begin -->
-    <header class="header mx-3 px-3">
+    <header class="header mx-3 px-3 hide-in-responsive">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1">
@@ -80,10 +80,161 @@
                     </div>
                 </div>
             </div>
-            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
         </div>
     </header>
+
+    <header id="header-responsive" class="header mx-3 px-3 show-in-responsive">
+        <!-- <div class="container"> -->
+            <div class="row mb-2 border-bottom remove-border">
+                <div class="col-lg-1 col-md-1 col-sm-2">
+                    <div class="header__logo text-center" style="height: fit-content;">
+                        <a href="./index.html" style="height: fit-content;"><img src="img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-9 header-responsive d-flex">
+                    <div class="row w-100 hide-on-menu-responsive-expand">
+                        <div class="col-3">
+                            <i class="fa fa-search d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-heart d-block text-danger text-center"></i>
+                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span>
+                        </div>
+                        <div class="col-3">
+                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
+                            <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-bars d-block text-danger text-center"></i>
+                            <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span>
+                        </div>
+                    </div>
+                    <div class="row w-100 hide-on-menu-responsive-expand d-none">
+                        <div class="col-12 text-right">
+                            <i class="fa fa-times text-danger" style="font-size: 30px; padding-right: 15px;"></i>
+                            <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-menu-responsive-expand">
+                <div class="col-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul class="d-flex" style="justify-content: space-around;">
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
+                            <li><a href="./female.html">Nữ</a></li>
+                            <li><a href="./male.html">Nam</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- </div> -->
+        </header>
     <!-- Header Section End -->
+        
+    <div class="position-relative">
+        <div id="menu-responsive" class="row">
+            <div class="col-12">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="row">
+                            <div id="loginName" class="col-6 item-menu-responsive-extends">
+                                <a href="./login-responsive.html" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    TÀI KHOẢN
+                                </a>
+                            </div>
+                            <div id="username" class="d-none col-6 item-menu-responsive-extends">
+                                <a href="./account.html" class="d-none" style="color: black; font-size: 30px; cursor: pointer;">
+                                    <i class="fa fa-user-circle-o px-3 py-2" style="font-size: 30px; color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    SƠN HÀ
+                                </a>
+                            </div>
+                            <div class="col-6 item-menu-responsive-extends">
+                                <a href="./introduce.html" class="d-block" style="color: black; font-size: 20px; cursor: pointer;">
+                                    <i class="fa fa-info px-3 py-2" style="border-radius: 50px; border: 3px solid rgb(192, 1, 1);  color: rgb(192, 1, 1);" aria-hidden="true"></i>
+                                    GIỚI THIỆU
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <ul class="nav nav-tabs row menu-responsive-item" id="myTab" role="tablist">
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>NỮ</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span>NAM</span></a>
+                                    </li>
+                                    <li class="nav-item col-4">
+                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><span>SẢN PHẨM BÁN CHẠY</span></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO DÀI TAY</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO KHOÁC</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <ul class="nav-sub-list">
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">ÁO PHÔNG</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">QUẦN LÓT</a>
+                                            </li>
+                                            <li class="nav-sub-item">
+                                                <a href="./product-details.html">VÁY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Hero Section Begin -->
     <!-- <section>
@@ -475,6 +626,8 @@
             }
         }
     </script>
+
+   </div>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
