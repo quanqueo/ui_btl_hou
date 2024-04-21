@@ -3621,7 +3621,7 @@ ol {
     text-align: left !important;
   }
   .header__logo a{
-    height: 75px !important;
+    height: 100px !important;
   }
   .header__logo a i{
     height: 75% !important;
@@ -3696,13 +3696,15 @@ ol {
     height: 50px;
   }
   .incentives{
-    font-size: 25px;
+    font-size: 22px;
   }
   .content-left{
     padding: 0px !important;
   }
   .content-right {
     margin-top: 20px;
+    border: none !important;
+    padding: 0;
   }
   .total a{
     padding: 20px 10px;
@@ -4870,4 +4872,51 @@ ul#myTab.menu-responsive-item li a{
   display: block;
   padding: 10px 0px;
   width: 100%;
+}
+ul.account-summary-list{
+  list-style: none;
+}
+ul.account-summary-list li.account-summary-item{
+  padding: 10px 15px;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+}
+ul.account-summary-list li.account-summary-item a{
+  padding: 15px 10px;
+  font-size: 22px;
+  width: 100%;
+  display: block;
+  color: black;
+  font-weight: 600;
+}
+ul.account-summary-list li.account-summary-item i{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.formAccountInfoResponsive .form-group label{
+  font-size: 30px;
+}
+.formAccountInfoResponsive .form-group input{
+  padding: 20px 0px;
+  background: white !important;
+  border: none;
+  border-bottom: 1px solid #aaa9a9;
+  font-size: 26px;
+}
+ul#myTab.tab-account-responsive-item li.nav-item{
+  background-color: white !important;
+  border: none;
+  font-size: 20px;
+}
+.fz-20{
+  font-size: 20px !important;
+}
+.fz-25{
+  font-size: 25px !important;
+}
+.fz-30{
+  font-size: 30px !important;
 }

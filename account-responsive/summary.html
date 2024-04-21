@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCARLET</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="px-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6 header__logo text-center d-inline-block" style="height: fit-content;">
+                        <a href=".././index.html" style="height: fit-content;"><img src="../img/logo/logonew-03.jpg" alt="" style="object-fit: cover; height: 100%;"></a>
+                    </div>
+                    <div class="col-6 text-right mt-4">
+                        <i class="fa fa-times text-danger" style="font-size: 35px; padding-right: 15px; font-weight: unset;"  onclick="onCloseAccountInfo()"></i>
+                        <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onCloseAccountInfo()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border-top border-bottom py-4" style="background-color: #f8f7f7;">
+                <h3><strong><i class="fa fa-user-circle-o" style="color: rgb(186, 23, 23); font-size: 40px;" aria-hidden="true"></i>  TÀI KHOẢN</strong></h3>
+            </div>
+            <div class="col-12 text-center" style="padding: 80px 10px;">
+                <i class="fa fa-user-circle-o" style="font-size: 150px;" aria-hidden="true"></i>
+                <h2 class="mt-4" style="font-size: 60px; font-weight: 800;">Sơn Hà</h2>
+            </div>
+            <div class="col-12 p-0">
+                <ul class="account-summary-list">
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a href="./account-info.html">THÔNG TIN TÀI KHOẢN</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a href="./change-password.html">ĐỔI MẬT KHẨU</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a href="./order-management.html">QUẢN LÝ ĐƠN HÀNG</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a href="../favourite.html">YÊU THÍCH</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a href="../shopping-cart.html">GIỎ HÀNG</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;">
+                        <a>CÀI ĐẶT</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="account-summary-item d-flex" style="justify-content: space-between;" onclick="onClickLogout()">
+                        <a href="../index.html">ĐĂNG XUẤT</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 border-top border-bottom py-4" style="background-color: #f8f7f7;">
+                <h4 class="text-center">BẢN QUYỀN THUỘC THỜI TRANG SCARLET</h4>
+            </div>
+        </div>
+   </div>
+
+   <script>
+    function onClickLogout(){
+            localStorage.removeItem("isLoged");
+        }
+   </script>
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.countdown.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

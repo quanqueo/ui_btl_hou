@@ -30,10 +30,16 @@
         //     var mixer = mixitup(containerEl);
         // }
         if(localStorage.getItem("isLoged")){
+            console.log(localStorage.getItem("isLoged"));
             $('#loginName').removeClass('d-block');
             $('#loginName').addClass('d-none');
             $('#username').removeClass('d-none');
             $('#username').addClass('d-block');
+
+            $('#loginNameResponsive').removeClass('d-block');
+            $('#loginNameResponsive').addClass('d-none');
+            $('#usernameResponsive').removeClass('d-none');
+            $('#usernameResponsive').addClass('d-block');
         }
         $('#buttonLogin').on('click', function() {
             localStorage.setItem("isLoged", true);
@@ -41,6 +47,11 @@
             $('#loginName').addClass('d-none');
             $('#username').removeClass('d-none');
             $('#username').addClass('d-block');
+
+            $('#loginNameResponsive').removeClass('d-block');
+            $('#loginNameResponsive').addClass('d-none');
+            $('#usernameResponsive').removeClass('d-none');
+            $('#usernameResponsive').addClass('d-block');
         });
         $('.product__item').on('click', function() {
             location.href = './product-details.html';
@@ -310,4 +321,7 @@ function onShowMenuResponsive(){
     $('#menu-responsive').toggleClass('index-more');
     $('.hide-on-menu-responsive-expand').toggleClass('d-none');
     $('.remove-border').toggleClass('border-bottom');
+}
+function onCloseAccountInfo(){
+    location.href = './summary.html';
 }
