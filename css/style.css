@@ -3668,7 +3668,8 @@ ol {
     font-size: 18px !important;
   }
   .header-responsive i{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 35px;
   }
   .favourite-prd p, 
   .favourite-prd h4{
@@ -3708,6 +3709,10 @@ ol {
   }
   .total a{
     padding: 20px 10px;
+  }
+  .news-index-page{
+    flex-wrap: nowrap !important; 
+    overflow: scroll;
   }
   .shop__sidebar__size label{
     width: 26%;
@@ -3773,6 +3778,9 @@ ol {
     color: #000;
     font-size: 25px;
     font-weight: bold;
+  }
+  .footer__about{
+    width: 100% !important;
   }
   .footer h5{
     font-size: 25px;
@@ -4693,7 +4701,7 @@ input#search {
 
 /* modal begin */
 .modal-content-custom {
-  border-radius: 27px;
+  border-radius: 15px;
 }
 /* modal end */
 
@@ -4919,4 +4927,11 @@ ul#myTab.tab-account-responsive-item li.nav-item{
 }
 .fz-30{
   font-size: 30px !important;
+}
+.text-color-web{
+  color: rgb(184, 27, 27);
+}
+a.btn-outline-dark:hover{
+  background-color: grey;
+  border: 1px solid grey;
 }

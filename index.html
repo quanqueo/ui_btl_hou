@@ -215,6 +215,32 @@
                 </div>
                 <div class="col-1"></div>
                 <div class="col-9 header-responsive d-flex">
+                    <div class="row w-100 hide-on-menu-responsive-expand justify-content-end align-items-end">
+                        <div class="col-2">
+                            <i class="fa fa-search d-block text-color-web text-center"></i>
+                            <!-- <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span> -->
+                        </div>
+                        <div class="col-2">
+                            <i class="fa fa-heart d-block text-color-web text-center"></i>
+                            <!-- <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span> -->
+                        </div>
+                        <div class="col-2">
+                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-color-web text-center"></i></a>
+                            <!-- <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span> -->
+                        </div>
+                        <div class="col-2" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()">
+                            <i class="fa fa-bars d-block text-color-web text-center"></i>
+                            <!-- <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span> -->
+                        </div>
+                    </div>
+                    <div class="row w-100 hide-on-menu-responsive-expand d-none" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()">
+                        <div class="col-12 text-right">
+                            <i class="fa fa-times text-color-web" style="font-size: 30px; padding-right: 15px;"></i>
+                            <!-- <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-9 header-responsive d-flex">
                     <div class="row w-100 hide-on-menu-responsive-expand">
                         <div class="col-3">
                             <i class="fa fa-search d-block text-danger text-center"></i>
@@ -239,7 +265,7 @@
                             <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row hide-on-menu-responsive-expand">
                 <div class="col-12">
@@ -538,7 +564,7 @@
             </div>
             <!-- Áo khoác -->
             <div class="container">
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <img src="img/banner/coat.jpg" />
                 </div>
                 <div class="row product__filter">
@@ -660,7 +686,7 @@
             </div>
             <!-- Quần dài -->
             <div class="container">
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <img src="img/banner/quandai.jpg" />
                 </div>
                 <div class="row product__filter">
@@ -782,7 +808,7 @@
             </div>
             <!-- Sản phẩm mới -->
             <div class="container mt-5">
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <h3 class="w-100 text-center"><strong>SẢN PHẨM MỚI</strong></h3>
                 </div>
                 <div class="row product__filter">
@@ -912,10 +938,10 @@
         </section>
         <section class="news hide-on-menu-responsive-expand">
             <div class="container">
-                <div class="row mb-3">
+                <div class="row mb-5">
                     <h3 class="w-100 text-center"><strong>TIN TỨC</strong></h3>
                 </div>
-                <div class="row product__filter" style="flex-wrap: nowrap !important; overflow: scroll;">
+                <div class="row product__filter news-index-page">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                         <div class="product__item">
                             <div class="product__item__news set-bg" data-setbg="img/tintuc/1.png">

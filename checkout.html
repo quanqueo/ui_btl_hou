@@ -93,28 +93,28 @@
                 </div>
                 <div class="col-1"></div>
                 <div class="col-9 header-responsive d-flex">
-                    <div class="row w-100 hide-on-menu-responsive-expand">
-                        <div class="col-3">
-                            <i class="fa fa-search d-block text-danger text-center"></i>
-                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span>
+                    <div class="row w-100 hide-on-menu-responsive-expand justify-content-end align-items-end">
+                        <div class="col-2">
+                            <i class="fa fa-search d-block text-color-web text-center"></i>
+                            <!-- <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Tìm kiếm</span> -->
                         </div>
-                        <div class="col-3">
-                            <i class="fa fa-heart d-block text-danger text-center"></i>
-                            <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span>
+                        <div class="col-2">
+                            <i class="fa fa-heart d-block text-color-web text-center"></i>
+                            <!-- <span class="d-block text-center" style="color: black; width: 100%; font-size: 12px;">Yêu thích</span> -->
                         </div>
-                        <div class="col-3">
-                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-danger text-center"></i></a>
-                            <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span>
+                        <div class="col-2">
+                            <a href="./shopping-cart.html" class="d-block m-0"><i class="fa fa-shopping-bag d-block text-color-web text-center"></i></a>
+                            <!-- <span class="d-block text-center cursor-pointer"><a href="./shopping-cart.html" style="color: black; width: 100%; font-size: 12px;">Giỏ hàng</a></span> -->
                         </div>
-                        <div class="col-3">
-                            <i class="fa fa-bars d-block text-danger text-center"></i>
-                            <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span>
+                        <div class="col-2" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()">
+                            <i class="fa fa-bars d-block text-color-web text-center"></i>
+                            <!-- <span class="navbar-toggler d-block text-center cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 12px;">Danh mục</a></span> -->
                         </div>
                     </div>
-                    <div class="row w-100 hide-on-menu-responsive-expand d-none">
+                    <div class="row w-100 hide-on-menu-responsive-expand d-none" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()">
                         <div class="col-12 text-right">
-                            <i class="fa fa-times text-danger" style="font-size: 30px; padding-right: 15px;"></i>
-                            <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span>
+                            <i class="fa fa-times text-color-web" style="font-size: 30px; padding-right: 15px;"></i>
+                            <!-- <span class="navbar-toggler d-block text-right cursor-pointer p-0" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="onShowMenuResponsive()"><a style="color: black; width: 100%; font-size: 20px;">Đóng</a></span> -->
                         </div>
                     </div>
                 </div>
@@ -378,8 +378,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="col btn btn-danger text-center font-weight-bold mt-4">THANH TOÁN</button>
-        
                             </form>
                         </div>
                         <div id="checkout-product-list" class="col-lg-4 col-md-4 hide-in-responsive">
@@ -531,7 +529,7 @@
         function onReloadCheckout(){
             let data = JSON.parse(localStorage.getItem('cartData'));
             var content = "";
-            content += `<div class="border-top border-bottom py-4">
+            content += `<div class="border-top py-4">
                         <h5 class="font-weight-bold">TỔNG ĐƠN HÀNG: <span id="quantity"></span> SẢN PHẨM</h5>`;
             data.forEach((item, index) => {
                 var prePrice = item?.price?.slice(0, -2);
@@ -575,7 +573,10 @@
                         <span><strong>Tổng tiền</strong></span>
                         <span><strong>449.000 <span style="text-decoration: underline;">đ</span></strong></span>
                     </div>
-                </div>`;
+                </div>
+                <form action="" class="custom-form mx-2 mt-5"  onsubmit="checkoutFormSubmit()">
+                    <button type="submit" class="col btn btn-danger text-center font-weight-bold mt-4">THANH TOÁN</button>
+                </form>`;
             document.getElementById("checkout-product-list").innerHTML = content;
             recalculateTotal()
         }
