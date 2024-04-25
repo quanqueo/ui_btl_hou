@@ -142,9 +142,9 @@
         </div>
     </div>
     <!-- Page Preloder -->
-    <!-- <div id="preloder">
+    <div id="preloder">
         <div class="loader"></div>
-    </div> -->
+    </div>
     <!-- Header Section Begin -->
     <header class="header mx-3 px-3 hide-in-responsive">
         <div class="container">
@@ -379,11 +379,12 @@
                                     <div class="card-body">
                                         <div class="shop__sidebar__categories">
                                             <ul>
-                                                <li><a href="#" style="color: rgb(171, 2, 2);">Áo phông</a></li>
-                                                <li><a href="#">Áo dài tay</a></li>
-                                                <li><a href="#">Áo khoác</a></li>
-                                                <li><a href="#">Quần</a></li>
-                                                <li><a href="#">Váy</a></li>
+                                                <li><a id="aophong" href="#">Áo phông</a></li>
+                                                <li><a id="aodaitay" href="#">Áo dài tay</a></li>
+                                                <li><a id="aokhoac" href="#">Áo khoác</a></li>
+                                                <li><a id="quandai" href="#">Quần dài</a></li>
+                                                <li><a id="quandui" href="#">Quần đùi</a></li>
+                                                <li><a id="vay" href="#">Váy</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -634,124 +635,142 @@
     </footer>
     <!-- Footer Section End -->
 
+    <script src="./data.js"></script>
     <script>
+        let params = new URLSearchParams(document.location.search);
+        let type = params.get("type"); // is the string "Jonathan"
+        let gender = params.get("gender"); // is the string "Jonathan"
+        let categoryType = type + gender;
         var data = [
-            {
-                price: '449.500',
-                prePrice: '699.000',
-                title: 'Váy liền nữ interlock cổ bẻ dáng dài',
-                discount: 50,
-                imgUrl: 'img/nu/1.jpg'
-            },
-            {
-                price: '149.500',
-                prePrice: '299.000',
-                title: 'Áo phông nữ cotton dáng ngắn in chữ',
-                discount: 50,
-                imgUrl: 'img/nu/aophong/aophong1/4.webp'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '699.000',
-                title: 'Váy liền nữ phối tay',
-                discount: 50,
-                imgUrl: 'img/nu/4.jpg'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '699.000',
-                title: 'Áo nỉ nữ có hình in',
-                discount: 50,
-                imgUrl: 'img/nu/13.jpg'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '699.000',
-                title: 'Áo nỉ nữ có hình in',
-                discount: 50,
-                imgUrl: 'img/nu/14.jpg'
-            },
-            {
-                price: '559.500 đ',
-                prePrice: '1.119.000',
-                title: 'Áo khoác chần bông nữ Ultra Air siêu nhẹ,...',
-                discount: 50,
-                imgUrl: 'img/nu/9.jpg'
-            },
-            {
-                price: '559.500 đ',
-                prePrice: '799.000',
-                title: 'Váy liền nữ interlock dáng suông',
-                discount: 30,
-                imgUrl: 'img/nu/5.jpg'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '799.000',
-                title: 'Áo cardigan nữ cổ V dài tay dáng ngắn vừa',
-                discount: 50,
-                imgUrl: 'img/nu/10.jpg'
-            },
-            {
-                price: '349.500 đ',
-                prePrice: '699.000',
-                title: 'Áo len nữ cổ lọ dệt loang',
-                discount: 50,
-                imgUrl: 'img/nu/12.jpg'
-            },
-            {
-                price: '399.500 đ',
-                prePrice: '799.000',
-                title: 'Quần jeans nữ dáng ôm',
-                discount: 50,
-                imgUrl: 'img/nu/1.jpg'
-            },
-            {
-                price: '149.500 đ',
-                prePrice: '299.000',
-                title: 'Chân váy jeans nữ cotton dáng suông',
-                discount: 50,
-                imgUrl: 'img/nu/7.jpg'
-            },
-            {
-                price: '364.500 đ',
-                prePrice: '699.000',
-                title: 'Quần dài nữ dáng suông',
-                discount: 50,
-                imgUrl: 'img/nu/2.jpg'
-            },
+            // {
+            //     price: '449.500',
+            //     prePrice: '699.000',
+            //     title: 'Váy liền nữ interlock cổ bẻ dáng dài',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/1.jpg'
+            // },
+            // {
+            //     price: '149.500',
+            //     prePrice: '299.000',
+            //     title: 'Áo phông nữ cotton dáng ngắn in chữ',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/aophong/aophong1/4.webp'
+            // },
+            // {
+            //     price: '399.500 đ',
+            //     prePrice: '699.000',
+            //     title: 'Váy liền nữ phối tay',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/4.jpg'
+            // },
+            // {
+            //     price: '399.500 đ',
+            //     prePrice: '699.000',
+            //     title: 'Áo nỉ nữ có hình in',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/13.jpg'
+            // },
+            // {
+            //     price: '399.500 đ',
+            //     prePrice: '699.000',
+            //     title: 'Áo nỉ nữ có hình in',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/14.jpg'
+            // },
+            // {
+            //     price: '559.500 đ',
+            //     prePrice: '1.119.000',
+            //     title: 'Áo khoác chần bông nữ Ultra Air siêu nhẹ,...',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/9.jpg'
+            // },
+            // {
+            //     price: '559.500 đ',
+            //     prePrice: '799.000',
+            //     title: 'Váy liền nữ interlock dáng suông',
+            //     discount: 30,
+            //     imgUrl: 'img/nu/5.jpg'
+            // },
+            // {
+            //     price: '399.500 đ',
+            //     prePrice: '799.000',
+            //     title: 'Áo cardigan nữ cổ V dài tay dáng ngắn vừa',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/10.jpg'
+            // },
+            // {
+            //     price: '349.500 đ',
+            //     prePrice: '699.000',
+            //     title: 'Áo len nữ cổ lọ dệt loang',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/12.jpg'
+            // },
+            // {
+            //     price: '399.500 đ',
+            //     prePrice: '799.000',
+            //     title: 'Quần jeans nữ dáng ôm',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/1.jpg'
+            // },
+            // {
+            //     price: '149.500 đ',
+            //     prePrice: '299.000',
+            //     title: 'Chân váy jeans nữ cotton dáng suông',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/7.jpg'
+            // },
+            // {
+            //     price: '364.500 đ',
+            //     prePrice: '699.000',
+            //     title: 'Quần dài nữ dáng suông',
+            //     discount: 50,
+            //     imgUrl: 'img/nu/2.jpg'
+            // },
         ];
-        var content = "";
-        data.forEach((item) => {
-            content += `<div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="product__item">
-                <div class="product__item__pic set-bg" data-setbg="./${item?.imgUrl}">
-                    <ul class="product__hover">
-                        <li><a href="./product-details.html"><img src="img/icon/heart.png" alt=""></a></li>
-                    </ul>
-                </div>
-                <div class="product__item__text">
-                    <h6>${item?.title}</h6>
-                    <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
-                    <h6>${item?.price} đ</h6>
-                    <h6><del>${item?.prePrice} đ</del>   <strong class="text-danger"> -${item?.discount}%</strong></h6> 
-                    <div class="product__color__select">
-                        <label for="pc-4">
-                            <input type="radio" id="pc-4">
-                        </label>
-                        <label class="active black" for="pc-5">
-                            <input type="radio" id="pc-5">
-                        </label>
-                        <label class="grey" for="pc-6">
-                            <input type="radio" id="pc-6">
-                        </label>
+        data = allData.find((item) => item.key == categoryType)?.data;
+        document.getElementById(`${type}`).style.color = "rgb(171, 2, 2)";
+        generateContent();
+        setHrefByGender();
+        function generateContent(){
+            var content = "";
+            data?.forEach((item) => {
+                content += `<div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="./${item?.imgUrl}">
+                        <ul class="product__hover">
+                            <li><a href="./product-details.html"><img src="img/icon/heart.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>${item?.title}</h6>
+                        <a href="#" class="add-cart">+ Thêm giỏ hàng</a>
+                        <h6>${item?.price} đ</h6>
+                        <h6><del>${item?.prePrice} đ</del>   <strong class="text-danger"> -${item?.discount}%</strong></h6> 
+                        <div class="product__color__select">
+                            <label for="pc-4">
+                                <input type="radio" id="pc-4">
+                            </label>
+                            <label class="active black" for="pc-5">
+                                <input type="radio" id="pc-5">
+                            </label>
+                            <label class="grey" for="pc-6">
+                                <input type="radio" id="pc-6">
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>`;
-        });
-        document.getElementById("productList").innerHTML = content;
-
+            </div>`;
+            });
+            document.getElementById("productList").innerHTML = content;
+        }
+        function setHrefByGender(){
+            document.getElementById("aophong").setAttribute("href", `./category.html?type=aophong&gender=${gender}`);
+            document.getElementById("aodaitay").setAttribute("href", `./category.html?type=aodaitay&gender=${gender}`);
+            document.getElementById("aokhoac").setAttribute("href", `./category.html?type=aokhoac&gender=${gender}`);
+            document.getElementById("quandai").setAttribute("href", `./category.html?type=quandai&gender=${gender}`);
+            document.getElementById("quandui").setAttribute("href", `./category.html?type=quandui&gender=${gender}`);
+            document.getElementById("vay").setAttribute("href", `./category.html?type=vay&gender=${gender}`);
+        }
         function onCloseFilter(){
             document.getElementById("filter-collapse").style = 'display: none';
         }
