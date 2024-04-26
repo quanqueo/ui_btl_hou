@@ -112,7 +112,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control btn-round px-3" id="password2" placeholder="Nhập lại mật khẩu">
                                     </div>
-                                    <button type="button" class="btn btn-black btn-block btn-round">Đăng ký</button>
+                                    <button type="button" class="btn btn-black btn-block btn-round" onclick="onLoginAfterRegister()">Đăng ký</button>
                                 </form>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control btn-round px-3" id="password2" placeholder="Xác nhận mật khẩu">
                                     </div>
-                                    <button type="button" class="btn btn-black btn-block btn-round">Đăng ký</button>
+                                    <button type="button" class="btn btn-black btn-block btn-round" onclick="onLoginAfterRegister()">Đăng ký</button>
                                 </form>
                             </div>
                             <!-- <div style="padding: 5px 0px;" class="extendForm">
@@ -150,7 +150,7 @@
                         </div>
                       </div>
                       <ul style="justify-content: space-between; border: none; padding: 5px 0px;" class="nav nav-tabs extendForm" role="tablist">
-                        <li class="nav-item"><a data-toggle="tab" href="#login" class="mr-2 direction active">Đăng nhập</a></li>
+                        <li class="nav-item"><a id="loginAfterRegister" data-toggle="tab" href="#login" class="mr-2 direction active">Đăng nhập</a></li>
                         <li class="nav-item"><a data-toggle="tab" href="#forgot-password" class="mr-2 direction">Quên mật khẩu</a></li>
                         <li class="nav-item"><a data-toggle="tab" href="#register" class="direction">Đăng ký tài khoản mới</a></li>
                     </ul>

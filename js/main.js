@@ -30,7 +30,6 @@
         //     var mixer = mixitup(containerEl);
         // }
         if(localStorage.getItem("isLoged")){
-            console.log(localStorage.getItem("isLoged"));
             $('#loginName').removeClass('d-block');
             $('#loginName').addClass('d-none');
             $('#username').removeClass('d-none');
@@ -328,4 +327,7 @@ function onShowMenuResponsive(){
 }
 function onCloseAccountInfo(){
     location.href = './summary.html';
+}
+function onLoginAfterRegister(){
+    $("#loginAfterRegister").click();
 }

@@ -208,7 +208,8 @@ ol {
   top: 0;
   left: 0;
   z-index: 999999;
-  background: #000;
+  /* background: #000; */
+  background: white;
 }
 
 .loader {
@@ -1335,6 +1336,15 @@ ol {
   padding-top: 15px;
 }
 
+.shop__sidebar__color .outside-color.prd-details {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px 0px 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+}
 .shop__sidebar__color .outside-color {
   display: inline-block;
   margin-right: 10px;
@@ -1344,7 +1354,7 @@ ol {
   background-color: rgb(255, 255, 255);
 }
 .shop__sidebar__color .outside-color.active{
-  border: 1px solid #333;
+  border: 1px solid #b3b3b3;
 }
 .shop__sidebar__color label {
   height: 30px;
@@ -4616,7 +4626,7 @@ input#search {
 .custom-form {
   .custom-group {
     margin: 20px 0px;
-    padding: 0px;
+    padding: 0px 15px 0px 0px;
   }
   label {
     font-weight: bold;
