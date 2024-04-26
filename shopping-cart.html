@@ -513,7 +513,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
                         <div class="list-item">`;
-                data.forEach((item, index) => {
+                data?.forEach((item, index) => {
                     var prePrice = item?.price?.slice(0, -2);
                     var price = prePrice.replace(".", "");
                     totalPrice.push(price * 1);
