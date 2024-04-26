@@ -1246,9 +1246,9 @@ ol {
 }
 
 .shop__sidebar__accordion .card-body {
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px 5px 20px 0px;
+  /* padding-top: 10px;
+  padding-bottom: 20px; */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1338,8 +1338,13 @@ ol {
 .shop__sidebar__color .outside-color {
   display: inline-block;
   margin-right: 10px;
-  padding: 10px;
-  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+.shop__sidebar__color .outside-color.active{
+  border: 1px solid #333;
 }
 .shop__sidebar__color label {
   height: 30px;

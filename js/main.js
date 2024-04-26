@@ -56,6 +56,10 @@
         $('.product__item__pic').on('click', function() {
             location.href = './product-details.html';
         });
+        $('.outside-color').on('click', function() {
+            $('.outside-color').removeClass('active');
+            $(this).addClass('active');
+        });
     });
 
     /*------------------
@@ -239,7 +243,7 @@
             }
         });
     });
-    let min = 10;
+    let min = 0;
     let max = 100;
     
     const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
@@ -249,7 +253,7 @@
       if (newValue > max) return;
       min = newValue;
       $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
-      $('#min').html(newValue);
+      $('#min').html(new Intl.NumberFormat().format(newValue * 10000) + 'đ');
       $('#line').css({
         'left': calcLeftPosition(newValue) + '%',
         'right': (100 - calcLeftPosition(max)) + '%'
@@ -261,7 +265,7 @@
       if (newValue < min) return;
       max = newValue;
       $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
-      $('#max').html(newValue);
+      $('#max').html(new Intl.NumberFormat().format(newValue * 10000) + 'đ');
       $('#line').css({
         'left': calcLeftPosition(min) + '%',
         'right': (100 - calcLeftPosition(newValue)) + '%'
