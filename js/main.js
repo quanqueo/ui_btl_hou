@@ -53,7 +53,7 @@
             $('#usernameResponsive').removeClass('d-none');
             $('#usernameResponsive').addClass('d-block');
         });
-        $('.product__item').on('click', function() {
+        $('.product__item__pic').on('click', function() {
             location.href = './product-details.html';
         });
     });
