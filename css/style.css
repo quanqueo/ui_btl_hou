@@ -1527,7 +1527,11 @@ ol {
   padding-top: 25px;
   text-align: center;
 }
-
+.admin-dashboard .card{
+  margin-left: 15px;
+  border-radius: 10px !important;
+  box-shadow: 5px 5px #f3f3f3;
+}
 .product__pagination a {
   display: inline-block;
   font-size: 16px;

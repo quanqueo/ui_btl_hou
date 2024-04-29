@@ -158,8 +158,8 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
-                            <li class="active"><a href="./female.html">Nữ</a></li>
-                            <li><a href="./male.html">Nam</a></li>
+                            <li id="nav-nu"><a href="./female.html">Nữ</a></li>
+                            <li id="nav-nam"><a href="./male.html">Nam</a></li>
                             <li><a href="./news.html">Tin tức</a></li>
                             <li><a href="./introduce.html">Giới thiệu</a></li>
                         </ul>
@@ -235,7 +235,7 @@
                 <div class="col-12">
                     <nav class="header__menu mobile-menu">
                         <ul class="d-flex" style="justify-content: space-around;">
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="./best-seller.html">Sản phẩm bán chạy</a></li>
                             <li><a href="./female.html">Nữ</a></li>
                             <li><a href="./male.html">Nam</a></li>
@@ -638,8 +638,9 @@
     <script src="./data.js"></script>
     <script>
         let params = new URLSearchParams(document.location.search);
-        let type = params.get("type"); // is the string "Jonathan"
-        let gender = params.get("gender"); // is the string "Jonathan"
+        let type = params.get("type");
+        let gender = params.get("gender");
+        let idNav = `nav-${gender}`;
         let categoryType = type + gender;
         var data = [
             // {
@@ -729,6 +730,7 @@
         ];
         data = allData.find((item) => item.key == categoryType)?.data;
         document.getElementById(`${type}`).style.color = "rgb(171, 2, 2)";
+        document.getElementById(`${idNav}`).classList = ["active"];
         generateContent();
         setHrefByGender();
         function generateContent(){
