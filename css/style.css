@@ -4957,3 +4957,14 @@ a.btn-outline-dark:hover{
 .admin-status{
   font-weight: 700;
 }
+.circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: #A1A7C4
+}
