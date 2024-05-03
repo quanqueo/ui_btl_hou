@@ -4954,3 +4954,6 @@ a.btn-outline-dark:hover{
   background-color: grey;
   border: 1px solid grey;
 }
+.admin-status{
+  font-weight: 600;
+}
